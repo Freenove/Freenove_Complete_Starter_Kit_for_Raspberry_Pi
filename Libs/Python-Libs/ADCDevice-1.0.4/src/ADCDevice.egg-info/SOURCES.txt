@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+src/ADCDevice/ADCDevice.py
+src/ADCDevice/__init__.py
+src/ADCDevice.egg-info/PKG-INFO
+src/ADCDevice.egg-info/SOURCES.txt
+src/ADCDevice.egg-info/dependency_links.txt
+src/ADCDevice.egg-info/top_level.txt
