@@ -33,7 +33,7 @@ void  main(void)
     pinMode(sensorPin, INPUT);//Set sensorPin to input
     pinMode(buzzerPin, OUTPUT); 
     delay(100);
-    wiringPiISR(sensorPin,INT_EDGE_FALLING,&sensorEven);
+    wiringPiISR(sensorPin,INT_EDGE_BOTH,&sensorEven);
     digitalWrite(buzzerPin, LOW); 
     while(1){
     }
