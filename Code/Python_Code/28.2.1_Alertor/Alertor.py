@@ -33,7 +33,7 @@ def sensorEvent(channel): # When sensor is blocked, this function will be execut
     alarm()
     
 def loop():
-    GPIO.add_event_detect(sensorPin,GPIO.FALLING,callback = sensorEvent,bouncetime=300)
+    GPIO.add_event_detect(sensorPin,GPIO.BOTH,callback = sensorEvent,bouncetime=300)
     while True:
         pass
 def destroy():
