@@ -6,7 +6,8 @@
 # modification: 2022/4/20
 ########################################################################
 import time
-import picamera
+from picamera2.encoders import H264Encoder, Quality
+from picamera2 import Picamera2
 import RPi.GPIO as GPIO
 import os
 
@@ -20,19 +21,20 @@ def setup():
 def loop():
     while True:
         if GPIO.input(buttonPin)==GPIO.LOW: # if button is pressed
-            with picamera.PiCamera() as camera:
-                my_file = open('video.h264', 'wb')
-                camera.start_preview()
-                time.sleep(1)
-                camera.resolution=(640,480)
-                camera.start_recording(my_file)
-                camera.wait_recording(6)
-                camera.stop_recording()
-                #camera.capture(my_file)
-                print ('Hello.a video has been taken successfully')   # print information on terminal
+            picam2 = Picamera2()
+            video_config = picam2.create_video_configuration(main={"size": (640, 480)})
+            picam2.configure(video_config)
+            encoder = H264Encoder()
+            picam2.start_recording(encoder, 'video.h264', quality=Quality.HIGH)
+            print(encoder._bitrate)
+            time.sleep(2)
+            picam2.stop_recording()
+            picam2.close()
+            print ('Hello,a video has been taken successfully')   # print information on terminal
+                
         elif GPIO.input(button2Pin)==GPIO.LOW: # if button is pressed
             print ('The video has been opened')  # print information on terminal
-            os.system('ffplay  -autoexit  video.h264')  
+            os.system('ffplay -x 640 -y 480 -autoexit  video.h264  -vf setpts=PTS/4 ')  
             print ('The video has been closed')  # print information on terminal
 def destroy():
     GPIO.cleanup()                    # Release GPIO resource
