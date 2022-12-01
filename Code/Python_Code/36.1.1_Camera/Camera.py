@@ -6,10 +6,10 @@
 # modification: 2022/4/20
 ########################################################################
 import time
-import picamera
+from picamera2 import Picamera2, Preview
 import RPi.GPIO as GPIO
 
-buttonPin = 11    # define buttonPin
+buttonPin = 12    # define buttonPin
 def setup():
     
     GPIO.setmode(GPIO.BOARD)      # use PHYSICAL GPIO Numbering
@@ -17,13 +17,16 @@ def setup():
 def loop():
     while True:
         if GPIO.input(buttonPin)==GPIO.LOW: # if button is pressed
-            with picamera.PiCamera() as camera:
-                my_file = open('image.jpg', 'wb')
-                camera.start_preview()
-                time.sleep(2)
-                camera.capture(my_file)
-                print ('Hello.a photo has been to taken successfully')   # print information on terminal
-                my_file.close()
+            picam2 = Picamera2()
+            preview_config = picam2.create_preview_configuration(main={"size": (800, 600)})
+            picam2.configure(preview_config)
+            picam2.start_preview(Preview.QTGL)
+            picam2.start()
+            time.sleep(2)
+            metadata = picam2.capture_file("image.jpg")
+            print ('Hello.a photo has been to taken successfully')   # print information on terminal
+            picam2.close()
+            print ('Please preess the button take a photo')
 def destroy():
     GPIO.cleanup()                    # Release GPIO resource
 
