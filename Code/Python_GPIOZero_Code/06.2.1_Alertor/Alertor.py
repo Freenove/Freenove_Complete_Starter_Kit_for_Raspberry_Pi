@@ -22,7 +22,7 @@ def loop():
             stopAlertor()
             print ('alertor turned off <<<')
 def alertor():
-    b.play(Tone(220.0)) 
+    buzzer.play(Tone(220.0)) 
     time.sleep(0.1)
         
 def stopAlertor():
