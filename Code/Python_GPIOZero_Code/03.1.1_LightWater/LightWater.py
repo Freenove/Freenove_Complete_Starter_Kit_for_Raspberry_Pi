@@ -8,7 +8,7 @@
 from gpiozero import LED
 from time import sleep
 
-ledPins = [14, 15, 18, 23, 24, 25, 8, 7, 12, 16, 20, 21]
+ledPins = [17, 18, 27, 22, 23, 24, 25, 2, 3, 8]
 leds = [LED(pin=pin) for pin in ledPins] 
     
 def loop():
