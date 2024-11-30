@@ -22,16 +22,16 @@ void rotaryDeal(){
     int currentDTStatus= 0;
     lastDTStatus =digitalRead(dtPin);
 
-    while(digitalRead(clkPin) == LOW){      //未旋转时，GPIO.input(clkPin)值为1，旋转时会变为0
-        currentDTStatus = digitalRead(dtPin);  //记录旋转时的当前值
+    while(digitalRead(clkPin) == LOW){      //When not rotating, the value of GPIO.input(clkPin) is 1, and it changes to 0 when rotating
+        currentDTStatus = digitalRead(dtPin);  //Record the current value during rotation
         symbol = 1;
     }
-    if(symbol==1){                  //当用手旋转编码器时
+    if(symbol==1){                  //When rotating the encoder by hand
         symbol = 0;
-        if ((lastDTStatus == 1) && (currentDTStatus == 0)){   //顺时针旋转，角位移增大，计数值增大
+        if ((lastDTStatus == 1) && (currentDTStatus == 0)){   //Clockwise rotation, angular displacement increases, count value increases
             previousCounterValue=previousCounterValue+1;
         }
-        if ((lastDTStatus == 0) && (currentDTStatus == 1)){   //逆时针旋转，角位移减少，计数值减少
+        if ((lastDTStatus == 0) && (currentDTStatus == 1)){   //Counterclockwise rotation, angular displacement decreases, count value decreases
             previousCounterValue=previousCounterValue-1;
         }
     }    
@@ -50,7 +50,7 @@ pullUpDnControl(swPin, PUD_UP); //pull up to high level
         rotaryDeal();
         if(digitalRead(swPin) == LOW){
             delay(120);
-            if(digitalRead(swPin) == LOW){   //当用手按下旋转编码器时，计数值清零
+            if(digitalRead(swPin) == LOW){   //When the hand presses the rotary encoder, the count value is reset to zero
                 previousCounterValue=0;
             }
         }
