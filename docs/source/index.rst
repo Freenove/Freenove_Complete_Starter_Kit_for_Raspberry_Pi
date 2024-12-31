@@ -2,9 +2,17 @@
 Freenove Complete Starter Kit for Raspberry Pi
 ######################################################
 
-.. toctree::
-   :maxdepth: 2
-   :caption: FNK0066
-   :glob:
+FNK0066
+******************************************************
 
-   fnk0066/fnk0066.rst
+Select the language you want to use.
+
+.. toctree::
+   :maxdepth: 1
+   :caption: language
+    
+   fnk0066/c-lang-tutorial.rst
+   fnk0066/python-tutorial.rst
+   fnk0066/processing-tutorial.rst
+   fnk0066/java-tutorial.rst
+   fnk0066/scratch-tutorial.rst
