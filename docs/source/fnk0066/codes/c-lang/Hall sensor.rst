@@ -2,7 +2,6 @@
 Chapter Hall sensor
 ##############################################################################
 
-
 In this chapter, we will learn how to use Hall sensor.
 
 Project Hall sensor and LED
@@ -75,7 +74,7 @@ Below is the pinout of the Hall sensor.
    * - GND
      - GND
     
-Please do not use voltage beyond the power supply range to avoid damage to the Hall sensor.For the above two hall sensors, their difference is only the pin sequence is different, please get the Hall sensor, check its sequence, change the corresponding wiring, so as not to cause permanent damage to your raspberry PI.
+:red:`Please do not use voltage beyond the power supply range to avoid damage to the Hall sensor.For the above two hall sensors, their difference is only the pin sequence is different, please get the Hall sensor, check its sequence, change the corresponding wiring, so as not to cause permanent damage to your raspberry PI.`
 
 Circuit
 ================================================================
@@ -105,7 +104,7 @@ Circuit
 Code
 ================================================================
 
-C Code 29.1.1 HallSensor
+C Code HallSensor
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
@@ -140,8 +139,6 @@ The following is the program code:
     :linenos: 
     :language: C
 
-
-
 Project Hall Sensor and Buzzer
 ****************************************************************
 
@@ -166,15 +163,6 @@ Component List
 |  |Speaker1|           |  |Active-buzzer|         |  |res-220R1|           |  |Resistor-1kΩ|        |                           
 +-----------------------+--------------------------+------------------------+------------------------+
 
-.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
-.. |Hall_Sensor| image:: ../_static/imgs/Hall_Sensor.png
-    :width: 30%
-.. |Hall_Sensor_1| image:: ../_static/imgs/Hall_Sensor_1.png
-    :width: 40%
-.. |red-led1| image:: ../_static/imgs/red-led.png
-    :width: 50%
-.. |res-220R1| image:: ../_static/imgs/res-220R.png
-    :width: 25%
 .. |Speaker1| image:: ../_static/imgs/Speaker.png
     :width: 60%
 .. |Active-buzzer| image:: ../_static/imgs/Active-buzzer.png
@@ -200,11 +188,10 @@ Circuit
 |   |Hall_Sensor_Fr_2| :xx-large:`or` |Hall_Sensor_Fr_3|                                         |
 +------------------------------------------------------------------------------------------------+
 
-
 .. |Hall_Sensor_Sc_1| image:: ../_static/imgs/Hall_Sensor_Sc_1.png
-.. |Hall_Sensor_Fr_2| image:: ../_static/imgs/Hall_Sensor_Fr_2.png
+.. |Hall_Sensor_Fr_2| image:: ../_static/imgs/29_00.png
     :width: 48%
-.. |Hall_Sensor_Fr_3| image:: ../_static/imgs/Hall_Sensor_Fr_3.png
+.. |Hall_Sensor_Fr_3| image:: ../_static/imgs/29_01.png
     :width: 48%
 
 .. note::
@@ -214,7 +201,7 @@ Circuit
 Code
 ================================================================
 
-C Code 29.2.1 Alertor
+C Code Alertor
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
@@ -247,4 +234,3 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/C_Code/29.2.1_Alertor/Alertor.c
     :linenos: 
     :language: C
-

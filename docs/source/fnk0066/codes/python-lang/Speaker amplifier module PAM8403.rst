@@ -2,14 +2,13 @@
 Chapter Speaker amplifier module PAM8403
 ################################################################
 
-
 In this chapter, we will learn how to use the speaker amplifier module PAM8403.
 
 **Please note: This chapter applies to Raspberry PI 2-4.**
 
 .. _Project 35.1 play local music:
 
-Project 35.1 Play local music
+Project Play local music
 ****************************************************************
 
 This project uses speakers to play local music.
@@ -119,6 +118,7 @@ Be careful when connecting this circuit. Do not use the RPi to power the speaker
 .. |PAM8403_Step3| image:: ../_static/imgs/PAM8403_Step3.png
 
 Additional supplement 
+==================================
 
 Raspbery Pi, other than 4B and 400, nees to restart the audio module. Otherwise the speaker amplifier module PAM8403 cannot be recognized.
 
@@ -176,11 +176,18 @@ Configure audio output method
 
 When your Pi doesn't have a desktop, you can right-click the speaker icon in the upper right corner to choose whether your Pi uses HDMI or Analog connection to handle sound. As shown below:
 
+.. image:: ../_static/imgs/python35_00.png
+    :align: center
+
+When your Pi doesn't have a desktop, you can choose how the sound is handled through the terminal command line.
+
 Open the terminal and enter the following command.
 
 .. code-block:: console
 
     $ sudo raspi-config
+
+Then open the following dialog box: 
 
 .. image:: ../_static/imgs/dialog_box.png
     :align: center
@@ -191,6 +198,9 @@ Configure volume
 ----------------------------------------------------------------
 
 When your Pi has desktop, you left-click the speaker icon and move the slider up or down with the keyboard to adjust the volume. As shown below:
+
+.. image:: ../_static/imgs/python35_01.png
+    :align: center
 
 When your Pi doesn't have desktop, you can adjust the sound volume through the terminal command line.
 
@@ -253,7 +263,7 @@ The following are some advanced commands of ffplay. As shown in the table below:
 Code
 ================================================================
 
-Python Code 35.1.1 Music
+Python Code Music
 ----------------------------------------------------------------
 
 Run program 
@@ -277,7 +287,7 @@ After executing the command, you can hear the test music playing. Here you can a
 
 
 
-Project 35.2 TTS reminder
+Project TTS reminder
 ****************************************************************
 
 This project uses the speaker amplifier module PAM8403 to make a TTS reminder.
@@ -354,7 +364,7 @@ Circuit
 Code
 ================================================================
 
-Python Code 35.2.1 TTS
+Python Code TTS
 ----------------------------------------------------------------
 
 Install espeak before run python code.
@@ -390,3 +400,11 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/35.2.1_TTS/TTS.py
     :linenos: 
     :language: python
+
+Read the signal pin of the infrared obstacle avoidance sensor, and determine whether the sensor is touched by human beings. If the sensor is touched by human beings, the speaker will broadcast a reminder.
+
+.. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/35.2.1_TTS/TTS.py
+    :linenos: 
+    :language: python
+    :lines: 15-20
+    :dedent:

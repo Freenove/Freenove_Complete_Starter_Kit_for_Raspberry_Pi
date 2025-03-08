@@ -23,7 +23,8 @@ Component List
 +-----------------------------+----------------------------------+----------------------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
-.. |camera| image:: ../_static/imgs/Battery_cable.png
+.. |power-module| image:: ../_static/imgs/power-module.png
+.. |camera| image:: ../_static/imgs/camera.png
 .. |Resistor-10kΩ| image:: ../_static/imgs/Resistor-10kΩ.png
     :width: 20%
 .. |button-small| image:: ../_static/imgs/button-small.jpg
@@ -125,7 +126,7 @@ If you do not get the result above, please check whether the camera wire is conn
 
     :red:`When plugging in or pulling out camera wire, please make sure Raspberry Pi is turned OFF. Otherwise, it may burn out the camera.`
 
-Python Code 36.1.1 Camera
+Python Code Camera
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
@@ -153,6 +154,7 @@ After the program is executed, you can take a photo by pressing the button. When
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/36.1.1_Camera/Camera.py
     :linenos: 
     :language: python
+    :dedent:
 
 Read the signal pin of the button, and determine whether the button is pressed, if the button is pressed, take a photo and save it in the corresponding directory.
 
@@ -160,7 +162,7 @@ Read the signal pin of the button, and determine whether the button is pressed, 
     :linenos: 
     :language: python
     :lines: 17-27
-
+    :dedent:
 
 Project Video Recording
 ****************************************************************
@@ -179,12 +181,6 @@ Component List
 |                             |                                  |                                  |
 |  |camera|                   |  |Resistor-10kΩ|                 |  |button-small|                  |
 +-----------------------------+----------------------------------+----------------------------------+
-
-.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
-.. |camera| image:: ../_static/imgs/Battery_cable.png
-.. |Resistor-10kΩ| image:: ../_static/imgs/Resistor-10kΩ.png
-    :width: 20%
-.. |button-small| image:: ../_static/imgs/button-small.jpg
 
 Circuit
 ================================================================
@@ -222,7 +218,7 @@ If you do not get the result above, please check whether the camera wire is conn
 
     :red:`When plugging in or pulling out camera wire, please make sure Raspberry Pi is turned OFF. Otherwise, it may burn out the camera.`
 
-Python Code 36.2.1 Video
+Python Code Video
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
@@ -244,7 +240,7 @@ First observe the project result, and then learn about the code in detail.
 
 After the program is executed, you can shoot a video by pressing the button. When the shooting button is pressed, you will see Video.h264 in the corresponding directory. When the play button is pressed, the corresponding captured video will be played, as shown in the image below. You can repeat the above operation to capture other videos, but it will overwrited the previous video.
 
-.. image:: ../_static/imgs/py_camera_1.png
+.. image:: ../_static/imgs/python36_00.png
     :align: center
 
 The following is the program code:
@@ -252,6 +248,7 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/36.2.1_Video/Video.py
     :linenos: 
     :language: python
+    :dedent:
 
 Read the signal pin of the shooting button, and determine whether the button is pressed, if the button is pressed, shoot a video and save it in the corresponding directory.
 
@@ -259,6 +256,7 @@ Read the signal pin of the shooting button, and determine whether the button is 
     :linenos: 
     :language: python
     :lines: 21-31
+    :dedent:
 
 Read the signal pin of the play button, and determine whether the button is pressed. If the button is pressed, use the ffplay tool to play the corresponding video. When the video finishes playing, the playback interface will be closed automatically.
 
@@ -266,4 +264,4 @@ Read the signal pin of the play button, and determine whether the button is pres
     :linenos: 
     :language: python
     :lines: 33-36
-
+    :dedent:

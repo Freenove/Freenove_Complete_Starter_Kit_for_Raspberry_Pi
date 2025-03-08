@@ -2,7 +2,6 @@
 Chapter LEDpixel
 ################################################################
 
-
 In this chapter, we will learn Freenove 8 RGB LED Module.
 
  .. note::
@@ -19,7 +18,7 @@ Component List
 
 +--------------------------------------------------+-------------------------------------------------+
 |1. Raspberry Pi (with 40 GPIO) x1                 |                                                 |
-|                                                  | Jumper Wires x7                                 |
+|                                                  | Jumper Wires x4                                 |
 |2. GPIO Extension Board & Ribbon Cable x1         |                                                 |
 |                                                  |  |jumper-wire|                                  |
 |3. Breadboard x1                                  |                                                 |
@@ -133,7 +132,7 @@ If you want to restart the audio module, just restore the content modified in th
 Code
 ================================================================
 
-Python Code 32.1.1 Ledpixel
+Python Code Ledpixel
 ----------------------------------------------------------------
 
 Before running python code, please install WS281X library first.
@@ -142,16 +141,17 @@ Before running python code, please install WS281X library first.
 
 .. code-block:: console
 
-    $ sudo pip3 install rpi_ws281x
+    $ cd ~/Freenove_Kit/Libs/Python-Libs/rpi-ws281x-python/library && sudo python3 setup.py install
 
 The installation is completed as shown in the figure below.
 
-.. image:: ../_static/imgs/rpi_ws281x.png
+.. image:: ../_static/imgs/python32_00.png
     :align: center
 
 First observe the project result, and then learn about the code in detail.
 
 .. hint:: 
+    
     :red:`If you have any concerns, please contact us via:`  support@freenove.com
 
 1.	Use ``cd`` command to enter 32.1.1_Ledpixel directory of Python code.
@@ -195,7 +195,7 @@ Light up the eight LEDs in red, green and blue in turn.
     :language: python
     :lines: 34-45
 
-Project 32.2 RainbowLight
+Project RainbowLight
 ****************************************************************
 
 In this project, we will learn to control the LED module with a potentiometer.
@@ -215,9 +215,6 @@ Component List
 |  |LEDpixel|                    |   |Rotary-potentiometer|            |  |ADC-module-2|             |
 +--------------------------------+-------------------------------------+-----------------------------+
 
-.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
-.. |LEDpixel| image:: ../_static/imgs/LEDpixel.png
-    :width: 60%
 .. |Rotary-potentiometer| image:: ../_static/imgs/Rotary-potentiometer.png
     :width: 60%
 .. |ADC-module-2| image:: ../_static/imgs/ADC-module-2.png
@@ -246,10 +243,10 @@ Code
 
 In this project, we will make a Servo rotate from 0 degrees to 180 degrees and then reverse the direction to make it rotate from 180 degrees to 0 degrees and repeat these actions in an endless loop.
 
-Python Code 32.2.1 RainbowLight
+Python Code RainbowLight
 ----------------------------------------------------------------
 
-If you did not configure I2C, please refer to :doc:`Chapter 7 ADC <ADC>`. If you did, please continue.
+If you did not configure I2C, please refer to :doc:`Chapter 7 <ADC>`. If you did, please continue.
 
 For Python code, ADCDevice requires a custom module which needs to be installed. If you have installed it in Chapter 7.Please skip the installation.
 
@@ -275,6 +272,7 @@ For Python code, ADCDevice requires a custom module which needs to be installed.
 First observe the project result, and then learn about the code in detail.
 
 .. hint:: 
+    
     :red:`If you have any concerns, please contact us via:`  support@freenove.com
 
 4.  Use ``cd`` command to enter 32.2.1_Rainbow Light directory of Python code.
@@ -296,28 +294,25 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/32.2.1_RainbowLight/RainbowLight.py
     :linenos: 
     :language: python
+    :dedent:
 
 This function converts HSL colors to RGB colors.
 
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/32.2.1_RainbowLight/RainbowLight.py
     :linenos: 
     :language: python
+    :lines: 41-57
+    :dedent:
 
 Read the ADC value of channel 2 in an infinite loop. Let the color of the eight LEDs change according to the value of the ADC.
 
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/32.2.1_RainbowLight/RainbowLight.py
     :linenos: 
     :language: python
+    :lines: 63-71
+    :dedent:
 
-Finally, in the "while" loop of main function, we need to use two separate cycles to make servo rotate from 0 degrees to 180 degrees and then from 180 degrees to 0 degrees. 
-
-.. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/32.2.1_RainbowLight/RainbowLight.py
-    :linenos: 
-    :language: python
-
-
-
-Project 32.2 SpiLEDpixel
+Project SpiLEDpixel
 ****************************************************************
 
 This project will control ledpixel to display any color by the Raspberry Pi's SPI.
@@ -336,10 +331,6 @@ Component List
 |                                                                                                    |
 |  |LEDpixel|                                                                                        |
 +----------------------------------------------------------------------------------------------------+
-
-.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
-.. |LEDpixel| image:: ../_static/imgs/LEDpixel.png
-    :width: 40%
 
 Component knowledge
 ================================================================
@@ -387,93 +378,10 @@ Circuit
 .. |LEDpixel_Sc_2| image:: ../_static/imgs/LEDpixel_Sc_2.png
 .. |LEDpixel_Fr_2| image:: ../_static/imgs/LEDpixel_Fr_2.png
 
-Before you run your python code, check that the spidev library exists.
-
-Enter the following command to install.
-
-.. code-block:: console    
-    
-    $ pip list
-
-The spidev is installed on Raspberry PI by default. As shown in the figure below.
-
-.. image:: ../_static/imgs/pip_list.png
-    :align: center
-
-If your Raspberry PI system does not have this library, you can find **spidev-3.6.tar.gz** in **Freenove_Kit/Libs/Python-Libs**.
-
-Enter the following instructions to install spidev.
-
-.. code-block:: console    
-    
-    $ cd Freenove_Kit/Libs/Python-Libs
-    $ tar -zxvf spidev-3.6.tar.gz
-    $ cd spidev-3.6
-    $ sudo python setup.py install
-
-The installation is complete as shown in the following figure.
-
-.. image:: ../_static/imgs/installation.png
-    :align: center
-
-
-.. hint:: 
-    :red:`If you have any concerns, please contact us via:` support@freenove.com
-
-Additional supplement 
-================================================================
-
-Note that the frequency of the SPI changes as the CPU frequency self-regulates, so we need to fix the cpu frequency before we start using the code. Please refer to the following operations.
-
-1. Open the config.txt file and prepare to edit it.
-
-.. code-block:: console    
-    
-    $ sudo nano /boot/firmware/config.txt
-
-2. If your Raspberry PI is Raspberry PI 4 or Raspberry PI 5, please add at the bottom:
-
-.. code-block:: console    
-    
-    $ force_turbo=1
-
-If your Raspberry PI is Raspberry PI 3, add it at the bottom:
-
-.. code-block:: console    
-    
-    $ core_freq=250
-
-3. Save the file.
-
-4. Turn on the spi feature of the Raspberry PI.
-
-.. code-block:: console    
-    
-    $ sudo raspi-config
-
-5. **Select Interface Options, then SPI, and turn it on**.
-
-6. Select Finish.
-
-7. Reboot the Raspberry PI.
-
-.. code-block:: console    
-    
-    $ sudo reboot
-
-.. image:: ../_static/imgs/SPI.png
-    :align: center
-
-.. image:: ../_static/imgs/SPI_1.png
-    :align: center
-
-.. image:: ../_static/imgs/SPI_2.png
-    :align: center
-
 Code
 ================================================================
 
-Python Code 32.3.1 Ledpixel
+Python Code Ledpixel
 ----------------------------------------------------------------
 
 Before you run your python code, check that the spidev library exists.
@@ -506,6 +414,7 @@ The installation is complete as shown in the following figure.
     :align: center
 
 .. hint:: 
+    
     :red:`If you have any concerns, please contact us via:`  support@freenove.com
 
 Additional supplement 
@@ -532,6 +441,7 @@ If your Raspberry PI is Raspberry PI 3, add it at the bottom:
     $ core_freq=250
 
 3. Save the file.
+
 4. Turn on the spi feature of the Raspberry PI.
 
 .. code-block:: console
@@ -567,7 +477,7 @@ After the program runs, ledpixel emits red, green, and blue three colors in turn
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/32.3.1_Ledpixel/Ledpixel.py
+.. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/32.3.1_SPILedpixel/Ledpixel.py
     :linenos: 
     :language: python
 

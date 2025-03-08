@@ -25,12 +25,11 @@ Component List
 +--------------------------------------------------+------------------------+------------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
-.. |Infrared_sensor| image:: ../_static/imgs/Hall_Sensor.png
-    :width: 30%
+.. |Infrared_sensor| image:: ../_static/imgs/30_00.png
 .. |red-led| image:: ../_static/imgs/red-led.png
     :width: 50%
 .. |res-220R| image:: ../_static/imgs/res-220R.png
-    :width: 10%
+    :width: 20%
 
 Component knowledge
 ================================================================
@@ -84,7 +83,7 @@ Please do not use the voltage beyond the power supply range to avoid damage to t
 Code
 ================================================================
 
-C Code 30.1.1 InfraredSensor
+C Code InfraredSensor
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
@@ -117,9 +116,9 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/C_Code/30.1.1_InfraredSensor/InfraredSensor.c
     :linenos: 
     :language: C
+    :dedent:
 
-
-Project 30.2 Infrared obstacle avoidance sensor and buzzer
+Project Infrared obstacle avoidance sensor and buzzer
 ****************************************************************
 
 This project uses an infrared obstacle avoidance sensor to make a simple reminder.
@@ -129,7 +128,7 @@ Component List
 
 +--------------------------------------------------+---------------------------------------------------+
 |1. Raspberry Pi (with 40 GPIO) x1                 |                                                   |
-|                                                  | Jumper Wires x6                                   |
+|                                                  | Jumper Wires x10                                  |
 |2. GPIO Extension Board & Ribbon Cable x1         |                                                   |
 |                                                  |  |jumper-wire|                                    |
 |3. Breadboard x1                                  |                                                   |
@@ -143,13 +142,8 @@ Component List
 |  |Infrared_sensor|                               |  |red-led1|              |  |res-220R|            |
 +--------------------------------------------------+--------------------------+------------------------+
 
-.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
-.. |Infrared_sensor| image:: ../_static/imgs/Hall_Sensor.png
-    :width: 30%
 .. |red-led1| image:: ../_static/imgs/red-led.png
     :width: 40%
-.. |res-220R| image:: ../_static/imgs/res-220R.png
-    :width: 25%
 .. |Active-buzzer| image:: ../_static/imgs/Active-buzzer.png
     :width: 40%
 .. |NPN-transistor| image:: ../_static/imgs/NPN-transistor.png
@@ -178,7 +172,7 @@ Circuit
 Code
 ================================================================
 
-C Code 30.2.1 Alertor
+C Code Alertor
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
@@ -211,3 +205,4 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/C_Code/30.2.1_Alertor/Alertor.c
     :linenos: 
     :language: C
+    :dedent:

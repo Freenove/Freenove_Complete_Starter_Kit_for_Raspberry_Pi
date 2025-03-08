@@ -2,7 +2,6 @@
 Chapter 74HC595 & 7-Segment Display
 ################################################################
 
-
 In this chapter, we will introduce the 7-Segment Display.
 
 Project 7-Segment Display
@@ -15,7 +14,7 @@ Component List
 
 +-------------------------------------------------+-------------------------------------------------+
 |1. Raspberry Pi (with 40 GPIO) x1                |                                                 |     
-|                                                 |   Jumper Wires x18                              |       
+|                                                 |   Jumper Wires x30                              |       
 |2. GPIO Extension Board & Ribbon Cable x1        |                                                 |       
 |                                                 |     |jumper-wire|                               |                                                            
 |3. Breadboard x1                                 |                                                 |                                                                 
@@ -72,17 +71,22 @@ Circuit
 .. |7_Segment_Sc| image:: ../_static/imgs/7_Segment_Sc.png
 .. |7_Segment_Fr| image:: ../_static/imgs/7_Segment_Fr.png
 
+.. raw:: html
+
+   <iframe height="500" width="690" src="https://www.youtube.com/embed/KSE0LdyuOFM" frameborder="0" allowfullscreen></iframe>
+
 Code
 ================================================================
 
 This code uses a 74HC595 IC Chip to control the 7-Segment Display. The use of the 74HC595 IC Chip is generally the same throughout this Tutorial. We need code to display the characters “0” to “F” one character at a time, and then output to display them with the 74HC595 IC Chip.
 
-Python Code 18.1.1 SevenSegmentDisplay
+Python Code SevenSegmentDisplay
 ----------------------------------------------------------------
 
 First, observe the project result, and then learn about the code in detail.
 
 .. hint:: 
+    
     :red:`If you have any concerns, please contact us via:`  support@freenove.com
 
 1.	Use cd command to enter 18.1.1_SevenSegmentDisplay directory of Python code.
@@ -101,7 +105,7 @@ After the program is executed, the 7-Segment Display starts to display the chara
 
 The following is the program code:
 
-.. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/17.1.1_SevenSegmentDisplay/SevenSegmentDisplay.py
+.. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/18.1.1_SevenSegmentDisplay/SevenSegmentDisplay.py
     :linenos: 
     :language: python
 
@@ -129,8 +133,6 @@ If you want to display the decimal point, make the highest bit of each array “
 
 For more information about the methods used by the OutputDevice class in the GPIO Zero library,please refer to: https://gpiozero.readthedocs.io/en/stable/api_output.html#outputdevice
 
-
-
 Project 4-Digit 7-Segment Display
 ****************************************************************
 
@@ -155,13 +157,8 @@ Component List
 |  |4_7_Segment_Display|                          |  |PNP|                                          | 
 +-------------------------------------------------+-------------------------------------------------+
 
-.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
-.. |74HC595| image:: ../_static/imgs/74HC595.png
-    :width: 30%
 .. |4_7_Segment_Display| image:: ../_static/imgs/4_7_Segment_Display.png
     :width: 70%
-.. |res-220R| image:: ../_static/imgs/res-220R.png
-    :width: 20%
 .. |PNP| image:: ../_static/imgs/PNP.png
 .. |Resistor-1kΩ| image:: ../_static/imgs/Resistor-1kΩ.png
     :width: 25%
@@ -203,13 +200,12 @@ Circuit
 .. |4_7_Segment_Sc| image:: ../_static/imgs/4_7_Segment_Sc.png
 .. |4_7_Segment_Fr| image:: ../_static/imgs/4_7_Segment_Fr.png
 
-
 Code
 ================================================================
 
 In this code, we use the 74HC595 IC Chip to control the 4-Digit 7-Segment Display, and use the dynamic scanning method to show the changing number characters.
 
-Python Code 18.2.1 StopWatch
+Python Code StopWatch
 ----------------------------------------------------------------
 
 This code uses the four step four pat mode to drive the Stepper Motor clockwise and reverse direction.
@@ -236,6 +232,7 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/18.2.1_StopWatch/StopWatch.py
     :linenos: 
     :language: python
+    :dedent:
 
 First, define the pin of 74HC595 and 7-segment display common end, character encoding and a variable "counter" to be displayed counter.
 
@@ -243,15 +240,17 @@ First, define the pin of 74HC595 and 7-segment display common end, character enc
     :linenos: 
     :language: python
     :lines: 15-21
+    :dedent:
 
-Subfunction selectDigit (digit) function is used to open one of the 7-segment display and close the other 7-segment display, where the parameter digit value can be 1,2,4,8. Using "|" can open a number of 7-segment display.
+Subfunction **selectDigit** (digit) function is used to open one of the 7-segment display and close the other 7-segment display, where the parameter digit value can be 1,2,4,8. Using "|" can open a number of 7-segment display.
 
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/18.2.1_StopWatch/StopWatch.py
     :linenos: 
     :language: python
     :lines: 38-42
+    :dedent:
 
-Subfunction outData (data) is used to make the 74HC595 output an 8-bit data immediately.
+Subfunction **outData** (data) is used to make the 74HC595 output an 8-bit data immediately.
 
 .. code-block:: python
 
@@ -260,23 +259,25 @@ Subfunction outData (data) is used to make the 74HC595 output an 8-bit data imme
         shiftOut(MSBFIRST,data)
         latchPin.on()
 
-Subfunction display (int dec) is used to make a 4-Digit 7-Segment Display a 4-bit integer. First open the common end of first 7-Segment Display Digit and turn OFF the other three Digits, now it can be used as 1-Digit 7-Segment Display. The first Digit is used for displaying single digits of "dec", the second Digit is for tens, the third for hundreds and fourth for thousands respectively. Each digit will be displayed for a period by using delay (). The time in this code is very brief, so you will a mess of Digits. If the time is set long enough, you will see that every digit is displayed independently.
+Subfunction **display** (int dec) is used to make a 4-Digit 7-Segment Display a 4-bit integer. First open the common end of first 7-Segment Display Digit and turn OFF the other three Digits, now it can be used as 1-Digit 7-Segment Display. The first Digit is used for displaying single digits of "dec", the second Digit is for tens, the third for hundreds and fourth for thousands respectively. Each digit will be displayed for a period by using delay (). The time in this code is very brief, so you will a mess of Digits. If the time is set long enough, you will see that every digit is displayed independently.
 
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/18.2.1_StopWatch/StopWatch.py
     :linenos: 
     :language: python
     :lines: 44-60
+    :dedent:
 
-Subfunction timer () is the timer callback function. When the time is up, this function will be executed. Accompanied by the execution, the variable counter will be added 1, and then reset the time of timer to 1s. 1s later, the function will be executed again.
+Subfunction **timer()** is the timer callback function. When the time is up, this function will be executed. Accompanied by the execution, the variable counter will be added 1, and then reset the time of timer to 1s. 1s later, the function will be executed again.
 
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/18.2.1_StopWatch/StopWatch.py
     :linenos: 
     :language: python
     :lines: 61-67
+    :dedent:
 
-Subfunction setup(), configure all input output modes for the GPIO pin used. 
+Subfunction **setup()** , configure all input output modes for the GPIO pin used. 
 
-Finally, in loop function, make the digital tube display variable counter value in the while loop. The value will change in function timer (), so the content displayed by 7-segment display will change accordingly.
+Finally, in loop function, make the digital tube display variable counter value in the while loop. The value will change in function **timer** (), so the content displayed by 7-segment display will change accordingly.
 
 .. code-block:: python
 

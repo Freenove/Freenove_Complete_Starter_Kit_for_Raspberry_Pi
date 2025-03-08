@@ -63,6 +63,9 @@ Below is the pinout of the touch sensor.
    * - DO
      - Output control signal(High or low level)
 
+   * - AO
+     - Output invalid
+
    * - GND
      - GND
 
@@ -95,7 +98,7 @@ Circuit
 Code
 ================================================================
 
-C Code 28.1.1 PhotoSensor
+C Code PhotoSensor
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
@@ -131,7 +134,7 @@ When you use the module whose output signal is low level, after the program is e
 
 
 
-Project 28.2 U-shaped photoelectric sensor and buzzer
+Project U-shaped photoelectric sensor and buzzer
 ****************************************************************
 
 This project uses U-shaped photoelectric sensor to make a simple sound and light alarm. 
@@ -155,7 +158,6 @@ Component List
 | |photoelectric| :xx-large:`or` |photoelectric_1| | |red-led|                        | |res-220R|             |       
 +--------------------------------------------------+----------------------------------+------------------------+
 
-.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
 .. |Active-buzzer| image:: ../_static/imgs/Active-buzzer.png
     :width: 40%
 .. |res-220R| image:: ../_static/imgs/res-220R.png
@@ -164,10 +166,6 @@ Component List
     :width: 45%
 .. |Resistor-1kΩ| image:: ../_static/imgs/Resistor-1kΩ.png
     :width: 20%
-.. |photoelectric| image:: ../_static/imgs/photoelectric.png
-    :width: 34%
-.. |photoelectric_1| image:: ../_static/imgs/photoelectric_1.png
-    :width: 30%
 .. |red-led| image:: ../_static/imgs/red-led.png
     :width: 30%
 
@@ -199,7 +197,7 @@ Circuit
 Code
 ================================================================
 
-C Code 28.2.1 Alertor
+C Code Alertor
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
@@ -248,6 +246,7 @@ The function alarm() is used to control the active buzzer to emit an alarm sound
     :linenos: 
     :language: C
     :lines: 14-23
+    :dedent:
 
 .. c:function:: int wiringPiISR (int pin, int edgeType, void (*function)(void)) ;
 

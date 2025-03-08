@@ -2,10 +2,9 @@
 Chapter BMP180 Barometric Pressure Sensor
 ################################################################
 
-
 In this chapter, we will learn how to use BMP180 barometric pressure sensor.
 
-Project 33.1 Barometer
+Project Barometer
 ****************************************************************
 
 Component List
@@ -13,7 +12,7 @@ Component List
 
 +--------------------------------------------------+-------------------------------------------------+
 |1. Raspberry Pi (with 40 GPIO) x1                 |                                                 |
-|                                                  | Jumper Wires x4                                 |
+|                                                  | Jumper Wires x6                                 |
 |2. GPIO Extension Board & Ribbon Cable x1         |                                                 |
 |                                                  |  |jumper-wire|                                  |
 |3. Breadboard x1                                  |                                                 |
@@ -104,10 +103,10 @@ Please do not use voltage beyond the power supply range to avoid damage to the B
 Code
 ================================================================
 
-Python Code 33.1.1 Barometer
+Python Code Barometer
 ----------------------------------------------------------------
 
-If you did not configure I2C and Install Smbus, please refer to :doc:`Chapter 7 ADC <ADC>`. If you did, please move on.
+If you did not configure I2C and Install Smbus, please refer to :ref:`Chapter 7 <ADC>`. If you did, please move on.
 
 First observe the project result, and then learn about the code in detail.
 

@@ -2,10 +2,9 @@
 Chapter High-sensitivity microphone sensor
 ##############################################################################
 
-
 In this chapter, we will learn how to use High-sensitivity microphone sensor.
 
-Project 26.1 High-sensitivity microphone sensor and LED
+Project High-sensitivity microphone sensor and LED
 ****************************************************************
 
 This project will use a high-sensitivity microphone sensor to make a sound-controlled light.
@@ -91,12 +90,19 @@ Circuit
 .. |microphone_Sc| image:: ../_static/imgs/microphone_Sc.png
 .. |microphone_Fr| image:: ../_static/imgs/microphone_Fr.png
 
+video: https://www.youtube.com/watch?v=W7fi0Sohpi0
+
+.. raw:: html
+
+   <iframe height="500" width="690" src="https://www.youtube.com/embed/W7fi0Sohpi0" frameborder="0" allowfullscreen></iframe>
+
 Code
 ================================================================
 
 First observe the project result, and then learn about the code in detail.
 
 .. hint:: 
+    
     :red:`If you have any concerns, please contact us via:` support@freenove.com
 
 1.  Use ``cd`` command to enter 26.1.1_VoiceLamp directory of C code.
@@ -125,15 +131,8 @@ The following is the program code:
 
 Read the signal pin of the high-sensitivity microphone sensor, and determine whether the state of the sensor is high level. If it is high level, the LED will continue to turn on for 5 seconds.
 
-.. code-block:: c
-
-    if(digitalRead(sensorPin) == LOW){    //The sensor is blocked 
-        digitalWrite(ledPin, HIGH);       //Make GPIO output HIGH level
-        delay(5000);
-        digitalWrite(ledPin, LOW);
-        printf("led turned on >>>\n");    //Output information on terminal
-    }
-    else{                                //The sensor is not blocked
-        digitalWrite(ledPin, LOW);       //Make GPIO output LOW level
-        printf("led turned off <<<\n");  //Output information on terminal
-    }
+.. literalinclude:: ../../../freenove_Kit/Code/C_Code/26.1.1_VoiceLamp/VoiceLamp.c
+    :linenos: 
+    :language: C
+    :lines: 20-29
+    :dedent:

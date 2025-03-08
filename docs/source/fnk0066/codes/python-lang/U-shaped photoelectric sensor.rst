@@ -64,6 +64,9 @@ Below is the pinout of the touch sensor.
    * - DO
      - Output control signal(High or low level)
 
+   * - AO
+     - Output invalid
+
    * - GND
      - GND
 
@@ -96,12 +99,13 @@ Circuit
 Code
 ================================================================
 
-Python Code 28.1.1 PhotoSensor
+Python Code PhotoSensor
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
 
 .. hint:: 
+    
     :red:`If you have any concerns, please contact us via:`  support@freenove.com
 
 1.  Use ``cd`` command to enter 28.1.1 1_Photosensor directory of Python code.
@@ -127,6 +131,7 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/28.1.1_PhotoSensor/PhotoSensor.py
     :linenos: 
     :language: python
+    :dedent:
 
 Import the PhotoSensor class from the sensor module. PhotoSensor is similar to the MotionSensor class in the GPIO Zero library in that they both actually use the SmoothedInputDevice class.
 
@@ -138,7 +143,7 @@ Import the PhotoSensor class from the sensor module. PhotoSensor is similar to t
 
     For more information about the methods used by the SmoothedInputDevice class in the GPIO Zero library,please refer to: https://gpiozero.readthedocs.io/en/stable/api_input.html#smoothedinputdevice
 
-Project 28.2 U-shaped photoelectric sensor and buzzer
+Project U-shaped photoelectric sensor and buzzer
 ****************************************************************
 
 This project uses U-shaped photoelectric sensor to make a simple sound and light alarm. 
@@ -206,12 +211,13 @@ Circuit
 Code
 ================================================================
 
-Python Code 28.2.1 Alertor
+Python Code Alertor
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
 
 .. hint:: 
+    
     :red:`If you have any concerns, please contact us via:`  support@freenove.com
 
 1.  Use ``cd`` command to enter 28.2.1_Alertor directory of Python code
@@ -233,6 +239,7 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/28.2.1_Alertor/Alertor.py
     :linenos: 
     :language: python
+    :dedent:
 
 The sensor.when_occlusion and sensor.when_no_occlusion functions associate the sensor pin with sensorEven().Because there are high level triggering module and low level triggering module in the U-type photoelectric sensor, we use the double-edge detection method here to make the program compatible with the module in your hand. When sensorPin detects low level or high level, it will call and execute the sensorEven() function.
 
@@ -240,6 +247,7 @@ The sensor.when_occlusion and sensor.when_no_occlusion functions associate the s
     :linenos: 
     :language: python
     :lines: 30-36
+    :dedent:
 
 The function alarm() is used to control the active buzzer to emit an alarm sound and control the LED to flash at the same time. Use variable times to pass in the number of times the alarm sounds and the LED blinks.
 
@@ -247,3 +255,4 @@ The function alarm() is used to control the active buzzer to emit an alarm sound
     :linenos: 
     :language: python
     :lines: 19-28
+    :dedent:

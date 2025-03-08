@@ -2,10 +2,9 @@
 Chapter Touch Sensor TTP223
 ##############################################################################
 
-
 In this chapter, we will learn how to use the touch sensor.
 
-Project 27.1 Touch Sensor and LED
+Project Touch Sensor and LED
 ****************************************************************
 
 This project will use the touch sensor to control the LED to emit different brightness.
@@ -84,12 +83,13 @@ Circuit
 Code
 ================================================================
 
-C Code 27.1.1 TouchSensor
+C Code TouchSensor
 ----------------------------------------------------------------
 
 First, observe the project result, and then learn about the code in detail.
 
 .. hint:: 
+    
     :red:`If you have any concerns, please contact us via:` support@freenove.com
 
 1.  Use ``cd`` command to enter 27.1.1_TouchSensor directory of C code.
@@ -117,6 +117,7 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/C_Code/27.1.1_TouchSensor/TouchSensor.c
     :linenos: 
     :language: C
+    :dedent:
 
 Read the signal pin of the touch sensor, and determine whether the state of the touch sensor has changed. If it has changed, record the time point.
 
@@ -124,6 +125,7 @@ Read the signal pin of the touch sensor, and determine whether the state of the 
     :linenos: 
     :language: C
     :lines: 28-31
+    :dedent:
 
 Check whether the state of the touch sensor is consistent with the previous moment every captureTime milliseconds. If not, assign the state of the touch sensor to the touch sensor variable SensorState.
 
@@ -131,6 +133,7 @@ Check whether the state of the touch sensor is consistent with the previous mome
     :linenos: 
     :language: C
     :lines: 34-37
+    :dedent:
 
 Each time the sensor is touched, a variable grade is used to record the number of touches.
 
@@ -138,6 +141,7 @@ Each time the sensor is touched, a variable grade is used to record the number o
     :linenos: 
     :language: C
     :lines: 36-43
+    :dedent:
 
 Set the LED light to emit different brightness according to the value of grade.
 
@@ -145,9 +149,9 @@ Set the LED light to emit different brightness according to the value of grade.
     :linenos: 
     :language: C
     :lines: 45-59
+    :dedent:
 
-
-Project 27.2 Touch Sensor and RGB LED
+Project Touch Sensor and RGB LED
 ****************************************************************
 
 This project uses a touch sensor to control RGB LED to emit different colors.
@@ -172,7 +176,7 @@ Component List
     :width: 50%
 .. |res-220R| image:: ../_static/imgs/res-220R.png
     :width: 20%
-.. |RGB-LED-real| image:: ../_static/imgs/red-led.png
+.. |RGB-LED-real| image:: ../_static/imgs/RGB-LED-real.png
     :width: 50%
 
 Circuit
@@ -193,16 +197,16 @@ Circuit
 .. |TTP223_Sc_1| image:: ../_static/imgs/TTP223_Sc_1.png
 .. |TTP223_Fr_1| image:: ../_static/imgs/TTP223_Fr_1.png
 
-
 Code
 ================================================================
 
-C Code 27.2.1 Discolor
+C Code Discolor
 ----------------------------------------------------------------
 
 First, observe the project result, and then learn about the code in detail.
 
 .. hint:: 
+    
     :red:`If you have any concerns, please contact us via:` support@freenove.com
 
 1.  Use ``cd`` command to enter 27.2.1_Discolor directory of C code.
@@ -237,6 +241,7 @@ Define a function called setupLedPin() to initialize the PWM configuration of th
     :linenos: 
     :language: C
     :lines: 23-28
+    :dedent:
 
 Determine the number of times the sensor is pressed, and control the pin R, G, and B to output different PWM values, thereby controlling the color of the RGB LED.
 
@@ -244,3 +249,4 @@ Determine the number of times the sensor is pressed, and control the pin R, G, a
     :linenos: 
     :language: C
     :lines: 65-71
+    :dedent:

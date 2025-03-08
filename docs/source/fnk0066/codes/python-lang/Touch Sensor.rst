@@ -2,10 +2,9 @@
 Chapter Touch Sensor 
 ################################################################
 
-
 In this chapter, we will learn how to use the touch sensor.
 
-Project 27.1 Touch Sensor and LED
+Project Touch Sensor and LED
 ****************************************************************
 
 This project will use the touch sensor to control the LED to emit different brightness.
@@ -84,10 +83,11 @@ Circuit
 Code
 ================================================================
 
-Python Code 27.1.1 TouchSensor
+Python Code TouchSensor
 ----------------------------------------------------------------
 
 .. hint:: 
+    
     :red:`If you have any concerns, please contact us via:`  support@freenove.com
 
 1.  Use cd command to enter 27.1.1_TouchSensor directory of Python code. 
@@ -109,6 +109,7 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/27.1.1_TouchSensor/TouchSensor.py
     :linenos: 
     :language: python
+    :dedent:
 
 Import the TouchSensor class from the sensor module. TouchSensor is similar to the MotionSensor class in the GPIO Zero library in that they both actually use the SmoothedInputDevice class.
 
@@ -122,6 +123,7 @@ sensor.when_touch associates the touch sensor pin with SensorEven(). When Sensor
     :linenos: 
     :language: python
     :lines: 18-27
+    :dedent:
 
 Set the LED light to emit different brightness according to the value of grade.
 
@@ -129,6 +131,7 @@ Set the LED light to emit different brightness according to the value of grade.
     :linenos: 
     :language: python
     :lines: 30-41
+    :dedent:
 
 **sensor.py**
 
@@ -137,14 +140,13 @@ Import the SmoothedInputDevice class from the GPIO Zero library, create the Touc
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/27.1.1_TouchSensor/sensor.py
     :linenos: 
     :language: python
+    :dedent:
 
 .. seealso::
 
     For more information about the methods used by the SmoothedInputDevice class in the GPIO Zero library,please refer to: https://gpiozero.readthedocs.io/en/stable/api_input.html#smoothedinputdevice
 
-
-
-Project 27.2 Touch Sensor and RGB LED
+Project Touch Sensor and RGB LED
 ****************************************************************
 
 This project uses a touch sensor to control RGB LED to emit different colors.
@@ -194,12 +196,13 @@ Circuit
 Code
 ================================================================
 
-Python Code 27.2.1 Discolor
+Python Code Discolor
 ----------------------------------------------------------------
 
 First, observe the project result, and then learn about the code in detail.
 
 .. hint:: 
+    
     :red:`If you have any concerns, please contact us via:`  support@freenove.com
 
 1.  Use cd command to enter 27.2.1_Discolor directory of Python code.
@@ -221,6 +224,7 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/27.2.1_Discolor/Discolor.py
     :linenos: 
     :language: python
+    :dedent:
 
 GPIO.add_event_detect() associates the touch sensor pin with SensorEven(). When SensorPin detects a high level, the SensorEven() function is called and executed.
 
@@ -228,6 +232,7 @@ GPIO.add_event_detect() associates the touch sensor pin with SensorEven(). When 
     :linenos: 
     :language: python
     :lines: 18-23
+    :dedent:
 
 Determine the number of times the sensor is pressed, and control the pin R, G, and B to output different PWM values, thereby controlling the color of the RGB LED.
 
@@ -235,3 +240,4 @@ Determine the number of times the sensor is pressed, and control the pin R, G, a
     :linenos: 
     :language: python
     :lines: 29-40
+    :dedent:

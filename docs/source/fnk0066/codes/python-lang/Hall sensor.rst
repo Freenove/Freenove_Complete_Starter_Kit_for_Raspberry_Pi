@@ -2,7 +2,6 @@
 Chapter Hall sensor 
 ################################################################
 
-
 In this chapter, we will learn how to use Hall sensor.
 
 Project Hall sensor and LED
@@ -75,7 +74,9 @@ Below is the pinout of the Hall sensor.
    * - GND
      - GND
     
-Please do not use voltage beyond the power supply range to avoid damage to the Hall sensor.For the above two hall sensors, their difference is only the pin sequence is different, please get the Hall sensor, check its sequence, change the corresponding wiring, so as not to cause permanent damage to your raspberry PI.
+:red:`Please do not use voltage beyond the power supply range to avoid damage to the Hall sensor.`
+
+:red:`For the above two hall sensors, their difference is only the pin sequence is different, please get the Hall sensor, check its sequence, change the corresponding wiring, so as not to cause permanent damage to your raspberry PI.`
 
 Circuit
 ================================================================
@@ -93,10 +94,10 @@ Circuit
 +------------------------------------------------------------------------------------------------+
 
 .. |Hall_Sensor_Sc| image:: ../_static/imgs/Hall_Sensor_Sc.png
-.. |Hall_Sensor_Fr| image:: ../_static/imgs/Hall_Sensor_Fr.png
-    :width: 44%
-.. |Hall_Sensor_Fr_1| image:: ../_static/imgs/Hall_Sensor_Fr_1.png
-    :width: 48%
+.. |Hall_Sensor_Fr| image:: ../_static/imgs/python29_00.png
+    :width: 45%
+.. |Hall_Sensor_Fr_1| image:: ../_static/imgs/python29_01.png
+    :width: 45%
 
 .. note::
     
@@ -105,12 +106,13 @@ Circuit
 Code
 ================================================================
 
-Python Code 29.1.1 HallSensor
+Python Code HallSensor
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
 
 .. hint:: 
+    
     :red:`If you have any concerns, please contact us via:`  support@freenove.com
 
 1.  Use ``cd`` command to enter 29.1.1_HallSensor directory of Python code.
@@ -132,6 +134,7 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/29.1.1_HallSensor/HallSensor.py
     :linenos: 
     :language: python
+    :dedent:
 
 Import the HallSensor class from the sensor module. HallSensor is similar to the MotionSensor class in the GPIO Zero library in that they both actually use the SmoothedInputDevice class.
 
@@ -142,8 +145,6 @@ Import the HallSensor class from the sensor module. HallSensor is similar to the
 .. seealso::
 
     For more information about the methods used by the SmoothedInputDevice class in the GPIO Zero library,please refer to: https://gpiozero.readthedocs.io/en/stable/api_input.html#smoothedinputdevice
-
-
 
 Project Hall Sensor and Buzzer
 ****************************************************************
@@ -169,11 +170,6 @@ Component List
 |  |Speaker1|           |  |Active-buzzer|         |  |res-220R1|           |  |Resistor-1kΩ|        |                           
 +-----------------------+--------------------------+------------------------+------------------------+
 
-.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
-.. |Hall_Sensor| image:: ../_static/imgs/Hall_Sensor.png
-    :width: 30%
-.. |Hall_Sensor_1| image:: ../_static/imgs/Hall_Sensor_1.png
-    :width: 40%
 .. |red-led1| image:: ../_static/imgs/red-led.png
     :width: 50%
 .. |res-220R1| image:: ../_static/imgs/res-220R.png
@@ -204,25 +200,25 @@ Circuit
 +------------------------------------------------------------------------------------------------+
 
 .. |Hall_Sensor_Sc_1| image:: ../_static/imgs/Hall_Sensor_Sc_1.png
-.. |Hall_Sensor_Fr_2| image:: ../_static/imgs/Hall_Sensor_Fr_2.png
+.. |Hall_Sensor_Fr_2| image:: ../_static/imgs/python29_02.png
     :width: 48%
-.. |Hall_Sensor_Fr_3| image:: ../_static/imgs/Hall_Sensor_Fr_3.png
+.. |Hall_Sensor_Fr_3| image:: ../_static/imgs/python29_03.png
     :width: 48%
 
 .. note::
     
-    :red:`Please check the sequence of your Hall sensor and select the appropriate wiring to avoid permanent damage to your raspberry PI. `
+    :red:`Please check the sequence of your Hall sensor and select the appropriate wiring to avoid permanent damage to your raspberry PI.`
 
 Code
 ================================================================
 
-Python Code 29.2.1 Alertor
+Python Code Alertor
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
 
 .. hint:: 
-    :red:`If you have any concerns, please contact us via:`  support@freenove.com
+    :red:`If you have any concerns, please contact us via:` support@freenove.com
 
 1.  Use ``cd`` command to enter 29.2.1_Alertor directory of Python code
 
@@ -243,5 +239,4 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/29.2.1_Alertor/Alertor.py
     :linenos: 
     :language: python
-
-
+    :dedent:

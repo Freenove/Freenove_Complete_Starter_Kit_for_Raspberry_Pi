@@ -74,12 +74,13 @@ Circuit
 Code
 ================================================================
 
-Python Code 31.1.1 RotaryEncoder
+Python Code RotaryEncoder
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
 
 .. hint:: 
+    
     :red:`If you have any concerns, please contact us via:`  support@freenove.com
 
 1.  Use ``cd`` command to enter 31.1.1_RotaryEncoder directory of Python code.
@@ -101,6 +102,7 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/31.1.1_RotaryEncoder/RotaryEncoder.py
     :linenos: 
     :language: python
+    :dedent:
 
 Function rotaryDeal() is used to determine whether the rotary encoder is rotating, and when there is rotation, determine whether it is rotating clockwise or counterclockwise. Use variable previousCounterValue to record the number of rotations. When rotating clockwise, the variable increases, and when rotating counterclockwise, the variable decreases.
 
@@ -108,6 +110,7 @@ Function rotaryDeal() is used to determine whether the rotary encoder is rotatin
     :linenos: 
     :language: python
     :lines: 24-38
+    :dedent:
 
 sw.when_pressed associates the SW signal pin of the rotary encoder with sensorEvent(). When swPin detects a low level signal, the sensorEvent() function is called and executed. That is, each time the rotary encoder is pressed, the variable previousCounterValue is cleared.
 
@@ -115,6 +118,7 @@ sw.when_pressed associates the SW signal pin of the rotary encoder with sensorEv
     :linenos: 
     :language: python
     :lines: 40-47
+    :dedent:
 
 Project Rotary Encoder
 ****************************************************************
@@ -136,7 +140,6 @@ Component List
 |  |Rotary_encoder|           |   |red-led|                           |   |res-220R|                 |
 +-----------------------------+---------------------------------------+------------------------------+
 
-.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
 .. |Rotary_encoder| image:: ../_static/imgs/Rotary_encoder.png
     :width: 40%
 .. |red-led| image:: ../_static/imgs/red-led.png
@@ -165,7 +168,7 @@ Circuit
 Code
 ================================================================
 
-Python Code 31.2.1 Dimmable
+Python Code Dimmable
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
@@ -192,6 +195,7 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/31.2.1_Dimmable/Dimmable.py
     :linenos: 
     :language: python
+    :dedent:
 
 Function rotaryDeal() is used to determine whether the rotary encoder is rotating, and when there is rotation, determined whether it is rotating clockwise or counterclockwise. Use variable previousCounterValue to record the number of rotations. When rotating clockwise, the variable increases, and when rotating counterclockwise, the variable decreases.
 
@@ -199,6 +203,7 @@ Function rotaryDeal() is used to determine whether the rotary encoder is rotatin
     :linenos: 
     :language: python
     :lines: 25-39
+    :dedent:
 
 sw.when_pressed associates the SW signal pin of the rotary encoder with sensorEvent(). When swPin detects a low level signal, the sensorEvent() function is called and executed. That is, each time the rotary encoder is pressed, the variable previousCounterValue is cleared.
 
@@ -206,6 +211,7 @@ sw.when_pressed associates the SW signal pin of the rotary encoder with sensorEv
     :linenos: 
     :language: python
     :lines: 41-48
+    :dedent:
 
 The variable previousCounterValue is limited here, and the PWM duty cycle of ledPin is set to previousCounterValue. The duty cycle of PWM should be less than or equal to 100.
 
@@ -213,3 +219,4 @@ The variable previousCounterValue is limited here, and the PWM duty cycle of led
     :linenos: 
     :language: python
     :lines: 51-58
+    :dedent:

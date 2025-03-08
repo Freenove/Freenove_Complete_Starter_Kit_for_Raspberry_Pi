@@ -71,7 +71,7 @@ Circuit
 Sketch
 ================================================================
 
-Sketch 11.1.1 SSD
+Sketch SSD
 ----------------------------------------------------------------
 
 First observe the result after running the sketch, and then learn about the code in detail.
@@ -96,7 +96,7 @@ This project contains a lot of code files, and the core code is contained in the
 
 The following is program code:
 
-.. literalinclude:: ../../../freenove_Kit/Code/Processing_Code/Sketches/Sketch_11_1_1_SSD/Sketch_11_1_1_SSD.pde
+.. literalinclude:: ../../../freenove_Kit/Processing/Sketches/Sketch_11_1_1_SSD/Sketch_11_1_1_SSD.pde
     :linenos: 
     :language: c
 
@@ -108,10 +108,11 @@ The project code is similar to the previous chapter. The difference is that in t
 
 In the function draw(), the data is output at a certain speed. At the same time the Display Window outputs the same character.
 
-.. literalinclude:: ../../../freenove_Kit/Code/Processing_Code/Sketches/Sketch_11_1_1_SSD/Sketch_11_1_1_SSD.pde
+.. literalinclude:: ../../../freenove_Kit/Processing/Sketches/Sketch_11_1_1_SSD/Sketch_11_1_1_SSD.pde
     :linenos: 
     :language: c
     :lines: 36-44
+    :dedent:
 
 By creating the font "mFont", we change the font of the characters on Display Window. The font ".vlw" file is created by clicking the "Create Font" on the menu bar, which is saved in the data folder of current Sketch.
 
@@ -121,7 +122,7 @@ By creating the font "mFont", we change the font of the characters on Display Wi
     ......
     mFont = loadFont("DigifaceWide-100.vlw");  //create DigifaceWide font
 
-For more details about loadFont(), please refer to "Help->Reference->loadFont()" or the official website: https://processing.org/reference/loadFont_.html 
+For more details about loadFont(), please refer to "Help -> Reference -> loadFont()" or the official website: `loadFont() <https://processing.org/reference/loadFont_.html>`_
 
 By creating an empty font, you can reset the font to default font.
 
@@ -139,7 +140,7 @@ Component List
 
 +-------------------------------------------------+-------------------------------------------------+
 |1. Raspberry Pi (with 40 GPIO) x1                |                                                 |     
-|                                                 |   Jumper Wires x18                              |       
+|                                                 |   Jumper Wires x27                              |       
 |2. GPIO Extension Board & Ribbon Cable x1        |                                                 |       
 |                                                 |     |jumper-wire|                               |                                                            
 |3. Breadboard x1                                 |                                                 |                                                                 
@@ -153,13 +154,8 @@ Component List
 |  |4_7_Segment_Display|                          |  |PNP|                                          | 
 +-------------------------------------------------+-------------------------------------------------+
 
-.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
-.. |74HC595| image:: ../_static/imgs/74HC595.png
-    :width: 30%
 .. |4_7_Segment_Display| image:: ../_static/imgs/4_7_Segment_Display.png
     :width: 70%
-.. |res-220R| image:: ../_static/imgs/res-220R.png
-    :width: 20%
 .. |PNP| image:: ../_static/imgs/PNP.png
 .. |Resistor-1kΩ| image:: ../_static/imgs/Resistor-1kΩ.png
     :width: 25%
@@ -207,10 +203,11 @@ Sketch
 
 In this project, open an independent thread to control the FDSSD. The uncertainty of the system time slice allocation may lead FDSS to flash on the display, which is a normal phenomenon. For details about display principle of FDSSD, please refer to our C and Python manual.
 
-Sketch 11.2.1 FDSSD
+Sketch FDSSD
 ----------------------------------------------------------------
 
 First observe the result after running the sketch, and then learn about the code in detail.
+
 1.	Use Processing to open the file Sketch_11_2_1_FDSSD.
 
 .. code-block:: console    
@@ -231,7 +228,7 @@ This project contains several code files, as shown below:
 
 The following is program code:
 
-.. literalinclude:: ../../../freenove_Kit/Code/Processing_Code/Sketches/Sketch_11_2_1_FDSSD/Sketch_11_2_1_FDSSD.pde
+.. literalinclude:: ../../../freenove_Kit/Processing/Sketches/Sketch_11_2_1_FDSSD/Sketch_11_2_1_FDSSD.pde
     :linenos: 
     :language: c
 

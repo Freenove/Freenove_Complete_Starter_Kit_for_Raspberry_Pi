@@ -4,7 +4,7 @@ Chapter BMP180 Barometric Pressure Sensor
 
 In this chapter, we will learn how to use BMP180 barometric pressure sensor.
 
-Project 33.1 Barometer
+Project Barometer
 ****************************************************************
 
 Component List
@@ -12,7 +12,7 @@ Component List
 
 +--------------------------------------------------+-------------------------------------------------+
 |1. Raspberry Pi (with 40 GPIO) x1                 |                                                 |
-|                                                  | Jumper Wires x4                                 |
+|                                                  | Jumper Wires x6                                 |
 |2. GPIO Extension Board & Ribbon Cable x1         |                                                 |
 |                                                  |  |jumper-wire|                                  |
 |3. Breadboard x1                                  |                                                 |
@@ -102,7 +102,7 @@ Please do not use voltage beyond the power supply range to avoid damage to the B
 Code
 ================================================================
 
-C Code 33.1.1 Barometer
+C Code Barometer
 ----------------------------------------------------------------
 
 If you did not **configure I2C and Install Smbus**, please refer to :ref:`Chapter 7<ADC>`. If you did, please move on.
@@ -137,6 +137,7 @@ The following is the program code:
 .. literalinclude:: ../../../freenove_Kit/Code/C_Code/33.1.1_Barometer/Barometer.c
     :linenos: 
     :language: C
+    :dedent:
 
 The function bmp180_GetTemperature() is used to calculate the current temperature value.
 
@@ -145,6 +146,7 @@ The function bmp180_GetTemperature() is used to calculate the current temperatur
     :linenos: 
     :language: C
     :lines: 150-157
+    :dedent:
 
 The function bmp180_GetPressure() is used to calculate the current pressure value.
 
@@ -152,6 +154,7 @@ The function bmp180_GetPressure() is used to calculate the current pressure valu
     :linenos: 
     :language: C
     :lines: 123-147
+    :dedent:
 
 The function bmp180_Altitude() is used to calculate the current altitude.   
 
@@ -159,4 +162,4 @@ The function bmp180_Altitude() is used to calculate the current altitude.
     :linenos: 
     :language: C
     :lines: 161-168
-
+    :dedent:

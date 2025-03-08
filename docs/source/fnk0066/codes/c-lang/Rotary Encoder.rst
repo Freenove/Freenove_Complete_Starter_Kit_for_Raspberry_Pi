@@ -73,7 +73,7 @@ Circuit
 Code
 ================================================================
 
-C Code 31.1.1 RotaryEncoder
+C Code RotaryEncoder
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
@@ -113,6 +113,7 @@ Function rotaryDeal() is used to determine whether the rotary encoder is rotatin
     :linenos: 
     :language: C
     :lines: 19-38
+    :dedent:
 
 Read the SW signal pin of the rotary encoder, and determine whether the rotary encoder is pressed. If it is pressed, the variable previousCounterValue is cleared.
 
@@ -120,6 +121,7 @@ Read the SW signal pin of the rotary encoder, and determine whether the rotary e
     :linenos: 
     :language: C
     :lines: 51-56
+    :dedent:
 
 Project Rotary Encoder
 ****************************************************************
@@ -170,7 +172,7 @@ Circuit
 Code
 ================================================================
 
-C Code 31.2.1 Dimmable
+C Code Dimmable
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
@@ -199,6 +201,7 @@ First observe the project result, and then learn about the code in detail.
 .. literalinclude:: ../../../freenove_Kit/Code/C_Code/31.2.1_Dimmable/Dimmable.c
     :linenos: 
     :language: C
+    :dedent:
 
 Function rotaryDeal() is used to determine whether the rotary encoder is rotating, and when there is rotation, determine whether it is rotating clockwise or counterclockwise. Use variable previousCounterValue to record the number of rotations. When rotating clockwise, the variable increases, and when rotating counterclockwise, the variable decreases.
 
@@ -206,6 +209,7 @@ Function rotaryDeal() is used to determine whether the rotary encoder is rotatin
     :linenos: 
     :language: C
     :lines: 22-41
+    :dedent:
 
 Read the SW signal pin of the rotary encoder, and determine whether the rotary encoder is pressed. If it is pressed, the variable previousCounterValue is cleared.
 
@@ -213,6 +217,7 @@ Read the SW signal pin of the rotary encoder, and determine whether the rotary e
     :linenos: 
     :language: C
     :lines: 54-59
+    :dedent:
 
 The variable previousCounterValue is limited here, and the PWM duty cycle of ledPin is set to previousCounterValue. The duty cycle of PWM should be less than or equal to 100.
 

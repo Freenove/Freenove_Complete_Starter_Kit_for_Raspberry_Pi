@@ -2,7 +2,6 @@
 Chapter Infrared Obstacle Avoidance Sensor
 ################################################################
 
-
 In this chapter, we will learn how to use infrared obstacle avoidance sensor.
 
 Project Infrared obstacle avoidance sensor and LED
@@ -26,7 +25,7 @@ Component List
 +--------------------------------------------------+------------------------+------------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
-.. |Infrared_sensor| image:: ../_static/imgs/Hall_Sensor.png
+.. |Infrared_sensor| image:: ../_static/imgs/Infrared_sensor.png
     :width: 30%
 .. |red-led| image:: ../_static/imgs/red-led.png
     :width: 50%
@@ -84,7 +83,7 @@ Please do not use the voltage beyond the power supply range to avoid damage to t
 Code
 ================================================================
 
-Python Code 30.1.1 InfraredSensor
+Python Code InfraredSensor
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
@@ -122,9 +121,7 @@ Import the InfraredSensor class from the sensor module. InfraredSensor is simila
 
     For more information about the methods used by the SmoothedInputDevice class in the GPIO Zero library,please refer to: https://gpiozero.readthedocs.io/en/stable/api_input.html#smoothedinputdevice
 
-
-
-Project 30.2 Infrared obstacle avoidance sensor and buzzer
+Project Infrared obstacle avoidance sensor and buzzer
 ****************************************************************
 
 This project uses an infrared obstacle avoidance sensor to make a simple reminder.
@@ -134,7 +131,7 @@ Component List
 
 +--------------------------------------------------+---------------------------------------------------+
 |1. Raspberry Pi (with 40 GPIO) x1                 |                                                   |
-|                                                  | Jumper Wires x6                                   |
+|                                                  | Jumper Wires x10                                  |
 |2. GPIO Extension Board & Ribbon Cable x1         |                                                   |
 |                                                  |  |jumper-wire|                                    |
 |3. Breadboard x1                                  |                                                   |
@@ -148,13 +145,6 @@ Component List
 |  |Infrared_sensor|                               |  |red-led|               |  |res-220R|            |
 +--------------------------------------------------+--------------------------+------------------------+
 
-.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
-.. |Infrared_sensor| image:: ../_static/imgs/Hall_Sensor.png
-    :width: 30%
-.. |red-led| image:: ../_static/imgs/red-led.png
-    :width: 30%
-.. |res-220R| image:: ../_static/imgs/res-220R.png
-    :width: 25%
 .. |Active-buzzer| image:: ../_static/imgs/Active-buzzer.png
     :width: 40%
 .. |NPN-transistor| image:: ../_static/imgs/NPN-transistor.png
@@ -184,7 +174,7 @@ Circuit
 Code
 ================================================================
 
-Python Code 30.2.1 Alertor
+Python Code Alertor
 ----------------------------------------------------------------
 
 First observe the project result, and then learn about the code in detail.
