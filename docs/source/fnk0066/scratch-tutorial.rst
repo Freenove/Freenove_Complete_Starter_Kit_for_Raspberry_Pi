@@ -28,7 +28,7 @@ Scratch language tutorial
 
 .. toctree::
    :titlesonly:
-   :caption: Raspberry Pi
+   :caption: Installing_an_Operating_System
 
    codes/scratch-lang/Installing_an_Operating_System.rst
 

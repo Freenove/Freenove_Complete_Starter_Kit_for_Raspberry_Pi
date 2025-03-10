@@ -28,7 +28,7 @@ Python language tutorial
 
 .. toctree::
    :titlesonly:
-   :caption: Raspberry Pi
+   :caption: Installing_an_Operating_System
 
    codes/python-lang/Installing_an_Operating_System.rst
 
