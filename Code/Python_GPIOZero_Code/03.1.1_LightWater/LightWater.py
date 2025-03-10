@@ -22,7 +22,6 @@ def loop():
             sleep(0.1)
             leds[index].on() 
 
-
 if __name__ == '__main__':     # Program entrance
     print ('Program is starting...')
     try:
@@ -31,6 +30,5 @@ if __name__ == '__main__':     # Program entrance
         print("Ending program")
     finally:
         for index in range(0,len(ledPins),1): 
-            leds[index].on()  #or leds[index].off()
             leds[index].close()  
 
