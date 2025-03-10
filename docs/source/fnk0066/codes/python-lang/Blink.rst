@@ -202,9 +202,11 @@ In the following diagram, the current through R1 is:
     :align: center
 
 .. warning:: 
+
     WARNING: Never connect the two poles of a power supply with anything of low resistance value (i.e. a metal object or bare wire) this is a Short and results in high current that may damage the power supply and electronic components.
 
 .. note:: 
+    
     Note: Unlike LEDs and Diodes, Resistors have no poles and re non-polar (it does not matter which direction you insert them into a circuit, it will work the same)
 
 Breadboard
@@ -270,24 +272,28 @@ You can press “Ctrl+C” to end the program. The following is the program code
 Import the LED class from the gpiozero library.
 
 .. code-block:: python
+    :linenos:
 
     from gpiozero import LED
 
 Create an LED assembly for controlling the LED.
 
 .. code-block:: python
+    :linenos:
 
     led = LED(17)           # define LED pin according to BCM Numbering
 
 Turn on LED device.
 
 .. code-block:: python
+    :linenos:
     
     led.on()    # turn on LED
 
 Turn off LED devices.
 
 .. code-block:: python
+    :linenos:
     
     led.off()   # turn off LED
 
@@ -323,10 +329,12 @@ In Python, libraries and functions used in a script must be imported by name at 
 For example, to use the LED interface from GPIO Zero, it should be explicitly imported:
 
 .. code-block:: python
+    :linenos:
 
     from gpiozero import LED
 
 .. code-block:: python
+    :linenos:
 
     led = LED(17)           # define LED pin according to BCM Numbering
     #led = LED("J8:11")     # BOARD Numbering
@@ -334,12 +342,14 @@ For example, to use the LED interface from GPIO Zero, it should be explicitly im
 Alternatively, the whole GPIO Zero library can be imported:
 
 .. code-block:: python
+    :linenos:
 
     import gpiozero
 
 In this case, all references to items within GPIO Zero must be prefixed: 
 
 .. code-block:: python
+    :linenos:
 
     led = gpiozero.LED(17)           # define LED pin according to BCM Numbering
     #led = gpiozero.LED("J8:11")     # BOARD Numbering
@@ -376,6 +386,7 @@ Finally, you can specify pins as “header:number”, e.g. “J8:11” meaning p
     Note that these alternate schemes are merely translations. If you request the state of a device on thecommand line, the associated pin number will always be reported in the Broadcom (BCM) scheme:
 
 .. code-block:: python
+    :linenos:
 
         led = LED("BOARD11")
         led

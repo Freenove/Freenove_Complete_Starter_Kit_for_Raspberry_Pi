@@ -114,12 +114,14 @@ The following is the program code:
 Import the RGBLED class that controls RGBLED from the gpiozero library.
 
 .. code-block:: python
+    :linenos:
     
     from gpiozero import RGBLED
 
 Create the RGBLED class for controlling the RGBLED.
 
 .. code-block:: python
+    :linenos:
     
     led = RGBLED(red=17, green=18, blue=27, active_high=False) # define the pins for R:GPIO17,G:GPIO18,B:GPIO2
 

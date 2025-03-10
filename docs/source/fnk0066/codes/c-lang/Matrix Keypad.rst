@@ -133,12 +133,14 @@ First, we define the information of the Matrix Keyboard used in this project: th
 Then, based on the above information, initiates a Keypad class object to operate the Matrix Keyboard.
 
 .. code-block:: c
+    :linenos:
 
     Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
 
 Set the debounce time to 50ms, and this value can be set based on the actual characteristics of the keyboard's flexibly, with a default time of 10ms.
 
 .. code-block:: c
+    :linenos:
 
     keypad.setDebounceTime(50);
 

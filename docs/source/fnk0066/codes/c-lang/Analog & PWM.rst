@@ -129,6 +129,7 @@ The following is the program code:
 First, create a software PWM pin.
 
 .. code-block:: c
+    :linenos:
 
     softPwmCreate(ledPin,  0, 100);//Creat SoftPWM pin
 

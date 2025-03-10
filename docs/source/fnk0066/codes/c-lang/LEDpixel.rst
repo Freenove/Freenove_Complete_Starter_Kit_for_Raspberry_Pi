@@ -494,12 +494,14 @@ The following is the program code:
     :dedent:
 
 .. code-block:: c   
+    :linenos:
 
     #include "Freenove_WS2812_SPI.h"
 
 To create Ledpixel objects, you can use the default parameters or you can use custom parameters.
 
 .. code-block:: c   
+    :linenos:
 
     //Freenove_WS2812_SPI strip = Freenove_WS2812_SPI(8, TYPE_GRB);//led_count, led_type
     Freenove_WS2812_SPI strip = Freenove_WS2812_SPI();//led_count=8, led_type=TYPE_GRB
@@ -507,6 +509,7 @@ To create Ledpixel objects, you can use the default parameters or you can use cu
 Create an interrupt event if the user presses Ctrl+C to turn off the lights before exiting the program.
 
 .. code-block:: c  
+    :linenos:
 
     void Ctrl_C_Handler(int value){
         strip.end();
@@ -519,6 +522,7 @@ Create an interrupt event if the user presses Ctrl+C to turn off the lights befo
 Initialize ledpixel, set the brightness value of the color light to 20, set the type of the color light to GRB type.
 
 .. code-block:: c  
+    :linenos:
 
     //Init ledpixel
     strip.begin();

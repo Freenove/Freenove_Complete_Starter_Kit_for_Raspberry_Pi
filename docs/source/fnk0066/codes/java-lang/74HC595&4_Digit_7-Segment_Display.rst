@@ -239,7 +239,7 @@ The following is program code:
     :language: java
     :dedent:
 
-Define an array called 'values' to store the content displayed on the digital tube. Define an array called ‘bits’ to store the control bits for the common anode of the digital tube.
+Define an array called 'values' to store the content displayed on the digital tube. Define an array called 'bits' to store the control bits for the common anode of the digital tube.
 
 .. literalinclude:: ../../../freenove_Kit/Pi4j/Sketches/Sketch_16_2_StopWatch/StopWatch.java
     :linenos: 
