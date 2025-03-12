@@ -9,7 +9,7 @@ Select the language you want to use.
 
 .. toctree::
    :maxdepth: 1
-   :caption: language
+   :caption: Select Code Language
     
    fnk0066/c-lang-tutorial.rst
    fnk0066/python-tutorial.rst
