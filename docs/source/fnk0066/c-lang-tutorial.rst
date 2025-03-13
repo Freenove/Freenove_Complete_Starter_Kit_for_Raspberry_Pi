@@ -79,4 +79,9 @@ C language tutorial
    codes/c-lang/RFID
    codes/c-lang/Soldering a Circuit Board
    codes/c-lang/Other Components
+
+.. toctree::
+   :titlesonly:
+   :caption: What's Next?
+
    codes/c-lang/WhatsNext.rst

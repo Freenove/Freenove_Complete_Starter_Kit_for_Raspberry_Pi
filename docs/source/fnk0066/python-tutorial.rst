@@ -81,4 +81,9 @@ Python language tutorial
    codes/python-lang/Web IoT.rst
    codes/python-lang/Soldering a Circuit Board.rst
    codes/python-lang/Other Components.rst
+
+.. toctree::
+   :titlesonly:
+   :caption: What's Next?
+   
    codes/python-lang/WhatsNext.rst
