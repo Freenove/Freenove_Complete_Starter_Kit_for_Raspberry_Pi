@@ -28,9 +28,9 @@ Component List
 .. |Infrared_sensor| image:: ../_static/imgs/Infrared_sensor.png
     :width: 30%
 .. |red-led| image:: ../_static/imgs/red-led.png
-    :width: 50%
+    :width: 40%
 .. |res-220R| image:: ../_static/imgs/res-220R.png
-    :width: 10%
+    :width: 20%
 
 Component knowledge
 ================================================================
@@ -146,11 +146,11 @@ Component List
 +--------------------------------------------------+--------------------------+------------------------+
 
 .. |Active-buzzer| image:: ../_static/imgs/Active-buzzer.png
-    :width: 40%
+    :width: 30%
 .. |NPN-transistor| image:: ../_static/imgs/NPN-transistor.png
-    :width: 50%
+    :width: 40%
 .. |Resistor-1kΩ| image:: ../_static/imgs/Resistor-1kΩ.png
-    :width: 25%
+    :width: 20%
 
 Circuit
 ================================================================

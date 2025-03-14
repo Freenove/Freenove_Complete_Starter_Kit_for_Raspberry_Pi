@@ -62,21 +62,22 @@ Its working voltage range is 2.5-5V. Two speakers (loads) should be connected be
 
 .. image:: ../_static/imgs/PAM8403_pin.png
     :align: center
+    :width: 60%
 
- 3.5mm 3 conductor audio cable to DuPont cable
+3.5mm 3 conductor audio cable to DuPont cable
 ----------------------------------------------------------------
 
 3.5mm headphone plugs are divided into 3 conductor plugs and 4 conductor plugs. 3 conductor plug has three wires, namely: left channel, right channel and ground wire. 4 conductor plug has four wires, namely: left channel, right channel, ground wire and MIC microphone level. In the kit, a 3.5mm 3 conductor plug is used. As shown in the figure below, it is divided into left channel, right channel and ground wire from left to right.
 
 .. image:: ../_static/imgs/Audio_cable_pin.png
     :align: center
-    :width: 80%
+    :width: 60%
 
 The audio cable to DuPont cable interface is shown in the figure below:
 
 .. image:: ../_static/imgs/Audio_cable_pin_1.png
     :align: center
-    :width: 80%
+    :width: 60%
 
 Circuit
 ================================================================
@@ -147,7 +148,7 @@ Add # to comment out the first line. Press Ctrl+O, Enter, Ctrl+X.
 
 .. code-block:: console
 
-    $ sudo nano /boot/config.txt
+    $ sudo nano /boot/firmware/config.txt
 
 Find the contents of the following two lines (with Ctrl + W you can search):
 
@@ -318,14 +319,7 @@ Component List
 |                                                                                                   |
 |  |Infrared_sensor|                                                                                |
 +---------------------------------------------------------------------------------------------------+
-.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
-.. |power-module| image:: ../_static/imgs/power-module.png
-    :width: 70%
-.. |Battery_cable| image:: ../_static/imgs/Battery_cable.png
-.. |Speaker| image:: ../_static/imgs/Speaker.png
-.. |PAM8403| image:: ../_static/imgs/PAM8403.png
-    :width: 60%
-.. |Audio_cable| image:: ../_static/imgs/Audio_cable.png
+
 .. |Infrared_sensor| image:: ../_static/imgs/Infrared_sensor.png
     :width: 15%
     
@@ -387,6 +381,7 @@ First observe the project result, and then learn about the code in detail.
 .. code-block:: console
 
     $ cd ~/Freenove_Kit/Code/Python_GPIOZero_Code/35.2.1_TTS
+    
 3.  Use python command to execute code "TTS.py"
 
 .. code-block:: console

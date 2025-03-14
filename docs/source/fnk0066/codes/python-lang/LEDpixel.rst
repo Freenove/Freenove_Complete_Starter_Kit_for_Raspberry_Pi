@@ -450,7 +450,7 @@ If your Raspberry PI is Raspberry PI 3, add it at the bottom:
 
 5. Select Interface Options, then SPI, and turn it on.
 
-.. image:: ../_static/imgs/installation.png
+.. image:: ../_static/imgs/installation1.png
     :align: center
 
 6. Select Finish.
