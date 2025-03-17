@@ -84,8 +84,8 @@ html_theme = "sphinx_rtd_theme"
 
 
 html_static_path = ["_static"]
-
-html_logo = "freenove-logo.png"
+html_favicon = "_static/images/freenove_logo_tag_icon.png"
+html_logo = "_static/images/freenove_logo_home_button.png"
 html_theme_options = {
     "collapse_navigation": False,
     "logo_only": True,
@@ -96,6 +96,11 @@ html_theme_options = {
     # 'style_nav_header_background': '#005500',
 }
 
+# multi-language docs
+language = 'en'
+locale_dirs = ['../locales/']   # path is example but recommended.
+gettext_compact = False  # optional.
+gettext_uuid = True  # optional.
 
 rst_prolog = """
 .. include:: <s5defs.txt>
@@ -116,10 +121,17 @@ prolog = "\n".join(
 print(rst_prolog)
 del frozen_locals
 
-
 html_css_files = [
-    "css/color-roles.css",
+    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/css/color-roles.css',
+    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/css/custom.css',
+    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/css/navigationStyle.css',
 ]
+html_js_files = [
+    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/js/custom.js',
+    # 'js/custom.js'
+]
+
+html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "/")
 
 intersphinx_mapping = {
     # "rpi-starter-kit": ("https://freenove-docs2.readthedocs.io/projects/fnk0066/en/latest/", None),
