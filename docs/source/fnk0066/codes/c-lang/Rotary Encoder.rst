@@ -12,19 +12,24 @@ This project uses a rotary encoder to make a simple counter.
 Component List
 ================================================================
 
-+--------------------------------------------------+-------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                 |                                                 |
-|                                                  | Jumper Wires x7                                 |
-|2. GPIO Extension Board & Ribbon Cable x1         |                                                 |
-|                                                  |  |jumper-wire|                                  |
-|3. Breadboard x1                                  |                                                 |
-+--------------------------------------------------+-------------------------------------------------+
-|Rotary encoder x1                                                                                   |
-|                                                                                                    |
-|  |Rotary_encoder1|                                                                                 |
-+----------------------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+
+    +------------------------------------------+------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1         |                  |
+    |                                          | Jumper Wires x7  |
+    |2. GPIO Extension Board & Ribbon Cable x1 |                  |
+    |                                          |  |jumper-wire|   |
+    |3. Breadboard x1                          |                  |
+    +------------------------------------------+------------------+
+    |Rotary encoder x1                                            |
+    |                                                             |
+    |  |Rotary_encoder1|                                          |
+    +-------------------------------------------------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
+    :width: 70%
 .. |Rotary_encoder1| image:: ../_static/imgs/Rotary_encoder.png
     :width: 20%
 
@@ -131,40 +136,43 @@ This project uses a rotary encoder to adjust the LEDs to emit different brightne
 Component List
 ================================================================
 
-+--------------------------------------------------+-------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                 |                                                 |
-|                                                  | Jumper Wires x8                                 |
-|2. GPIO Extension Board & Ribbon Cable x1         |                                                 |
-|                                                  |  |jumper-wire|                                  |
-|3. Breadboard x1                                  |                                                 |
-+-----------------------------+--------------------+------------------+------------------------------+
-|Rotary encoder x1            |  LED x1                               |  Resistor 220Ω x1            |
-|                             |                                       |                              |
-|  |Rotary_encoder|           |   |red-led|                           |   |res-220R|                 |
-+-----------------------------+---------------------------------------+------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
 
-.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
+    +-------------------------------------------+---------------------------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1          |                                       |
+    |                                           | Jumper Wires x8                       |
+    |2. GPIO Extension Board & Ribbon Cable x1  |                                       |
+    |                                           |  |jumper-wire|                        |
+    |3. Breadboard x1                           |                                       |
+    +-----------------------------+-------------+------------------+--------------------+
+    |Rotary encoder x1            |  LED x1                        |  Resistor 220Ω x1  |
+    |                             |                                |                    |
+    |  |Rotary_encoder|           |   |red-led|                    |   |res-220R|       |
+    +-----------------------------+--------------------------------+--------------------+
+
 .. |Rotary_encoder| image:: ../_static/imgs/Rotary_encoder.png
-    :width: 40%
-.. |red-led| image:: ../_static/imgs/red-led.png
     :width: 50%
+.. |red-led| image:: ../_static/imgs/red-led.png
+    :width: 30%
 .. |res-220R| image:: ../_static/imgs/res-220R.png
-    :width: 15%
+    :width: 10%
 
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |Rotary_encoder_Sc_1|                                                                        |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |Rotary_encoder_Fr_1|                                                                        |
-+------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------+
+|   Schematic diagram                                                                 |
+|                                                                                     |
+|   |Rotary_encoder_Sc_1|                                                             |
++-------------------------------------------------------------------------------------+
+|   Hardware connection. If you need any support,please feel free to contact us via:  |
+|                                                                                     |
+|   support@freenove.com                                                              | 
+|                                                                                     |
+|   |Rotary_encoder_Fr_1|                                                             |
++-------------------------------------------------------------------------------------+
 
 .. |Rotary_encoder_Sc_1| image:: ../_static/imgs/Rotary_encoder_Sc_1.png
 .. |Rotary_encoder_Fr_1| image:: ../_static/imgs/Rotary_encoder_Fr_1.png
@@ -222,6 +230,7 @@ Read the SW signal pin of the rotary encoder, and determine whether the rotary e
 The variable previousCounterValue is limited here, and the PWM duty cycle of ledPin is set to previousCounterValue. The duty cycle of PWM should be less than or equal to 100.
 
 .. code-block:: c
+    :linenos:
 
     if(previousCounterValue>=100){
             previousCounterValue=100;

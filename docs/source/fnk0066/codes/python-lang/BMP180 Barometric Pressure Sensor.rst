@@ -10,21 +10,22 @@ Project Barometer
 Component List
 ================================================================
 
-+--------------------------------------------------+-------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                 |                                                 |
-|                                                  | Jumper Wires x6                                 |
-|2. GPIO Extension Board & Ribbon Cable x1         |                                                 |
-|                                                  |  |jumper-wire|                                  |
-|3. Breadboard x1                                  |                                                 |
-+--------------------------------------------------+-------------------------------------------------+
-|BMP180 barometric pressure sensor x1                                                                |
-|                                                                                                    |
-|  |BMP180|                                                                                          |
-+----------------------------------------------------------------------------------------------------+
++-------------------------------------------+-----------------+
+|1. Raspberry Pi (with 40 GPIO) x1          |                 |
+|                                           | Jumper Wires x6 |
+|2. GPIO Extension Board & Ribbon Cable x1  |                 |
+|                                           |  |jumper-wire|  |
+|3. Breadboard x1                           |                 |
++-------------------------------------------+-----------------+
+|BMP180 barometric pressure sensor x1                         |
+|                                                             |
+|  |BMP180|                                                   |
++-------------------------------------------------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
+    :width: 80%
 .. |BMP180| image:: ../_static/imgs/BMP180.png
-    :width: 40%
+    :width: 35%
 
 Component knowledge
 ================================================================

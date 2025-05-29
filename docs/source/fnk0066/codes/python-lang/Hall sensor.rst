@@ -12,21 +12,25 @@ This project uses hall sensor to control the state of LED.
 Component List
 ================================================================
 
-+--------------------------------------------------+------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                 |                        |     
-|                                                  | Jumper Wires x6        |       
-|2. GPIO Extension Board & Ribbon Cable x1         |                        |       
-|                                                  |  |jumper-wire|         |                                                            
-|3. Breadboard x1                                  |                        |                                                                 
-+--------------------------------------------------+------------------------+
-| Hall sensor x1                                   | LED x1                 |
-|                                                  |                        |
-|  |Hall_Sensor| :xx-large:`or` |Hall_Sensor_1|    |  |red-led|             |                           
-+--------------------------------------------------+------------------------+
-| Speaker x1                                       | Resistor 220Ω x1       |
-|                                                  |                        |
-|  |Speaker|                                       |  |res-220R|            |                           
-+--------------------------------------------------+------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+
+    +-----------------------------------------------+------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1              |                  |     
+    |                                               | Jumper Wires x6  |       
+    |2. GPIO Extension Board & Ribbon Cable x1      |                  |       
+    |                                               |  |jumper-wire|   |                                                            
+    |3. Breadboard x1                               |                  |                                                                 
+    +-----------------------------------------------+------------------+
+    | Hall sensor x1                                | LED x1           |
+    |                                               |                  |
+    |  |Hall_Sensor| :xx-large:`or` |Hall_Sensor_1| |  |red-led|       |                           
+    +-----------------------------------------------+------------------+
+    | Speaker x1                                    | Resistor 220Ω x1 |
+    |                                               |                  |
+    |  |Speaker|                                    |  |res-220R|      |                           
+    +-----------------------------------------------+------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
 .. |Hall_Sensor| image:: ../_static/imgs/Hall_Sensor.png
@@ -34,9 +38,9 @@ Component List
 .. |Hall_Sensor_1| image:: ../_static/imgs/Hall_Sensor_1.png
     :width: 40%
 .. |red-led| image:: ../_static/imgs/red-led.png
-    :width: 30%
+    :width: 20%
 .. |res-220R| image:: ../_static/imgs/res-220R.png
-    :width: 15%
+    :width: 10%
 .. |Speaker| image:: ../_static/imgs/Speaker.png
     :width: 40%
 
@@ -154,21 +158,25 @@ This project uses Hall sensor to make a simple magnetic field detection sound an
 Component List
 ================================================================
 
-+--------------------------------------------------+-------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                 |                                                 |     
-|                                                  | Jumper Wires x6                                 |       
-|2. GPIO Extension Board & Ribbon Cable x1         |                                                 |       
-|                                                  |  |jumper-wire|                                  |                                                            
-|3. Breadboard x1                                  |                                                 |                                                                 
-+--------------------------------------------------+-------------+-----------------------------------+
-| Hall sensor x1                                   | LED x1      | NPN-transistor                    |
-|                                                  |             |                                   |
-|  |Hall_Sensor| :xx-large:`or` |Hall_Sensor_1|    |  |red-led1| |  |NPN-transistor|                 |                           
-+-----------------------+--------------------------+-------------+----------+------------------------+
-| Speaker x1            | Active buzzer x1         | Resistor 220Ω x1       | Resistor 1kΩ x1        |
-|                       |                          |                        |                        |
-|  |Speaker1|           |  |Active-buzzer|         |  |res-220R1|           |  |Resistor-1kΩ|        |                           
-+-----------------------+--------------------------+------------------------+------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+
+    +--------------------------------------------------+-------------------------------------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1                 |                                                 |     
+    |                                                  | Jumper Wires x6                                 |       
+    |2. GPIO Extension Board & Ribbon Cable x1         |                                                 |       
+    |                                                  |  |jumper-wire|                                  |                                                            
+    |3. Breadboard x1                                  |                                                 |                                                                 
+    +--------------------------------------------------+-------------+-----------------------------------+
+    | Hall sensor x1                                   | LED x1      | NPN-transistor                    |
+    |                                                  |             |                                   |
+    |  |Hall_Sensor| :xx-large:`or` |Hall_Sensor_1|    |  |red-led1| |  |NPN-transistor|                 |                           
+    +-----------------------+--------------------------+-------------+----------+------------------------+
+    | Speaker x1            | Active buzzer x1         | Resistor 220Ω x1       | Resistor 1kΩ x1        |
+    |                       |                          |                        |                        |
+    |  |Speaker1|           |  |Active-buzzer|         |  |res-220R1|           |  |Resistor-1kΩ|        |                           
+    +-----------------------+--------------------------+------------------------+------------------------+
 
 .. |red-led1| image:: ../_static/imgs/red-led.png
     :width: 50%

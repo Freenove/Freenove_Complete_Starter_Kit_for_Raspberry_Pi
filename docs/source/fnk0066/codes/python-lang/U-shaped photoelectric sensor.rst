@@ -13,17 +13,21 @@ This project uses a U-shaped photoelectric sensor to control the state of the LE
 Component List
 ================================================================
 
-+-------------------------------------------------+---------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                |                                                   |     
-|                                                 | Jumper Wires x6                                   |       
-|2. GPIO Extension Board & Ribbon Cable x1        |                                                   |       
-|                                                 |  |jumper-wire|                                    |                                                            
-|3. Breadboard x1                                 |                                                   |                                                                 
-+-------------------------------------------------+-------------------------+-------------------------+
-| TTP223 Touch Sensor x1                          | LED x1                  | Resistor 220Ω x1        |   
-|                                                 |                         |                         |       
-| |photoelectric| :xx-large:`or` |photoelectric_1||  |red-led1|             | |res-220R1|             |       
-+-------------------------------------------------+-------------------------+-------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+
+    +-------------------------------------------------+------------------------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1                |                                    |     
+    |                                                 | Jumper Wires x6                    |       
+    |2. GPIO Extension Board & Ribbon Cable x1        |                                    |       
+    |                                                 |  |jumper-wire|                     |                                                            
+    |3. Breadboard x1                                 |                                    |                                                                 
+    +-------------------------------------------------+-----------------+------------------+
+    | TTP223 Touch Sensor x1                          | LED x1          | Resistor 220Ω x1 |   
+    |                                                 |                 |                  |       
+    | |photoelectric| :xx-large:`or` |photoelectric_1||  |red-led1|     | |res-220R1|      |       
+    +-------------------------------------------------+-----------------+------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
 .. |photoelectric| image:: ../_static/imgs/photoelectric.png
@@ -33,7 +37,7 @@ Component List
 .. |res-220R1| image:: ../_static/imgs/res-220R.png
     :width: 15%
 .. |red-led1| image:: ../_static/imgs/red-led.png
-    :width: 50%
+    :width: 30%
 
 Component knowledge
 ================================================================
@@ -77,17 +81,17 @@ Below is the pinout of the touch sensor.
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |photoelectric_Sc|                                                                           |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |photoelectric_Fr|                                                                           |
-+------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------+
+|   Schematic diagram                                                                |
+|                                                                                    |
+|   |photoelectric_Sc|                                                               |
++------------------------------------------------------------------------------------+
+|   Hardware connection. If you need any support,please feel free to contact us via: |
+|                                                                                    |
+|   support@freenove.com                                                             | 
+|                                                                                    |
+|   |photoelectric_Fr|                                                               |
++------------------------------------------------------------------------------------+
 
 .. |photoelectric_Sc| image:: ../_static/imgs/photoelectric_Sc.png
 .. |photoelectric_Fr| image:: ../_static/imgs/photoelectric_Fr.png
@@ -167,7 +171,6 @@ Component List
 | |photoelectric| :xx-large:`or` |photoelectric_1| | |red-led|                        | |res-220R|             |       
 +--------------------------------------------------+----------------------------------+------------------------+
 
-.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
 .. |Active-buzzer| image:: ../_static/imgs/Active-buzzer.png
     :width: 40%
 .. |res-220R| image:: ../_static/imgs/res-220R.png
@@ -176,10 +179,6 @@ Component List
     :width: 45%
 .. |Resistor-1kΩ| image:: ../_static/imgs/Resistor-1kΩ.png
     :width: 20%
-.. |photoelectric| image:: ../_static/imgs/photoelectric.png
-    :width: 34%
-.. |photoelectric_1| image:: ../_static/imgs/photoelectric_1.png
-    :width: 30%
 .. |red-led| image:: ../_static/imgs/red-led.png
     :width: 30%
 

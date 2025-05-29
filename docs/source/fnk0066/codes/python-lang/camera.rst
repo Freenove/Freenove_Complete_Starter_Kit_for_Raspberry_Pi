@@ -11,19 +11,26 @@ Project TTS reminder
 This project uses a camera to take a picture and save it in the corresponding location.
 
 Component List
+===========================
 
-+-------------------------------------------------+-------------------------------------------------+
-| Breadboard Power Module x1                      | Jumper x3                                       |
-|                                                 |                                                 |
-| |power-module|                                  |  |jumper-wire|                                  |
-+-----------------------------+-------------------+--------------+----------------------------------+
-| Camera x1                   | Resistor 10kΩ x2                 | Push Button Switch x1            |
-|                             |                                  |                                  |
-|  |camera|                   |  |Resistor-10kΩ|                 |  |button-small|                  |
-+-----------------------------+----------------------------------+----------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+
+    +---------------------------------------------+-------------------------------------+
+    | Breadboard Power Module x1                  | Jumper x3                           |
+    |                                             |                                     |
+    | |power-module|                              |  |jumper-wire|                      |
+    +---------------------------+-----------------+--------------+----------------------+
+    | Camera x1                 | Resistor 10kΩ x2               | Push Button Switch x1|
+    |                           |                                |                      |
+    |  |camera|                 |  |Resistor-10kΩ|               |  |button-small|      |
+    +---------------------------+--------------------------------+----------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
+    :width: 80%
 .. |power-module| image:: ../_static/imgs/power-module.png
+    :width: 80%
 .. |camera| image:: ../_static/imgs/camera.png
 .. |Resistor-10kΩ| image:: ../_static/imgs/Resistor-10kΩ.png
     :width: 20%
@@ -172,30 +179,34 @@ This project uses a camera to shoot a video and play it back.
 Component List
 ================================================================
 
-+-------------------------------------------------+-------------------------------------------------+
-| Breadboard Power Module x1                      | Jumper x8                                       |
-|                                                 |                                                 |
-| |power-module|                                  |  |jumper-wire|                                  |
-+-----------------------------+-------------------+--------------+----------------------------------+
-| Camera x1                   | Resistor 10kΩ x4                 | Push Button Switch x2            |
-|                             |                                  |                                  |
-|  |camera|                   |  |Resistor-10kΩ|                 |  |button-small|                  |
-+-----------------------------+----------------------------------+----------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+
+    +---------------------------------------------+--------------------------------------+
+    | Breadboard Power Module x1                  | Jumper x8                            |
+    |                                             |                                      |
+    | |power-module|                              |  |jumper-wire|                       |
+    +---------------------------+-----------------+--------------+-----------------------+
+    | Camera x1                 | Resistor 10kΩ x4               | Push Button Switch x2 |
+    |                           |                                |                       |
+    |  |camera|                 |  |Resistor-10kΩ|               |  |button-small|       |
+    +---------------------------+--------------------------------+-----------------------+
 
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |camera_Sc_1|                                                                                |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |camera_Fr_1|                                                                                |
-+------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------+
+|   Schematic diagram                                                               |
+|                                                                                   |
+|   |camera_Sc_1|                                                                   |
++-----------------------------------------------------------------------------------+
+|   Hardware connection. If you need any support,please feel free to contact us via:|
+|                                                                                   |
+|   support@freenove.com                                                            | 
+|                                                                                   |
+|   |camera_Fr_1|                                                                   |
++-----------------------------------------------------------------------------------+
 
 .. |camera_Sc_1| image:: ../_static/imgs/camera_Sc_1.png
 .. |camera_Fr_1| image:: ../_static/imgs/camera_Fr_1.png

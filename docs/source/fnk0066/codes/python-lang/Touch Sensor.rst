@@ -12,24 +12,29 @@ This project will use the touch sensor to control the LED to emit different brig
 Component List
 ================================================================
 
-+-------------------------------------------------+-------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                |                                                 |     
-|                                                 | Jumper Wires x7                                 |       
-|2. GPIO Extension Board & Ribbon Cable x1        |                                                 |       
-|                                                 |  |jumper-wire|                                  |                                                            
-|3. Breadboard x1                                 |                                                 |                                                                 
-+---------------------------------------+---------+------------------------+------------------------+
-| TTP223 Touch Sensor x1                | LED x1                           | Resistor 220Ω x1       |     
-|                                       |                                  |                        |       
-|  |TTP223|                             | |red-led|                        | |res-220R1|            |       
-+---------------------------------------+----------------------------------+------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+
+    +-------------------------------------------------+-----------------------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1                |                                   |     
+    |                                                 | Jumper Wires x7                   |       
+    |2. GPIO Extension Board & Ribbon Cable x1        |                                   |       
+    |                                                 |  |jumper-wire|                    |                                                            
+    |3. Breadboard x1                                 |                                   |                                                                 
+    +---------------------------------------+---------+-----------------+-----------------+
+    | TTP223 Touch Sensor x1                | LED x1                    | Resistor 220Ω x1|     
+    |                                       |                           |                 |       
+    |  |TTP223|                             | |red-led|                 | |res-220R1|     |       
+    +---------------------------------------+---------------------------+-----------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
 .. |TTP223| image:: ../_static/imgs/TTP223.png
+    :width: 80%
 .. |res-220R1| image:: ../_static/imgs/res-220R.png
-    :width: 15%
+    :width: 10%
 .. |red-led| image:: ../_static/imgs/red-led.png
-    :width: 50%
+    :width: 30%
 
 Component knowledge
 ================================================================
@@ -65,17 +70,17 @@ Please do not use voltage beyond the power supply range to avoid damage to the t
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |TTP223_Sc|                                                                                  |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |TTP223_Fr|                                                                                  |
-+------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------+
+|   Schematic diagram                                                                 |
+|                                                                                     |
+|   |TTP223_Sc|                                                                       |
++-------------------------------------------------------------------------------------+
+|   Hardware connection. If you need any support,please feel free to contact us via:  |
+|                                                                                     |
+|   support@freenove.com                                                              | 
+|                                                                                     |
+|   |TTP223_Fr|                                                                       |
++-------------------------------------------------------------------------------------+
 
 .. |TTP223_Sc| image:: ../_static/imgs/TTP223_Sc.png
 .. |TTP223_Fr| image:: ../_static/imgs/TTP223_Fr.png
@@ -114,6 +119,7 @@ The following is the program code:
 Import the TouchSensor class from the sensor module. TouchSensor is similar to the MotionSensor class in the GPIO Zero library in that they both actually use the SmoothedInputDevice class.
 
 .. code-block:: python
+    :linenos:
 
     from sensor import TouchSensor
 
@@ -154,40 +160,41 @@ This project uses a touch sensor to control RGB LED to emit different colors.
 Component List
 ================================================================
 
-+-------------------------------------------------+-------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                |                                                 |     
-|                                                 | Jumper Wires x10                                |       
-|2. GPIO Extension Board & Ribbon Cable x1        |                                                 |       
-|                                                 |  |jumper-wire|                                  |                                                            
-|3. Breadboard x1                                 |                                                 |                                                                 
-+---------------------------------------+---------+------------------------+------------------------+
-| TTP223 Touch Sensor x1                | RGB LED x1                       | Resistor 220Ω x3       |     
-|                                       |                                  |                        |       
-|  |TTP223|                             | |RGB-LED-real|                   | |res-220R|             |       
-+---------------------------------------+----------------------------------+------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
 
-.. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
-.. |TTP223| image:: ../_static/imgs/TTP223.png
-    :width: 50%
+    +-------------------------------------------------+---------------------------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1                |                                       |     
+    |                                                 | Jumper Wires x10                      |       
+    |2. GPIO Extension Board & Ribbon Cable x1        |                                       |       
+    |                                                 |  |jumper-wire|                        |                                                            
+    |3. Breadboard x1                                 |                                       |                                                                 
+    +---------------------------------------+---------+-------------------+-------------------+
+    | TTP223 Touch Sensor x1                | RGB LED x1                  | Resistor 220Ω x3  |     
+    |                                       |                             |                   |       
+    |  |TTP223|                             | |RGB-LED-real|              | |res-220R|        |       
+    +---------------------------------------+-----------------------------+-------------------+
+
 .. |res-220R| image:: ../_static/imgs/res-220R.png
-    :width: 20%
+    :width: 10%
 .. |RGB-LED-real| image:: ../_static/imgs/red-led.png
-    :width: 50%
+    :width: 30%
 
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |TTP223_Sc_1|                                                                                |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |TTP223_Fr_1|                                                                                |
-+------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------+
+|   Schematic diagram                                                                 |
+|                                                                                     |
+|   |TTP223_Sc_1|                                                                     |
++-------------------------------------------------------------------------------------+
+|   Hardware connection. If you need any support,please feel free to contact us via:  |
+|                                                                                     |
+|   support@freenove.com                                                              | 
+|                                                                                     |
+|   |TTP223_Fr_1|                                                                     |
++-------------------------------------------------------------------------------------+
 
 .. |TTP223_Sc_1| image:: ../_static/imgs/TTP223_Sc_1.png
 .. |TTP223_Fr_1| image:: ../_static/imgs/TTP223_Fr_1.png

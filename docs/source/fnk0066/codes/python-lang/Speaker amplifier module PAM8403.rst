@@ -16,25 +16,29 @@ This project uses speakers to play local music.
 Component List
 ================================================================
 
-+-------------------------------------------------+-------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                |                                                 |
-|                                                 |   Jumper Wires                                  |
-|2. GPIO Extension Board & Ribbon Cable x1        |                                                 |
-|                                                 |     |jumper-wire|                               | 
-|3. Breadboard x1                                 |                                                 |
-+-------------------------------------------------+-------------------------------------------------+
-| Breadboard Power Module x1                      | 9V Battery (you provide) & 9V Battery           |
-|                                                 |                                                 |
-|                                                 | Cable                                           |
-|                                                 |                                                 |
-| |power-module|                                  |  |Battery_cable|                                |
-+-----------------------------+-------------------+--------------+----------------------------------+
-| Speaker amplifier           | Speaker x2                       | Audio cable x1                   |
-|                             |                                  |                                  |
-| module PAM8403 x1           |                                  |                                  |
-|                             |                                  |                                  |
-|  |PAM8403|                  |  |Speaker|                       |  |Audio_cable|                   |
-+-----------------------------+----------------------------------+----------------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+
+    +-----------------------------------------+---------------------------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1        |                                       |
+    |                                         |   Jumper Wires                        |
+    |2. GPIO Extension Board & Ribbon Cable x1|                                       |
+    |                                         |     |jumper-wire|                     | 
+    |3. Breadboard x1                         |                                       |
+    +-----------------------------------------+---------------------------------------+
+    | Breadboard Power Module x1              | 9V Battery (you provide) & 9V Battery |
+    |                                         |                                       |
+    |                                         | Cable                                 |
+    |                                         |                                       |
+    | |power-module|                          |  |Battery_cable|                      |
+    +-----------------------------+-----------+--------------+------------------------+
+    | Speaker amplifier           | Speaker x2               | Audio cable x1         |
+    |                             |                          |                        |
+    | module PAM8403 x1           |                          |                        |
+    |                             |                          |                        |
+    |  |PAM8403|                  |  |Speaker|               |  |Audio_cable|         |
+    +-----------------------------+--------------------------+------------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
 .. |power-module| image:: ../_static/imgs/power-module.png
@@ -84,32 +88,32 @@ Circuit
 
 Be careful when connecting this circuit. Do not use the RPi to power the speaker amplifier module PAM8403 directly, as this may cause permanent damage to your RPi!
 
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         |
-|                                                                                                |
-|   |PAM8403_Fr|                                                                                 | 
-+------------------------------------------------------------------------------------------------+
-|   Next connect the peaker amplifier module PAM8403 cable.                                      |
-|                                                                                                |
-|   The specific connection steps are as follows:                                                |
-|                                                                                                |
-|                                                                                                |
-|   :xx-large:`step 1`                                                                           |
-|                                                                                                |
-|   |PAM8403_Step1|                                                                              | 
-|                                                                                                |
-|   :xx-large:`Step 2`                                                                           |
-|                                                                                                |
-|   |PAM8403_Step2|                                                                              | 
-|                                                                                                |
-|   |PAM8403_Step2_1|                                                                            | 
-|                                                                                                |
-|   :xx-large:`Step 3`                                                                           |
-|                                                                                                |
-|   |PAM8403_Step3|                                                                              | 
-+------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------+
+|   Hardware connection. If you need any support,please feel free to contact us via: |
+|                                                                                    |
+|   support@freenove.com                                                             |
+|                                                                                    |
+|   |PAM8403_Fr|                                                                     | 
++------------------------------------------------------------------------------------+
+|   Next connect the peaker amplifier module PAM8403 cable.                          |
+|                                                                                    |
+|   The specific connection steps are as follows:                                    |
+|                                                                                    |
+|                                                                                    |
+|   :xx-large:`step 1`                                                               |
+|                                                                                    |
+|   |PAM8403_Step1|                                                                  | 
+|                                                                                    |
+|   :xx-large:`Step 2`                                                               |
+|                                                                                    |
+|   |PAM8403_Step2|                                                                  | 
+|                                                                                    |
+|   |PAM8403_Step2_1|                                                                | 
+|                                                                                    |
+|   :xx-large:`Step 3`                                                               |
+|                                                                                    |
+|   |PAM8403_Step3|                                                                  | 
++------------------------------------------------------------------------------------+
 
 .. |PAM8403_Fr| image:: ../_static/imgs/PAM8403_Fr.png
 .. |PAM8403_Step1| image:: ../_static/imgs/PAM8403_Step1.png
@@ -233,9 +237,8 @@ You can see the common commands of ffmpeg with the following commands
 The following are some advanced commands of ffplay. As shown in the table below:
 
 .. list-table::
-   :align: center
    :header-rows: 1
-   :class: product-table
+   :align: center
 
    * - Command
      - Description
@@ -296,29 +299,29 @@ This project uses the speaker amplifier module PAM8403 to make a TTS reminder.
 Component List
 ================================================================
 
-+-------------------------------------------------+-------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                |                                                 |
-|                                                 |   Jumper Wires                                  |
-|2. GPIO Extension Board & Ribbon Cable x1        |                                                 |
-|                                                 |     |jumper-wire|                               | 
-|3. Breadboard x1                                 |                                                 |
-+-------------------------------------------------+-------------------------------------------------+
-| Breadboard Power Module x1                      | 9V Battery (you provide) & 9V                   |
-|                                                 |                                                 |
-|                                                 | Battery Cable                                   |
-|                                                 |                                                 |
-| |power-module|                                  |  |Battery_cable|                                |
-+-----------------------------+-------------------+--------------+----------------------------------+
-| Speaker amplifier           | Speaker x2                       | Audio cable x1                   |
-|                             |                                  |                                  |
-| module PAM8403 x1           |                                  |                                  |
-|                             |                                  |                                  |
-|  |PAM8403|                  |  |Speaker|                       |  |Audio_cable|                   |
-+-----------------------------+----------------------------------+----------------------------------+
-| Infrared_sensor                                                                                   |
-|                                                                                                   |
-|  |Infrared_sensor|                                                                                |
-+---------------------------------------------------------------------------------------------------+
++------------------------------------------+-------------------------------+
+|1. Raspberry Pi (with 40 GPIO) x1         |                               |
+|                                          |   Jumper Wires                |
+|2. GPIO Extension Board & Ribbon Cable x1 |                               |
+|                                          |     |jumper-wire|             | 
+|3. Breadboard x1                          |                               |
++------------------------------------------+-------------------------------+
+| Breadboard Power Module x1               | 9V Battery (you provide) & 9V |
+|                                          |                               |
+|                                          | Battery Cable                 |
+|                                          |                               |
+| |power-module|                           |  |Battery_cable|              |
++-----------------------------+------------+--------------+----------------+
+| Speaker amplifier           | Speaker x2                | Audio cable x1 |
+|                             |                           |                |
+| module PAM8403 x1           |                           |                |
+|                             |                           |                |
+|  |PAM8403|                  |  |Speaker|                |  |Audio_cable| |
++-----------------------------+---------------------------+----------------+
+| Infrared_sensor                                                          |
+|                                                                          |
+|  |Infrared_sensor|                                                       |
++--------------------------------------------------------------------------+
 
 .. |Infrared_sensor| image:: ../_static/imgs/Infrared_sensor.png
     :width: 15%
@@ -334,21 +337,21 @@ TTS, short for Text To Speech, is part of the human-machine dialogue that enable
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |TTS_Sc|                                                                                     |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |TTS_Fr|                                                                                     |
-|                                                                                                |
-|   For the connection steps of the speaker amplifier module PAM8403, please refer to            |
-|                                                                                                |
-|   :ref:`Project 35.1 play local music`                                                         |
-+------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------+
+|   Schematic diagram                                                                 |
+|                                                                                     |
+|   |TTS_Sc|                                                                          |
++-------------------------------------------------------------------------------------+
+|   Hardware connection. If you need any support,please feel free to contact us via:  |
+|                                                                                     |
+|   support@freenove.com                                                              | 
+|                                                                                     |
+|   |TTS_Fr|                                                                          |
+|                                                                                     |
+|   For the connection steps of the speaker amplifier module PAM8403, please refer to |
+|                                                                                     |
+|   :ref:`Project 35.1 play local music`                                              |
++-------------------------------------------------------------------------------------+
 
 .. |TTS_Sc| image:: ../_static/imgs/TTS_Sc.png
     :width: 70%

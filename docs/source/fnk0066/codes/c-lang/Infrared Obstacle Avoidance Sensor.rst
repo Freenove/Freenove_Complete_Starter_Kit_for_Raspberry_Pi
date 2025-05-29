@@ -12,24 +12,29 @@ This project uses infrared obstacle avoidance sensor to change the state of LED.
 Component List
 ================================================================
 
-+--------------------------------------------------+-------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                 |                                                 |
-|                                                  | Jumper Wires x6                                 |
-|2. GPIO Extension Board & Ribbon Cable x1         |                                                 |
-|                                                  |  |jumper-wire|                                  |
-|3. Breadboard x1                                  |                                                 |
-+--------------------------------------------------+------------------------+------------------------+
-|Infrared obstacle avoidance sensor x1             | LED x1                 | Resistor 220Ω x1       |
-|                                                  |                        |                        |
-|  |Infrared_sensor|                               |  |red-led|             |  |res-220R|            |
-+--------------------------------------------------+------------------------+------------------------+
+.. table::
+    :align: center
+    :width: 80%
+
+    +-------------------------------------------+-------------------------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1          |                                     |
+    |                                           | Jumper Wires x6                     |
+    |2. GPIO Extension Board & Ribbon Cable x1  |                                     |
+    |                                           |  |jumper-wire|                      |
+    |3. Breadboard x1                           |                                     |
+    +-------------------------------------------+-----------------+-------------------+
+    |Infrared obstacle avoidance sensor x1      | LED x1          | Resistor 220Ω x1  |
+    |                                           |                 |                   |
+    |  |Infrared_sensor|                        |  |red-led|      |  |res-220R|       |
+    +-------------------------------------------+-----------------+-------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
+    :width: 80%
 .. |Infrared_sensor| image:: ../_static/imgs/30_00.png
 .. |red-led| image:: ../_static/imgs/red-led.png
-    :width: 50%
+    :width: 30%
 .. |res-220R| image:: ../_static/imgs/res-220R.png
-    :width: 20%
+    :width: 15%
 
 Component knowledge
 ================================================================
@@ -64,17 +69,17 @@ Below is the pinout of infrared obstacle avoidance sensor.
 
 Please do not use the voltage beyond the power supply range to avoid damage to the infrared obstacle avoidance sensor.
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |Infrared_sensor_Sc|                                                                         |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |Infrared_sensor_Fr|                                                                         |
-+------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------+
+|   Schematic diagram                                                                 |
+|                                                                                     |
+|   |Infrared_sensor_Sc|                                                              |
++-------------------------------------------------------------------------------------+
+|   Hardware connection. If you need any support,please feel free to contact us via:  |
+|                                                                                     |
+|   support@freenove.com                                                              | 
+|                                                                                     |
+|   |Infrared_sensor_Fr|                                                              |
++-------------------------------------------------------------------------------------+
 
 .. |Infrared_sensor_Sc| image:: ../_static/imgs/Infrared_sensor_Sc.png
 .. |Infrared_sensor_Fr| image:: ../_static/imgs/Infrared_sensor_Fr.png
@@ -126,30 +131,34 @@ This project uses an infrared obstacle avoidance sensor to make a simple reminde
 Component List
 ================================================================
 
-+--------------------------------------------------+---------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                 |                                                   |
-|                                                  | Jumper Wires x10                                  |
-|2. GPIO Extension Board & Ribbon Cable x1         |                                                   |
-|                                                  |  |jumper-wire|                                    |
-|3. Breadboard x1                                  |                                                   |
-+--------------------------------------------------+--------------------------+------------------------+
-|Active buzzer x1                                  | NPN transistorx1 (S8050) | Resistor 1kΩx1         |
-|                                                  |                          |                        |
-|  |Active-buzzer|                                 |  |NPN-transistor|        |  |Resistor-1kΩ|        |
-+--------------------------------------------------+--------------------------+------------------------+
-|Infrared obstacle avoidance sensor x1             | LED x1                   | Resistor 220Ω x1       |
-|                                                  |                          |                        |
-|  |Infrared_sensor|                               |  |red-led1|              |  |res-220R|            |
-+--------------------------------------------------+--------------------------+------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+
+    +-------------------------------------------+----------------------------------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1          |                                              |
+    |                                           | Jumper Wires x10                             |
+    |2. GPIO Extension Board & Ribbon Cable x1  |                                              |
+    |                                           |  |jumper-wire|                               |
+    |3. Breadboard x1                           |                                              |
+    +-------------------------------------------+--------------------------+-------------------+
+    |Active buzzer x1                           | NPN transistorx1 (S8050) | Resistor 1kΩx1    |
+    |                                           |                          |                   |
+    |  |Active-buzzer|                          |  |NPN-transistor|        |  |Resistor-1kΩ|   |
+    +-------------------------------------------+--------------------------+-------------------+
+    |Infrared obstacle avoidance sensor x1      | LED x1                   | Resistor 220Ω x1  |
+    |                                           |                          |                   |
+    |  |Infrared_sensor|                        |  |red-led1|              |  |res-220R|       |
+    +-------------------------------------------+--------------------------+-------------------+
 
 .. |red-led1| image:: ../_static/imgs/red-led.png
-    :width: 40%
+    :width: 30%
 .. |Active-buzzer| image:: ../_static/imgs/Active-buzzer.png
     :width: 40%
 .. |NPN-transistor| image:: ../_static/imgs/NPN-transistor.png
-    :width: 50%
+    :width: 30%
 .. |Resistor-1kΩ| image:: ../_static/imgs/Resistor-1kΩ.png
-    :width: 25%
+    :width: 20%
 
 Circuit
 ================================================================

@@ -13,17 +13,21 @@ This project uses a U-shaped photoelectric sensor to control the state of the LE
 Component List
 ================================================================
 
-+-------------------------------------------------+---------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                |                                                   |     
-|                                                 | Jumper Wires x6                                   |       
-|2. GPIO Extension Board & Ribbon Cable x1        |                                                   |       
-|                                                 |  |jumper-wire|                                    |                                                            
-|3. Breadboard x1                                 |                                                   |                                                                 
-+-------------------------------------------------+-------------------------+-------------------------+
-| TTP223 Touch Sensor x1                          | LED x1                  | Resistor 220Ω x1        |   
-|                                                 |                         |                         |       
-| |photoelectric| :xx-large:`or` |photoelectric_1||  |red-led1|             | |res-220R1|             |       
-+-------------------------------------------------+-------------------------+-------------------------+
+.. table:: 
+    :align: center  
+    :width: 80%
+
+    +-------------------------------------------------+------------------------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1                |                                    |     
+    |                                                 | Jumper Wires x6                    |       
+    |2. GPIO Extension Board & Ribbon Cable x1        |                                    |       
+    |                                                 |  |jumper-wire|                     |                                                            
+    |3. Breadboard x1                                 |                                    |                                                                 
+    +-------------------------------------------------+-----------------+------------------+
+    | TTP223 Touch Sensor x1                          | LED x1          | Resistor 220Ω x1 |   
+    |                                                 |                 |                  |       
+    | |photoelectric| :xx-large:`or` |photoelectric_1||  |red-led1|     | |res-220R1|      |       
+    +-------------------------------------------------+-----------------+------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
 .. |photoelectric| image:: ../_static/imgs/photoelectric.png
@@ -33,7 +37,7 @@ Component List
 .. |res-220R1| image:: ../_static/imgs/res-220R.png
     :width: 15%
 .. |red-led1| image:: ../_static/imgs/red-led.png
-    :width: 50%
+    :width: 30%
 
 Component knowledge
 ================================================================
@@ -76,17 +80,17 @@ Below is the pinout of the touch sensor.
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |photoelectric_Sc|                                                                           |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |photoelectric_Fr|                                                                           |
-+------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------+
+|   Schematic diagram                                                                 |
+|                                                                                     |
+|   |photoelectric_Sc|                                                                |
++-------------------------------------------------------------------------------------+
+|   Hardware connection. If you need any support,please feel free to contact us via:  |
+|                                                                                     |
+|   support@freenove.com                                                              | 
+|                                                                                     |
+|   |photoelectric_Fr|                                                                |
++-------------------------------------------------------------------------------------+
 
 .. |photoelectric_Sc| image:: ../_static/imgs/photoelectric_Sc.png
 .. |photoelectric_Fr| image:: ../_static/imgs/photoelectric_Fr.png
@@ -142,30 +146,34 @@ This project uses U-shaped photoelectric sensor to make a simple sound and light
 Component List
 ================================================================
 
-+------------------------------------------------------------+-------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                           |                                                 |     
-|                                                            | Jumper Wires x10                                |       
-|2. GPIO Extension Board & Ribbon Cable x1                   |                                                 |       
-|                                                            |  |jumper-wire|                                  |                                                            
-|3. Breadboard x1                                            |                                                 |                                                                 
-+--------------------------------------------------+---------+------------------------+------------------------+
-| Active buzzer x1                                 | NPN transistorx1 (S8050)         | Resistor 1kΩx1         |     
-|                                                  |                                  |                        |       
-|  |Active-buzzer|                                 | |NPN-transistor|                 | |Resistor-1kΩ|         |       
-+--------------------------------------------------+----------------------------------+------------------------+
-| U-shaped photoelectric sensor x1                 | LED x1                           | Resistor 220Ω x1       |     
-|                                                  |                                  |                        |       
-| |photoelectric| :xx-large:`or` |photoelectric_1| | |red-led|                        | |res-220R|             |       
-+--------------------------------------------------+----------------------------------+------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+
+    +------------------------------------------------------------+-------------------------------------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1                           |                                                 |     
+    |                                                            | Jumper Wires x10                                |       
+    |2. GPIO Extension Board & Ribbon Cable x1                   |                                                 |       
+    |                                                            |  |jumper-wire|                                  |                                                            
+    |3. Breadboard x1                                            |                                                 |                                                                 
+    +--------------------------------------------------+---------+------------------------+------------------------+
+    | Active buzzer x1                                 | NPN transistorx1 (S8050)         | Resistor 1kΩx1         |     
+    |                                                  |                                  |                        |       
+    |  |Active-buzzer|                                 | |NPN-transistor|                 | |Resistor-1kΩ|         |       
+    +--------------------------------------------------+----------------------------------+------------------------+
+    | U-shaped photoelectric sensor x1                 | LED x1                           | Resistor 220Ω x1       |     
+    |                                                  |                                  |                        |       
+    | |photoelectric| :xx-large:`or` |photoelectric_1| | |red-led|                        | |res-220R|             |       
+    +--------------------------------------------------+----------------------------------+------------------------+
 
 .. |Active-buzzer| image:: ../_static/imgs/Active-buzzer.png
     :width: 40%
 .. |res-220R| image:: ../_static/imgs/res-220R.png
-    :width: 20%
+    :width: 15%
 .. |NPN-transistor| image:: ../_static/imgs/NPN-transistor.png
-    :width: 45%
+    :width: 30%
 .. |Resistor-1kΩ| image:: ../_static/imgs/Resistor-1kΩ.png
-    :width: 20%
+    :width: 15%
 .. |red-led| image:: ../_static/imgs/red-led.png
     :width: 30%
 
@@ -181,14 +189,19 @@ Circuit
 |                                                                                                |
 |   support@freenove.com                                                                         | 
 |                                                                                                |
-|   |photoelectric_Fr_2|    :xx-large:`or`  |photoelectric_Fr_3|                                 |
+|   |photoelectric_Fr_2|                                                                         |
+|                                                                                                |
+|   .. centered::                                                                                |
+|      :xx-large:`or`                                                                            |
+|                                                                                                |
+|   |photoelectric_Fr_3|                                                                         |
 +------------------------------------------------------------------------------------------------+
 
 .. |photoelectric_Sc_1| image:: ../_static/imgs/photoelectric_Sc_1.png
 .. |photoelectric_Fr_2| image:: ../_static/imgs/photoelectric_Fr_2.png
-    :width: 48%
+    :width: 80%
 .. |photoelectric_Fr_3| image:: ../_static/imgs/photoelectric_Fr_3.png
-    :width: 48%
+    :width: 80%
 
 .. note::
     
@@ -234,6 +247,7 @@ The following is the program code:
 The wiringPiISR() function associates the sensor pins with sensorEven().Because there are high level triggering module and low level triggering module in the U-type photoelectric sensor, we use the double-edge detection method here to make the program compatible with the module in your hand. When sensorPin detects low level or high level, it will call and execute the sensorEven() function.
 
 .. code-block:: c
+    :linenos: 
 
     wiringPiISR(sensorPin,INT_EDGE_BOTH,&sensorEven);
     void sensorEven(void){

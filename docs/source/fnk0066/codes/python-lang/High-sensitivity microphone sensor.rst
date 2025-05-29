@@ -12,25 +12,30 @@ This project will use a high-sensitivity microphone sensor to make a sound-contr
 Component List
 ================================================================
 
-+-------------------------------------------------+-------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                |                                                 |     
-|                                                 | Jumper Wires x6                                 |       
-|2. GPIO Extension Board & Ribbon Cable x1        |                                                 |       
-|                                                 |  |jumper-wire|                                  |                                                            
-|3. Breadboard x1                                 |                                                 |                                                                 
-+---------------------------------------+---------+------------------------+------------------------+
-| High-sensitivity microphone sensor x1 | LED x1                           | Resistor 220Ω x1       |     
-|                                       |                                  |                        |       
-|  |microphone|                         | |red-led|                        | |res-220R|             |       
-+---------------------------------------+----------------------------------+------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+
+    +-------------------------------------------------+------------------------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1                |                                    |     
+    |                                                 | Jumper Wires x6                    |       
+    |2. GPIO Extension Board & Ribbon Cable x1        |                                    |       
+    |                                                 |  |jumper-wire|                     |                                                            
+    |3. Breadboard x1                                 |                                    |                                                                 
+    +---------------------------------------+---------+-----------------+------------------+
+    | High-sensitivity microphone sensor x1 | LED x1                    | Resistor 220Ω x1 |     
+    |                                       |                           |                  |       
+    |  |microphone|                         | |red-led|                 | |res-220R|       |       
+    +---------------------------------------+---------------------------+------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
+    :width: 80%
 .. |microphone| image:: ../_static/imgs/microphone.png
     :width: 30%
 .. |res-220R| image:: ../_static/imgs/res-220R.png
-    :width: 15%
+    :width: 10%
 .. |red-led| image:: ../_static/imgs/red-led.png
-    :width: 50%
+    :width: 30%
 
 Component knowledge
 ================================================================
@@ -75,17 +80,17 @@ Please do not use voltage beyond the power supply range to avoid damage to the h
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |microphone_Sc|                                                                              |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |microphone_Fr|                                                                              |
-+------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------+
+|   Schematic diagram                                                                |
+|                                                                                    |
+|   |microphone_Sc|                                                                  |
++------------------------------------------------------------------------------------+
+|   Hardware connection. If you need any support,please feel free to contact us via: |
+|                                                                                    |
+|   support@freenove.com                                                             | 
+|                                                                                    |
+|   |microphone_Fr|                                                                  |
++------------------------------------------------------------------------------------+
 
 .. |microphone_Sc| image:: ../_static/imgs/microphone_Sc.png
 .. |microphone_Fr| image:: ../_static/imgs/microphone_Fr.png

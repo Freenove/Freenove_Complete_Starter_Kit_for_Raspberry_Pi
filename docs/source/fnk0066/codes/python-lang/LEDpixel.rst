@@ -16,17 +16,17 @@ This project will achieve an Freenove 8 RGB LED Module flowing water.
 Component List
 ================================================================
 
-+--------------------------------------------------+-------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                 |                                                 |
-|                                                  | Jumper Wires x4                                 |
-|2. GPIO Extension Board & Ribbon Cable x1         |                                                 |
-|                                                  |  |jumper-wire|                                  |
-|3. Breadboard x1                                  |                                                 |
-+--------------------------------------------------+-------------------------------------------------+
-|Freenove 8 RGB LED Module x1                                                                        |
-|                                                                                                    |
-|  |LEDpixel|                                                                                        |
-+----------------------------------------------------------------------------------------------------+
++------------------------------------------+-----------------+
+|1. Raspberry Pi (with 40 GPIO) x1         |                 |
+|                                          | Jumper Wires x4 |
+|2. GPIO Extension Board & Ribbon Cable x1 |                 |
+|                                          |  |jumper-wire|  |
+|3. Breadboard x1                          |                 |
++------------------------------------------+-----------------+
+|Freenove 8 RGB LED Module x1                                |
+|                                                            |
+|  |LEDpixel|                                                |
++------------------------------------------------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
 .. |LEDpixel| image:: ../_static/imgs/LEDpixel.png
@@ -484,6 +484,7 @@ The following is the program code:
 Call the light library and the time library.
 
 .. code-block:: python
+    :linenos:
 
     from SPI_Ledpixel import Freenove_SPI_LedPixel
     import time
@@ -491,6 +492,7 @@ Call the light library and the time library.
 Apply for a light object, set the number of lights to 8, brightness to 255, light type to "GRB", use the mosi pin of spi0 to control the lights.
 
 .. code-block:: python
+    :linenos:
 
     # Freenove_SPI_LedPixel(led_count, led_brightness, led_transmission_sequence, spidev_bus)
     led = Freenove_SPI_LedPixel(8, 255, 'GRB', 0) 
@@ -498,12 +500,14 @@ Apply for a light object, set the number of lights to 8, brightness to 255, ligh
 Check whether the SPI is configured successfully.
 
 .. code-block:: python
+    :linenos:
 
     if led.check_spi_state() != 0:
 
 Reconfigure the number and brightness of ledpixel.
 
 .. code-block:: python
+    :linenos:
 
     led.set_led_count(8)                     # Set the number of lights.
     led.set_led_brightness(20)                # Set the brightness of lights.
@@ -511,6 +515,7 @@ Reconfigure the number and brightness of ledpixel.
 Let ledpixel display red, green and blue one by one, then turn off.
 
 .. code-block:: python
+    :linenos:
 
     color = [[255,0,0],[0,255,0],[0,0,255],[0,0,0]]  # Set the color of the lights
     for j in range(4):
@@ -524,6 +529,7 @@ Let ledpixel display red, green and blue one by one, then turn off.
 Let ledpixel cycle rainbow colors.
 
 .. code-block:: python
+    :linenos:
 
     while True:
         for j in range(255):

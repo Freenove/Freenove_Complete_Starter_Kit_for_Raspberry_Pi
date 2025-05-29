@@ -13,19 +13,24 @@ This project uses a rotary encoder to make a simple counter.
 Component List
 ================================================================
 
-+--------------------------------------------------+-------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                 |                                                 |
-|                                                  | Jumper Wires x7                                 |
-|2. GPIO Extension Board & Ribbon Cable x1         |                                                 |
-|                                                  |  |jumper-wire|                                  |
-|3. Breadboard x1                                  |                                                 |
-+--------------------------------------------------+-------------------------------------------------+
-|Rotary encoder x1                                                                                   |
-|                                                                                                    |
-|  |Rotary_encoder1|                                                                                 |
-+----------------------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+
+    +-------------------------------------------+------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1          |                  |
+    |                                           | Jumper Wires x7  |
+    |2. GPIO Extension Board & Ribbon Cable x1  |                  |
+    |                                           |  |jumper-wire|   |
+    |3. Breadboard x1                           |                  |
+    +-------------------------------------------+------------------+
+    |Rotary encoder x1                                             |
+    |                                                              |
+    |  |Rotary_encoder1|                                           |
+    +--------------------------------------------------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
+    :width: 80%
 .. |Rotary_encoder1| image:: ../_static/imgs/Rotary_encoder.png
     :width: 20%
 
@@ -128,22 +133,22 @@ This project uses a rotary encoder to adjust the LEDs to emit different brightne
 Component List
 ================================================================
 
-+--------------------------------------------------+-------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                 |                                                 |
-|                                                  | Jumper Wires x8                                 |
-|2. GPIO Extension Board & Ribbon Cable x1         |                                                 |
-|                                                  |  |jumper-wire|                                  |
-|3. Breadboard x1                                  |                                                 |
-+-----------------------------+--------------------+------------------+------------------------------+
-|Rotary encoder x1            |  LED x1                               |  Resistor 220Ω x1            |
-|                             |                                       |                              |
-|  |Rotary_encoder|           |   |red-led|                           |   |res-220R|                 |
-+-----------------------------+---------------------------------------+------------------------------+
++------------------------------------------+--------------------------------------+
+|1. Raspberry Pi (with 40 GPIO) x1         |                                      |
+|                                          | Jumper Wires x8                      |
+|2. GPIO Extension Board & Ribbon Cable x1 |                                      |
+|                                          |  |jumper-wire|                       |
+|3. Breadboard x1                          |                                      |
++-----------------------------+------------+------------------+-------------------+
+|Rotary encoder x1            |  LED x1                       |  Resistor 220Ω x1 |
+|                             |                               |                   |
+|  |Rotary_encoder|           |   |red-led|                   |   |res-220R|      |
++-----------------------------+-------------------------------+-------------------+
 
 .. |Rotary_encoder| image:: ../_static/imgs/Rotary_encoder.png
     :width: 40%
 .. |red-led| image:: ../_static/imgs/red-led.png
-    :width: 50%
+    :width: 30%
 .. |res-220R| image:: ../_static/imgs/res-220R.png
     :width: 15%
 
