@@ -102,7 +102,8 @@ variables_to_export = [
     "version",
 ]
 frozen_locals = dict(locals())
-prolog = "\n".join(
+prolog = "
+".join(
     map(lambda x: f".. |{x}| replace:: {frozen_locals[x]}",
         variables_to_export)
 )
