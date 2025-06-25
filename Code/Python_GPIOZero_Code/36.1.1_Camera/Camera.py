@@ -13,18 +13,21 @@ buttonPin = 18    # define buttonPin
 button = Button(buttonPin,pull_up=True) # define Button pin according to BCM Numbering
 
 def loop():
-    while True:
-        if button.is_pressed:  # if button is pressed
-            picam2 = Picamera2()
-            preview_config = picam2.create_preview_configuration(main={"size": (800, 600)})
-            picam2.configure(preview_config)
-            picam2.start_preview(Preview.QTGL)
-            picam2.start()
-            time.sleep(2)
-            metadata = picam2.capture_file("image.jpg")
-            print ('Hello.a photo has been to taken successfully')   # print information on terminal
-            picam2.close()
-            print ('Please preess the button take a photo')
+	picam2 = Picamera2()
+	preview_config = picam2.create_preview_configuration(main={"size": (800, 600)})
+	picam2.configure(preview_config)
+    picam2.start_preview(Preview.QTGL)
+    picam2.start()
+    print ('Please preess the button take a photo')
+    try:
+		while True:
+			if button.is_pressed:  # if button is pressed
+				metadata = picam2.capture_file("image.jpg")
+				print ('Hello.a photo has been to taken successfully')   # print information on terminal
+				time.sleep(1)
+	except KeyboardInterrupt:
+		picam2.close()
+            
 def destroy():
     button.close()
     
