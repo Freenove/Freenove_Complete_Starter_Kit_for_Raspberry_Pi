@@ -163,7 +163,7 @@ After the program is executed, you can take a photo by pressing the button. When
     :language: python
     :dedent:
 
-Read the signal pin of the button, and determine whether the button is pressed, if the button is pressed, take a photo and save it in the corresponding directory.
+Take a photo and save it in the corresponding directory.
 
 .. literalinclude:: ../../../freenove_Kit/Code/Python_GPIOZero_Code/36.1.1_Camera/Camera.py
     :linenos: 
