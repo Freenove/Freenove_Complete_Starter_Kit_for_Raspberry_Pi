@@ -137,6 +137,7 @@ The following is the program code:
 Import the MicrophoneSensor class from the sensor module. MicrophoneSensor is similar to the MotionSensor class in the GPIO Zero library in that they both actually use the SmoothedInputDevice class.
 
 .. code-block:: python
+    :linenos: 
 
     from sensor import MicrophoneSensor
 
