@@ -6,7 +6,7 @@ In this chapter, we will learn Freenove 8 RGB LED Module.
 
  .. note::
 
-    **If your Raspberry PI System is Bookworm, skip 32.1 and 32.2 and look at 32.3 instead. Because 32.1 and 32.2 use the rpi_ws2812 library, they are not compatible with Raspberry Pi5.**
+    **If your Raspberry PI System is Bookworm, skip 32.1 and 32.2 and look at 32.3 instead. Because 32.1 and 32.2 use the rpi_ws2812 library, they are not compatible with Bookworm.**
 
 Project LEDpixel
 ****************************************************************
