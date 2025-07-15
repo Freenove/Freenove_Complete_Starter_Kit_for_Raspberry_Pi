@@ -4,7 +4,6 @@
 0. Chapter Preparation
 ##############################################################################
 
-
 Why "Chapter 0"? Because in program code the first number is 0. We choose to follow this rule. In this chapter, we will do some necessary foundational preparation work: Start your Raspberry Pi and install some necessary libraries. 
 
 Linux Command

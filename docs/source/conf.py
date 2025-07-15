@@ -7,18 +7,9 @@
 # add these directories to sys.path here.
 from datetime import datetime
 import os
-import pathlib
-import sys
 
-sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
-num_cpus = os.cpu_count() or 1
-if num_cpus > 1:
-    num_jobs = num_cpus - 1  # 保留一个核心给系统
-else:
-    num_jobs = 1
-
-# os.system("rm -r freenove_Kit")
-# os.system("git clone --depth 1 https://github.com/Freenove/Freenove_Complete_Starter_Kit_for_Raspberry_Pi freenove_Kit")
+os.system("rm -r freenove_Kit")
+os.system("git clone --depth 1 https://github.com/Freenove/Freenove_Complete_Starter_Kit_for_Raspberry_Pi freenove_Kit")
 
 project = "fnk0066-docs"
 # <!!!BEGIN!!!>
