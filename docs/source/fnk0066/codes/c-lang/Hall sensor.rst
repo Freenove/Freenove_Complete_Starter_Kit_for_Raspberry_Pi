@@ -14,6 +14,7 @@ Component List
 
 .. table:: 
     :align: center
+    :class: table-line
     :width: 80%
 
     +--------------------------------------------------+-----------------+
@@ -62,7 +63,7 @@ Below is the pinout of the Hall sensor.
 .. list-table::
    :align: center
    :header-rows: 1
-   :class: product-table
+   :class: zebra
 
    * - symbol
      - Function
@@ -84,18 +85,23 @@ Below is the pinout of the Hall sensor.
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |Hall_Sensor_Sc|                                                                             |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |Hall_Sensor_Fr| :xx-large:`or` |Hall_Sensor_Fr_1|                                           |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :align: center
+    :class: table-line
+    :width: 80%
 
+    +------------------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                            |
+    |                                                                                                |
+    |   |Hall_Sensor_Sc|                                                                             |
+    +------------------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:             |
+    |                                                                                                |
+    |   support@freenove.com                                                                         | 
+    |                                                                                                |
+    |   |Hall_Sensor_Fr| :xx-large:`or` |Hall_Sensor_Fr_1|                                           |
+    +------------------------------------------------------------------------------------------------+
+    
 .. |Hall_Sensor_Sc| image:: ../_static/imgs/Hall_Sensor_Sc.png
 .. |Hall_Sensor_Fr| image:: ../_static/imgs/Hall_Sensor_Fr.png
     :width: 44%
@@ -135,7 +141,6 @@ First observe the project result, and then learn about the code in detail.
     
     $ sudo ./HallSensor
 
-
 After the program is executed, when the sensor is close to the magnetic field (horn) by hand, the LED will turn on, and if the sensor does not sense the magnetic field (horn), the LED will turn off.
 
 The following is the program code:
@@ -154,6 +159,7 @@ Component List
 
 .. table:: 
     :align: center
+    :class: table-line
     :width: 80%
 
     +-----------------------------------------------+------------------------------------------+
@@ -190,22 +196,27 @@ Component List
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |Hall_Sensor_Sc_1|                                                                           |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |Hall_Sensor_Fr_2|                                                                           |
-|                                                                                                |
-|   .. centered::                                                                                |
-|      :xx-large:`or`                                                                            |
-|                                                                                                |
-|   |Hall_Sensor_Fr_3|                                                                           |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :align: center
+    :class: table-line
+    :width: 80%
+
+    +------------------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                            |
+    |                                                                                                |
+    |   |Hall_Sensor_Sc_1|                                                                           |
+    +------------------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:             |
+    |                                                                                                |
+    |   support@freenove.com                                                                         | 
+    |                                                                                                |
+    |   |Hall_Sensor_Fr_2|                                                                           |
+    |                                                                                                |
+    |   .. centered::                                                                                |
+    |      :xx-large:`or`                                                                            |
+    |                                                                                                |
+    |   |Hall_Sensor_Fr_3|                                                                           |
+    +------------------------------------------------------------------------------------------------+
 
 .. |Hall_Sensor_Sc_1| image:: ../_static/imgs/Hall_Sensor_Sc_1.png
 .. |Hall_Sensor_Fr_2| image:: ../_static/imgs/29_00.png

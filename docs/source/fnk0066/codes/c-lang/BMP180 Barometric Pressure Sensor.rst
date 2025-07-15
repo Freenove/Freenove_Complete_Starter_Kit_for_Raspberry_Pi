@@ -10,17 +10,22 @@ Project Barometer
 Component List
 ================================================================
 
-+--------------------------------------------+------------------+
-|1. Raspberry Pi (with 40 GPIO) x1           |                  |
-|                                            | Jumper Wires x6  |
-|2. GPIO Extension Board & Ribbon Cable x1   |                  |
-|                                            |  |jumper-wire|   |
-|3. Breadboard x1                            |                  |
-+--------------------------------------------+------------------+
-|BMP180 barometric pressure sensor x1                           |
-|                                                               |
-|  |BMP180|                                                     |
-+---------------------------------------------------------------+
+.. table:: 
+    :align: center
+    :class: table-line
+    :width: 80%
+
+    +--------------------------------------------+------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1           |                  |
+    |                                            | Jumper Wires x6  |
+    |2. GPIO Extension Board & Ribbon Cable x1   |                  |
+    |                                            |  |jumper-wire|   |
+    |3. Breadboard x1                            |                  |
+    +--------------------------------------------+------------------+
+    |BMP180 barometric pressure sensor x1                           |
+    |                                                               |
+    |  |BMP180|                                                     |
+    +---------------------------------------------------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
     :width: 40%
@@ -41,6 +46,7 @@ The general process of BMP180 reading data and the calculation of each data are 
 
 .. image:: ../_static/imgs/BMP180_Read_Data.png
     :align: center
+    :width: 60%
 
 Among them, UT is temperature data (16 bits), and UP is pressure data (16 to 19 bits).
 
@@ -48,16 +54,19 @@ Calculate temperature:
 
 .. image:: ../_static/imgs/temperature.png
     :align: center
+    :width: 60%
 
 Calculate pressure:
 
 .. image:: ../_static/imgs/pressure.png
     :align: center
+    :width: 60%
 
 Calculate absolute altitude. According to the measured air pressure p and sea level air pressure po (for example, 1013.25hPa), the altitude in meters can be calculated via the following international pressure formula:
 
 .. image:: ../_static/imgs/altitude.png
     :align: center
+    :width: 60%
 
 Below is the pinout of BMP180 barometric pressure sensor.
 
@@ -66,7 +75,7 @@ Below is the pinout of BMP180 barometric pressure sensor.
 .. list-table::
    :align: center
    :header-rows: 1
-   :class: product-table
+   :class: zebra
 
    * - symbol
      - Function
@@ -85,17 +94,25 @@ Below is the pinout of BMP180 barometric pressure sensor.
 
 Please do not use voltage beyond the power supply range to avoid damage to the BMP180 barometric pressure sensor.
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |BMP180_Sc|                                                                                  |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |BMP180_Fr|                                                                                  |
-+------------------------------------------------------------------------------------------------+
+Circuit
+===========================
+
+.. table:: 
+    :align: center
+    :class: table-line
+    :width: 80%
+
+    +-------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                 |
+    |                                                                                     |
+    |   |BMP180_Sc|                                                                       |
+    +-------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:  |
+    |                                                                                     |
+    |   support@freenove.com                                                              | 
+    |                                                                                     |
+    |   |BMP180_Fr|                                                                       |
+    +-------------------------------------------------------------------------------------+
 
 .. |BMP180_Sc| image:: ../_static/imgs/BMP180_Sc.png
 .. |BMP180_Fr| image:: ../_static/imgs/BMP180_Fr.png

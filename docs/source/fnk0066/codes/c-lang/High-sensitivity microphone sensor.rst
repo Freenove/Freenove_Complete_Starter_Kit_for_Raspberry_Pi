@@ -14,6 +14,7 @@ Component List
 
 .. table:: 
   :align: center
+  :class: table-line
   :width: 80%
 
   +-------------------------------------------------+-------------------------------------+
@@ -56,7 +57,7 @@ Below is the pinout of the high-sensitivity microphone sensor.
 .. list-table::
    :align: center
    :header-rows: 1
-   :class: product-table
+   :class: zebra
 
    * - symbol
      - Function
@@ -80,22 +81,25 @@ Please do not use voltage beyond the power supply range to avoid damage to the h
 Circuit
 ================================================================
 
-+---------------------------------------------------------------------------------+
-|Schematic diagram                                                                |
-|                                                                                 |
-||microphone_Sc|                                                                  |
-+---------------------------------------------------------------------------------+
-|Hardware connection. If you need any support,please feel free to contact us via: |
-|                                                                                 |
-|support@freenove.com                                                             | 
-|                                                                                 |
-||microphone_Fr|                                                                  |
-+---------------------------------------------------------------------------------+
+.. table:: 
+  :align: center
+  :class: table-line
+  :width: 80%
+
+  +---------------------------------------------------------------------------------+
+  |Schematic diagram                                                                |
+  |                                                                                 |
+  ||microphone_Sc|                                                                  |
+  +---------------------------------------------------------------------------------+
+  |Hardware connection. If you need any support,please feel free to contact us via: |
+  |                                                                                 |
+  |support@freenove.com                                                             | 
+  |                                                                                 |
+  ||microphone_Fr|                                                                  |
+  +---------------------------------------------------------------------------------+
 
 .. |microphone_Sc| image:: ../_static/imgs/microphone_Sc.png
 .. |microphone_Fr| image:: ../_static/imgs/microphone_Fr.png
-
-video: https://www.youtube.com/watch?v=W7fi0Sohpi0
 
 .. raw:: html
 
@@ -103,6 +107,9 @@ video: https://www.youtube.com/watch?v=W7fi0Sohpi0
 
 Code
 ================================================================
+
+C Code VoiceLamp
+--------------------------------
 
 First observe the project result, and then learn about the code in detail.
 

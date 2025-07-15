@@ -18,26 +18,26 @@ Component List
     :align: center
     :width: 80%
 
-    +------------------------------------------------+--------------------+
-    |1. Raspberry Pi (with 40 GPIO) x1               |   Resistor 220Ω x1 |     
-    |                                                |                    |       
-    |2. GPIO Extension Board & Ribbon Cable x1       |   |res-220R|       |       
-    |                                                |                    |                                                            
-    |3. Breadboard x1                                |                    |                                                                 
-    +------------------------------------------------+--------------------+
-    | Photoresistor x1                               |   Resistor 10kΩ x3 |
-    |                                                |                    |
-    | |Phtotresistor|                                |  |Resistor-10kΩ|   |                           
-    +------------------------------------------------+--------------------+
-    | ADC module x1 (Only one)                       |   LED x1           |
-    |                                                |                    |
-    | |ADC-module-1|   :xx-large:`or`  |ADC-module-2||   |red-led|        |                   
-    |                                                |                    |  
-    +------------------------------------------------+--------------------+
-    |   Jumper Wire M/M x15                                               |
-    |                                                                     | 
-    |      |jumper-wire|                                                  |
-    +---------------------------------------------------------------------+
+    +------------------------------------------------+------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1               |Resistor 220Ω x1  |     
+    |                                                |                  |       
+    |2. GPIO Extension Board & Ribbon Cable x1       ||res-220R|        |       
+    |                                                |                  |                                                            
+    |3. Breadboard x1                                |                  |                                                                 
+    +------------------------------------------------+------------------+
+    | Photoresistor x1                               | Resistor 10kΩ x3 |
+    |                                                |                  |
+    | |Phtotresistor|                                ||Resistor-10kΩ|   |                           
+    +------------------------------------------------+------------------+
+    | ADC module x1 (Only one)                       | LED x1           |
+    |                                                |                  |
+    | |ADC-module-1|   :xx-large:`or`  |ADC-module-2|||red-led|         |                   
+    |                                                |                  |  
+    +------------------------------------------------+------------------+
+    |   Jumper Wire M/M x15                                             |
+    |                                                                   | 
+    |      |jumper-wire|                                                |
+    +-------------------------------------------------------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
         :width: 80%
@@ -86,8 +86,6 @@ The circuit used is similar to the Soft light project. The only difference is th
 |   support@freenove.com                                                                         |
 |                                                                                                |
 |   |ADS7830-fritizing-5|                                                                        |
-|                                                                                                |
-|    **Video:** https://youtu.be/r6p3zhXsyko                                                     |
 +------------------------------------------------------------------------------------------------+
 
 .. |ADS7830-Schematic-4| image:: ../_static/imgs/ADS7830-Schematic-4.png
@@ -124,7 +122,7 @@ The code used in this project is identical with what was used in the last chapte
 C Code Nightlamp
 ----------------------------------------------------------------
 
-If you did not configure I2C, please refer to :ref:`Chapter 7 <ADC>`. If you did, please continue.
+If you did not :blue:`configure I2C`, please refer to :ref:`Chapter 7 <ADC>`. If you did, please continue.
 
 First, observe the project result, and then learn about the code in detail.
 

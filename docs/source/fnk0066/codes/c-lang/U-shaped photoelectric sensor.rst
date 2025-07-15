@@ -15,6 +15,7 @@ Component List
 
 .. table:: 
     :align: center  
+    :class: table-line
     :width: 80%
 
     +-------------------------------------------------+------------------------------------+
@@ -56,7 +57,7 @@ Below is the pinout of the touch sensor.
 .. list-table::
    :align: center
    :header-rows: 1
-   :class: product-table
+   :class: zebra
 
    * - symbol
      - Function
@@ -80,17 +81,22 @@ Below is the pinout of the touch sensor.
 Circuit
 ================================================================
 
-+-------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                 |
-|                                                                                     |
-|   |photoelectric_Sc|                                                                |
-+-------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:  |
-|                                                                                     |
-|   support@freenove.com                                                              | 
-|                                                                                     |
-|   |photoelectric_Fr|                                                                |
-+-------------------------------------------------------------------------------------+
+.. table:: 
+    :align: center  
+    :class: table-line
+    :width: 80%
+
+    +-------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                 |
+    |                                                                                     |
+    |   |photoelectric_Sc|                                                                |
+    +-------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:  |
+    |                                                                                     |
+    |   support@freenove.com                                                              | 
+    |                                                                                     |
+    |   |photoelectric_Fr|                                                                |
+    +-------------------------------------------------------------------------------------+
 
 .. |photoelectric_Sc| image:: ../_static/imgs/photoelectric_Sc.png
 .. |photoelectric_Fr| image:: ../_static/imgs/photoelectric_Fr.png
@@ -108,6 +114,7 @@ C Code PhotoSensor
 First observe the project result, and then learn about the code in detail.
 
 .. hint:: 
+
     :red:`If you have any concerns, please contact us via:` support@freenove.com
 
 1.  Use cd command to enter 28.1.1_PhotoSensor directory of C code.
@@ -135,8 +142,7 @@ When you use the module whose output signal is low level, after the program is e
 .. literalinclude:: ../../../freenove_Kit/Code/C_Code/28.1.1_PhotoSensor/PhotoSensor.c
     :linenos: 
     :language: C
-
-
+    :dedent:
 
 Project U-shaped photoelectric sensor and buzzer
 ****************************************************************
@@ -148,6 +154,7 @@ Component List
 
 .. table:: 
     :align: center
+    :class: table-line
     :width: 80%
 
     +------------------------------------------------------------+-------------------------------------------------+
@@ -180,22 +187,27 @@ Component List
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |photoelectric_Sc_1|                                                                         |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |photoelectric_Fr_2|                                                                         |
-|                                                                                                |
-|   .. centered::                                                                                |
-|      :xx-large:`or`                                                                            |
-|                                                                                                |
-|   |photoelectric_Fr_3|                                                                         |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :align: center
+    :class: table-line
+    :width: 80%
+
+    +------------------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                            |
+    |                                                                                                |
+    |   |photoelectric_Sc_1|                                                                         |
+    +------------------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:             |
+    |                                                                                                |
+    |   support@freenove.com                                                                         | 
+    |                                                                                                |
+    |   |photoelectric_Fr_2|                                                                         |
+    |                                                                                                |
+    |   .. centered::                                                                                |
+    |      :xx-large:`or`                                                                            |
+    |                                                                                                |
+    |   |photoelectric_Fr_3|                                                                         |
+    +------------------------------------------------------------------------------------------------+
 
 .. |photoelectric_Sc_1| image:: ../_static/imgs/photoelectric_Sc_1.png
 .. |photoelectric_Fr_2| image:: ../_static/imgs/photoelectric_Fr_2.png

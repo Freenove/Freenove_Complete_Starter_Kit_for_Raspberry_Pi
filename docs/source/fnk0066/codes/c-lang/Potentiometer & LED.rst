@@ -63,8 +63,6 @@ Circuit with ADS7830
 |   support@freenove.com                                                                         |
 |                                                                                                |
 |   |ADS7830-fritizing-2|                                                                        |
-|                                                                                                |
-|    **Video:** https://youtu.be/YMEfe9IWU6I                                                     |
 +------------------------------------------------------------------------------------------------+
 
 .. |ADS7830-Schematic-2| image:: ../_static/imgs/ADS7830-Schematic-2.png
@@ -96,7 +94,7 @@ Code
 C Code Softlight
 ----------------------------------------------------------------
 
-If you did not configure I2C, please refer to :ref:`Chapter 7 <ADC>` . If you did, please move on.
+If you did not :blue:`configure I2C`, please refer to :ref:`Chapter 7 <ADC>`. If you did, please move on.
 
 First, observe the project result, and then learn about the code in detail.
 

@@ -60,7 +60,7 @@ The relationship between resistance value and temperature of a thermistor is:
 
 .. math::
 
-   \boldsymbol{ R_t = R \cdot \exp \left[ B \left( \frac{1}{T_2} - \frac{1}{T_1} \right) \right] }
+   \boldsymbol{ R_t = R \cdot EXP \left[ B \left( \frac{1}{T_2} - \frac{1}{T_1} \right) \right] }
 
 - Where:
     - **Rt** is the thermistor resistance under T2 temperature;
@@ -102,8 +102,6 @@ The circuit of this project is similar to the one in last chapter. The only diff
 |   |ADS7830-fritizing-6|                                                                        |
 |                                                                                                |
 |    **Thermistor has longer pins than the one shown in circuit.**                               |
-|                                                                                                |
-|    **Video:** https://youtu.be/-CvWcobXSFI                                                     |
 +------------------------------------------------------------------------------------------------+
 
 .. |ADS7830-Schematic-5| image:: ../_static/imgs/ADS7830-Schematic-5.png
@@ -144,7 +142,7 @@ In this project code, the ADC value still needs to be read, but the difference h
 C Code Thermometer
 ----------------------------------------------------------------
 
-If you did not configure I2C, please refer to :ref:`Chapter 7 <ADC>`. If you did, please continue.
+If you did not :blue:`configure I2C`, please refer to :ref:`Chapter 7 <ADC>`. If you did, please continue.
 
 First, observe the project result, and then learn about the code in detail.
 
@@ -173,13 +171,14 @@ First, observe the project result, and then learn about the code in detail.
 After the program is executed, the Terminal window will display the current ADC value, voltage value and temperature value. Try to "pinch" the thermistor (without touching the leads) with your index finger and thumb for a brief time, you should see that the temperature value increases.
 
 .. image:: ../_static/imgs/ADC-value-2.png
-        :width: 100%
-        :align: center
+    :width: 70%
+    :align: center
 
 The following is the code:
 
 .. literalinclude:: ../../../freenove_Kit/Code/C_Code/11.1.1_Thermometer/Thermometer.cpp
     :linenos: 
     :language: C
+    :dedent:
 
 In the code, the ADC value of ADC module A0 port is read, and then calculates the voltage and the resistance of Thermistor according to Ohms Law. Finally, it calculates the temperature sensed by the Thermistor, according to the formula. 

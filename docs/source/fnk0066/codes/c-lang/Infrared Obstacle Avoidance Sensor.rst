@@ -14,6 +14,7 @@ Component List
 
 .. table::
     :align: center
+    :class: table-line
     :width: 80%
 
     +-------------------------------------------+-------------------------------------+
@@ -30,7 +31,7 @@ Component List
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
     :width: 80%
-.. |Infrared_sensor| image:: ../_static/imgs/30_00.png
+.. |Infrared_sensor| image:: ../_static/imgs/Infrared_sensor.png
 .. |red-led| image:: ../_static/imgs/red-led.png
     :width: 30%
 .. |res-220R| image:: ../_static/imgs/res-220R.png
@@ -53,7 +54,7 @@ Below is the pinout of infrared obstacle avoidance sensor.
 .. list-table::
    :align: center
    :header-rows: 1
-   :class: product-table
+   :class: zebra
 
    * - symbol
      - Function
@@ -69,17 +70,22 @@ Below is the pinout of infrared obstacle avoidance sensor.
 
 Please do not use the voltage beyond the power supply range to avoid damage to the infrared obstacle avoidance sensor.
 
-+-------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                 |
-|                                                                                     |
-|   |Infrared_sensor_Sc|                                                              |
-+-------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:  |
-|                                                                                     |
-|   support@freenove.com                                                              | 
-|                                                                                     |
-|   |Infrared_sensor_Fr|                                                              |
-+-------------------------------------------------------------------------------------+
+.. table::
+    :align: center
+    :class: table-line
+    :width: 80%
+
+    +-------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                 |
+    |                                                                                     |
+    |   |Infrared_sensor_Sc|                                                              |
+    +-------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:  |
+    |                                                                                     |
+    |   support@freenove.com                                                              | 
+    |                                                                                     |
+    |   |Infrared_sensor_Fr|                                                              |
+    +-------------------------------------------------------------------------------------+
 
 .. |Infrared_sensor_Sc| image:: ../_static/imgs/Infrared_sensor_Sc.png
 .. |Infrared_sensor_Fr| image:: ../_static/imgs/Infrared_sensor_Fr.png
@@ -133,6 +139,7 @@ Component List
 
 .. table:: 
     :width: 80%
+    :class: table-line
     :align: center
 
     +-------------------------------------------+----------------------------------------------+
@@ -163,17 +170,22 @@ Component List
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |Infrared_sensor_Sc_1|                                                                       |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |Infrared_sensor_Fr_1|                                                                       |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :class: table-line
+    :align: center
+
+    +------------------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                            |
+    |                                                                                                |
+    |   |Infrared_sensor_Sc_1|                                                                       |
+    +------------------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:             |
+    |                                                                                                |
+    |   support@freenove.com                                                                         | 
+    |                                                                                                |
+    |   |Infrared_sensor_Fr_1|                                                                       |
+    +------------------------------------------------------------------------------------------------+
 
 .. |Infrared_sensor_Sc_1| image:: ../_static/imgs/Infrared_sensor_Sc_1.png
 .. |Infrared_sensor_Fr_1| image:: ../_static/imgs/Infrared_sensor_Fr_1.png
