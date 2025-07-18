@@ -15,6 +15,7 @@ Component List
 .. table:: 
     :align: center
     :width: 80%
+    :class: table-line
 
     +-------------------------------------------------+-----------------------------------+
     |1. Raspberry Pi (with 40 GPIO) x1                |                                   |     
@@ -51,7 +52,7 @@ Below is the pinout of the touch sensor.
 .. list-table::
    :align: center
    :header-rows: 1
-   :class: product-table
+   :class: zebra
 
    * - symbol
      - Function
@@ -70,17 +71,22 @@ Please do not use voltage beyond the power supply range to avoid damage to the t
 Circuit
 ================================================================
 
-+-------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                 |
-|                                                                                     |
-|   |TTP223_Sc|                                                                       |
-+-------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:  |
-|                                                                                     |
-|   support@freenove.com                                                              | 
-|                                                                                     |
-|   |TTP223_Fr|                                                                       |
-+-------------------------------------------------------------------------------------+
+.. table::
+    :align: center
+    :class: table-line
+    :width: 80%
+    
+    +-------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                 |
+    |                                                                                     |
+    |   |TTP223_Sc|                                                                       |
+    +-------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:  |
+    |                                                                                     |
+    |   support@freenove.com                                                              | 
+    |                                                                                     |
+    |   |TTP223_Fr|                                                                       |
+    +-------------------------------------------------------------------------------------+
 
 .. |TTP223_Sc| image:: ../_static/imgs/TTP223_Sc.png
 .. |TTP223_Fr| image:: ../_static/imgs/TTP223_Fr.png
@@ -163,6 +169,7 @@ Component List
 .. table:: 
     :align: center
     :width: 80%
+    :class: table-line
 
     +-------------------------------------------------+---------------------------------------+
     |1. Raspberry Pi (with 40 GPIO) x1                |                                       |     
@@ -184,17 +191,22 @@ Component List
 Circuit
 ================================================================
 
-+-------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                 |
-|                                                                                     |
-|   |TTP223_Sc_1|                                                                     |
-+-------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:  |
-|                                                                                     |
-|   support@freenove.com                                                              | 
-|                                                                                     |
-|   |TTP223_Fr_1|                                                                     |
-+-------------------------------------------------------------------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+    :class: table-line
+
+    +-------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                 |
+    |                                                                                     |
+    |   |TTP223_Sc_1|                                                                     |
+    +-------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:  |
+    |                                                                                     |
+    |   support@freenove.com                                                              | 
+    |                                                                                     |
+    |   |TTP223_Fr_1|                                                                     |
+    +-------------------------------------------------------------------------------------+
 
 .. |TTP223_Sc_1| image:: ../_static/imgs/TTP223_Sc_1.png
 .. |TTP223_Fr_1| image:: ../_static/imgs/TTP223_Fr_1.png

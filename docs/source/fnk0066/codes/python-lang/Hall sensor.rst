@@ -15,6 +15,7 @@ Component List
 .. table:: 
     :align: center
     :width: 80%
+    :class: table-line
 
     +-----------------------------------------------+------------------+
     |1. Raspberry Pi (with 40 GPIO) x1              |                  |     
@@ -61,7 +62,7 @@ Below is the pinout of the Hall sensor.
 .. list-table::
    :align: center
    :header-rows: 1
-   :class: product-table
+   :class: zebra
 
    * - symbol
      - Function
@@ -85,23 +86,28 @@ Below is the pinout of the Hall sensor.
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |Hall_Sensor_Sc|                                                                             |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |Hall_Sensor_Fr| :xx-large:`or` |Hall_Sensor_Fr_1|                                           |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+    :class: table-line
+
+    +------------------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                            |
+    |                                                                                                |
+    |   |Hall_Sensor_Sc|                                                                             |
+    +------------------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:             |
+    |                                                                                                |
+    |   support@freenove.com                                                                         | 
+    |                                                                                                |
+    |   |Hall_Sensor_Fr| :xx-large:`or` |Hall_Sensor_Fr_1|                                           |
+    +------------------------------------------------------------------------------------------------+
 
 .. |Hall_Sensor_Sc| image:: ../_static/imgs/Hall_Sensor_Sc.png
 .. |Hall_Sensor_Fr| image:: ../_static/imgs/python29_00.png
-    :width: 45%
+    :width: 44%
 .. |Hall_Sensor_Fr_1| image:: ../_static/imgs/python29_01.png
-    :width: 45%
+    :width: 44%
 
 .. note::
     
@@ -161,10 +167,11 @@ Component List
 .. table:: 
     :align: center
     :width: 80%
+    :class: table-line
 
     +--------------------------------------------------+-------------------------------------------------+
     |1. Raspberry Pi (with 40 GPIO) x1                 |                                                 |     
-    |                                                  | Jumper Wires x6                                 |       
+    |                                                  | Jumper Wires x10                                |       
     |2. GPIO Extension Board & Ribbon Cable x1         |                                                 |       
     |                                                  |  |jumper-wire|                                  |                                                            
     |3. Breadboard x1                                  |                                                 |                                                                 
@@ -195,17 +202,22 @@ Component List
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |Hall_Sensor_Sc_1|                                                                           |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |Hall_Sensor_Fr_2| :xx-large:`or` |Hall_Sensor_Fr_3|                                         |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+    :class: table-line
+
+    +------------------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                            |
+    |                                                                                                |
+    |   |Hall_Sensor_Sc_1|                                                                           |
+    +------------------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:             |
+    |                                                                                                |
+    |   support@freenove.com                                                                         | 
+    |                                                                                                |
+    |   |Hall_Sensor_Fr_2| :xx-large:`or` |Hall_Sensor_Fr_3|                                         |
+    +------------------------------------------------------------------------------------------------+
 
 .. |Hall_Sensor_Sc_1| image:: ../_static/imgs/Hall_Sensor_Sc_1.png
 .. |Hall_Sensor_Fr_2| image:: ../_static/imgs/python29_02.png
@@ -226,6 +238,7 @@ Python Code Alertor
 First observe the project result, and then learn about the code in detail.
 
 .. hint:: 
+    
     :red:`If you have any concerns, please contact us via:` support@freenove.com
 
 1.  Use ``cd`` command to enter 29.2.1_Alertor directory of Python code

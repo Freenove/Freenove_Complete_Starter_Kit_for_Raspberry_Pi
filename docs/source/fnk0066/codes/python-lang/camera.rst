@@ -16,6 +16,7 @@ Component List
 .. table:: 
     :width: 80%
     :align: center
+    :class: table-line
 
     +---------------------------------------------+-------------------------------------+
     | Breadboard Power Module x1                  | Jumper x3                           |
@@ -49,45 +50,50 @@ Next connect the camera to the Raspberry Pi. First turn off the power switch of 
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |camera_Sc|                                                                                  |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         |
-|                                                                                                |
-|   |camera_Fr|                                                                                  |
-|                                                                                                |
-|   :red:`Next connect the camera cable.`                                                        |
-|                                                                                                |
-|   After connected, it should be as follows                                                     |
-|                                                                                                |
-|   Step 1                                                                                       |
-|                                                                                                |
-|     |camera_step1|                                                                             |
-|                                                                                                |
-|   Step 2                                                                                       |
-|                                                                                                |
-|     |camera_step2|                                                                             |
-|                                                                                                |
-|   The :blue:`Blue side` of cable should be toward to Servo.                                    |
-|                                                                                                |
-|   Connect one end of cable to camera. Please note the front and back of the cable.             |
-|                                                                                                |
-|   Step 3                                                                                       |
-|                                                                                                |
-|     |camera_step3|                                                                             |
-|                                                                                                |
-|   Step 4                                                                                       |
-|                                                                                                |
-|     |camera_step4|                                                                             |
-|                                                                                                |
-|   The :blue:`Blue side` of cable should be toward to Servo.                                    |
-|                                                                                                |
-|   Connect one end of cable to camera. Please note the front and back of the cable.             |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+
+    +------------------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                            |
+    |                                                                                                |
+    |   |camera_Sc|                                                                                  |
+    +------------------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:             |
+    |                                                                                                |
+    |   support@freenove.com                                                                         |
+    |                                                                                                |
+    |   |camera_Fr|                                                                                  |
+    |                                                                                                |
+    |   :red:`Next connect the camera cable.`                                                        |
+    |                                                                                                |
+    |   After connected, it should be as follows                                                     |
+    |                                                                                                |
+    |   Step 1                                                                                       |
+    |                                                                                                |
+    |     |camera_step1|                                                                             |
+    |                                                                                                |
+    |   Step 2                                                                                       |
+    |                                                                                                |
+    |     |camera_step2|                                                                             |
+    |                                                                                                |
+    |   The :blue:`Blue side` of cable should be toward to Servo.                                    |
+    |                                                                                                |
+    |   Connect one end of cable to camera. Please note the front and back of the cable.             |
+    |                                                                                                |
+    |   Step 3                                                                                       |
+    |                                                                                                |
+    |     |camera_step3|                                                                             |
+    |                                                                                                |
+    |   Step 4                                                                                       |
+    |                                                                                                |
+    |     |camera_step4|                                                                             |
+    |                                                                                                |
+    |   The :blue:`Blue side` of cable should be toward to Servo.                                    |
+    |                                                                                                |
+    |   Connect one end of cable to camera. Please note the front and back of the cable.             |
+    +------------------------------------------------------------------------------------------------+
 
 .. |camera_Sc| image:: ../_static/imgs/camera_Sc.png
 .. |camera_Fr| image:: ../_static/imgs/camera_Fr.png
@@ -115,6 +121,8 @@ A workaround is to open a terminal, run "sudo raspi-config", navigate to "Advanc
 .. image:: ../_static/imgs/reboot_2.png
     :align: center
 
+reboot your Pi.
+
 Code
 ================================================================
 
@@ -131,7 +139,7 @@ If you do not get the result above, please check whether the camera wire is conn
 
 .. note::
 
-    :red:`When plugging in or pulling out camera wire, please make sure Raspberry Pi is turned OFF. Otherwise, it may burn out the camera.`
+    :combo:`red font-bolder:When plugging in or pulling out camera wire, please make sure Raspberry Pi is turned OFF. Otherwise, it may burn out the camera.`
 
 Python Code Camera
 ----------------------------------------------------------------
@@ -182,6 +190,7 @@ Component List
 .. table:: 
     :width: 80%
     :align: center
+    :class: table-line
 
     +---------------------------------------------+--------------------------------------+
     | Breadboard Power Module x1                  | Jumper x8                            |
@@ -196,17 +205,22 @@ Component List
 Circuit
 ================================================================
 
-+-----------------------------------------------------------------------------------+
-|   Schematic diagram                                                               |
-|                                                                                   |
-|   |camera_Sc_1|                                                                   |
-+-----------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:|
-|                                                                                   |
-|   support@freenove.com                                                            | 
-|                                                                                   |
-|   |camera_Fr_1|                                                                   |
-+-----------------------------------------------------------------------------------+
+.. table:: 
+    :width: 80%
+    :align: center
+    :class: table-line
+
+    +-----------------------------------------------------------------------------------+
+    |   Schematic diagram                                                               |
+    |                                                                                   |
+    |   |camera_Sc_1|                                                                   |
+    +-----------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:|
+    |                                                                                   |
+    |   support@freenove.com                                                            | 
+    |                                                                                   |
+    |   |camera_Fr_1|                                                                   |
+    +-----------------------------------------------------------------------------------+
 
 .. |camera_Sc_1| image:: ../_static/imgs/camera_Sc_1.png
 .. |camera_Fr_1| image:: ../_static/imgs/camera_Fr_1.png
@@ -227,7 +241,7 @@ If you do not get the result above, please check whether the camera wire is conn
 
 .. note::
 
-    :red:`When plugging in or pulling out camera wire, please make sure Raspberry Pi is turned OFF. Otherwise, it may burn out the camera.`
+    :combo:`red font-bolder:When plugging in or pulling out camera wire, please make sure Raspberry Pi is turned OFF. Otherwise, it may burn out the camera.`
 
 Python Code Video
 ----------------------------------------------------------------

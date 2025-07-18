@@ -16,6 +16,7 @@ Component List
 .. table:: 
     :align: center
     :width: 80%
+    :class: table-line
 
     +-------------------------------------------------+------------------------------------+
     |1. Raspberry Pi (with 40 GPIO) x1                |                                    |     
@@ -57,7 +58,7 @@ Below is the pinout of the touch sensor.
 .. list-table::
    :align: center
    :header-rows: 1
-   :class: product-table
+   :class: zebra
 
    * - symbol
      - Function
@@ -81,17 +82,22 @@ Below is the pinout of the touch sensor.
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                |
-|                                                                                    |
-|   |photoelectric_Sc|                                                               |
-+------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via: |
-|                                                                                    |
-|   support@freenove.com                                                             | 
-|                                                                                    |
-|   |photoelectric_Fr|                                                               |
-+------------------------------------------------------------------------------------+
+.. table::
+    :align: center
+    :width: 80%
+    :class: table-line
+
+    +------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                |
+    |                                                                                    |
+    |   |photoelectric_Sc|                                                               |
+    +------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via: |
+    |                                                                                    |
+    |   support@freenove.com                                                             | 
+    |                                                                                    |
+    |   |photoelectric_Fr|                                                               |
+    +------------------------------------------------------------------------------------+
 
 .. |photoelectric_Sc| image:: ../_static/imgs/photoelectric_Sc.png
 .. |photoelectric_Fr| image:: ../_static/imgs/photoelectric_Fr.png
@@ -155,21 +161,26 @@ This project uses U-shaped photoelectric sensor to make a simple sound and light
 Component List
 ================================================================
 
-+------------------------------------------------------------+-------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                           |                                                 |     
-|                                                            | Jumper Wires x10                                |       
-|2. GPIO Extension Board & Ribbon Cable x1                   |                                                 |       
-|                                                            |  |jumper-wire|                                  |                                                            
-|3. Breadboard x1                                            |                                                 |                                                                 
-+--------------------------------------------------+---------+------------------------+------------------------+
-| Active buzzer x1                                 | NPN transistorx1 (S8050)         | Resistor 1kΩx1         |     
-|                                                  |                                  |                        |       
-|  |Active-buzzer|                                 | |NPN-transistor|                 | |Resistor-1kΩ|         |       
-+--------------------------------------------------+----------------------------------+------------------------+
-| U-shaped photoelectric sensor x1                 | LED x1                           | Resistor 220Ω x1       |     
-|                                                  |                                  |                        |       
-| |photoelectric| :xx-large:`or` |photoelectric_1| | |red-led|                        | |res-220R|             |       
-+--------------------------------------------------+----------------------------------+------------------------+
+.. table::
+    :align: center
+    :width: 80%
+    :class: table-line
+
+    +------------------------------------------------------------+-------------------------------------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1                           |                                                 |     
+    |                                                            | Jumper Wires x10                                |       
+    |2. GPIO Extension Board & Ribbon Cable x1                   |                                                 |       
+    |                                                            |  |jumper-wire|                                  |                                                            
+    |3. Breadboard x1                                            |                                                 |                                                                 
+    +--------------------------------------------------+---------+------------------------+------------------------+
+    | Active buzzer x1                                 | NPN transistorx1 (S8050)         | Resistor 1kΩx1         |     
+    |                                                  |                                  |                        |       
+    |  |Active-buzzer|                                 | |NPN-transistor|                 | |Resistor-1kΩ|         |       
+    +--------------------------------------------------+----------------------------------+------------------------+
+    | U-shaped photoelectric sensor x1                 | LED x1                           | Resistor 220Ω x1       |     
+    |                                                  |                                  |                        |       
+    | |photoelectric| :xx-large:`or` |photoelectric_1| | |red-led|                        | |res-220R|             |       
+    +--------------------------------------------------+----------------------------------+------------------------+
 
 .. |Active-buzzer| image:: ../_static/imgs/Active-buzzer.png
     :width: 40%
@@ -185,23 +196,28 @@ Component List
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |photoelectric_Sc_1|                                                                         |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |photoelectric_Fr_2|    :xx-large:`or`  |photoelectric_Fr_3|                                 |
-+------------------------------------------------------------------------------------------------+
+.. table::
+    :align: center
+    :width: 80%
+    :class: table-line
+
+    +------------------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                            |
+    |                                                                                                |
+    |   |photoelectric_Sc_1|                                                                         |
+    +------------------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:             |
+    |                                                                                                |
+    |   support@freenove.com                                                                         | 
+    |                                                                                                |
+    |   |photoelectric_Fr_2|    :xx-large:`or`  |photoelectric_Fr_3|                                 |
+    +------------------------------------------------------------------------------------------------+
 
 .. |photoelectric_Sc_1| image:: ../_static/imgs/photoelectric_Sc_1.png
 .. |photoelectric_Fr_2| image:: ../_static/imgs/photoelectric_Fr_2.png
-    :width: 48%
+    :width: 49%
 .. |photoelectric_Fr_3| image:: ../_static/imgs/photoelectric_Fr_3.png
-    :width: 48%
+    :width: 46%
 
 .. note::
     

@@ -2,7 +2,6 @@
 Chapter Rotary Encoder
 ################################################################
 
-
 In this chapter, we will learn how to use rotary encoder.
 
 Project Rotary Encoder
@@ -16,6 +15,7 @@ Component List
 .. table:: 
     :width: 80%
     :align: center
+    :class: table-line
 
     +-------------------------------------------+------------------+
     |1. Raspberry Pi (with 40 GPIO) x1          |                  |
@@ -61,17 +61,22 @@ For example, when you turn the encoder clockwise by hand, the CLK outputs low le
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |Rotary_encoder_Sc|                                                                          |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |Rotary_encoder_Fr|                                                                          |
-+------------------------------------------------------------------------------------------------+
+.. table::
+    :class: table-line
+    :align: center
+    :width: 80%
+
+    +------------------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                            |
+    |                                                                                                |
+    |   |Rotary_encoder_Sc|                                                                          |
+    +------------------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:             |
+    |                                                                                                |
+    |   support@freenove.com                                                                         | 
+    |                                                                                                |
+    |   |Rotary_encoder_Fr|                                                                          |
+    +------------------------------------------------------------------------------------------------+
 
 .. |Rotary_encoder_Sc| image:: ../_static/imgs/Rotary_encoder_Sc.png
 .. |Rotary_encoder_Fr| image:: ../_static/imgs/Rotary_encoder_Fr.png
@@ -133,17 +138,22 @@ This project uses a rotary encoder to adjust the LEDs to emit different brightne
 Component List
 ================================================================
 
-+------------------------------------------+--------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1         |                                      |
-|                                          | Jumper Wires x8                      |
-|2. GPIO Extension Board & Ribbon Cable x1 |                                      |
-|                                          |  |jumper-wire|                       |
-|3. Breadboard x1                          |                                      |
-+-----------------------------+------------+------------------+-------------------+
-|Rotary encoder x1            |  LED x1                       |  Resistor 220Ω x1 |
-|                             |                               |                   |
-|  |Rotary_encoder|           |   |red-led|                   |   |res-220R|      |
-+-----------------------------+-------------------------------+-------------------+
+.. table:: 
+    :class: table-line
+    :width: 80%
+    :align: center
+    
+    +------------------------------------------+--------------------------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1         |                                      |
+    |                                          | Jumper Wires x8                      |
+    |2. GPIO Extension Board & Ribbon Cable x1 |                                      |
+    |                                          |  |jumper-wire|                       |
+    |3. Breadboard x1                          |                                      |
+    +-----------------------------+------------+------------------+-------------------+
+    |Rotary encoder x1            |  LED x1                       |  Resistor 220Ω x1 |
+    |                             |                               |                   |
+    |  |Rotary_encoder|           |   |red-led|                   |   |res-220R|      |
+    +-----------------------------+-------------------------------+-------------------+
 
 .. |Rotary_encoder| image:: ../_static/imgs/Rotary_encoder.png
     :width: 40%
@@ -155,17 +165,22 @@ Component List
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |Rotary_encoder_Sc_1|                                                                        |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |Rotary_encoder_Fr_1|                                                                        |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :class: table-line
+    :width: 80%
+    :align: center
+    
+    +------------------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                            |
+    |                                                                                                |
+    |   |Rotary_encoder_Sc_1|                                                                        |
+    +------------------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:             |
+    |                                                                                                |
+    |   support@freenove.com                                                                         | 
+    |                                                                                                |
+    |   |Rotary_encoder_Fr_1|                                                                        |
+    +------------------------------------------------------------------------------------------------+
 
 .. |Rotary_encoder_Sc_1| image:: ../_static/imgs/Rotary_encoder_Sc_1.png
 .. |Rotary_encoder_Fr_1| image:: ../_static/imgs/Rotary_encoder_Fr_1.png

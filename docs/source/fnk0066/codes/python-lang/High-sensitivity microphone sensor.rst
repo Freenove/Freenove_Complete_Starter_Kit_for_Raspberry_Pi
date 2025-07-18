@@ -31,11 +31,11 @@ Component List
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
     :width: 80%
 .. |microphone| image:: ../_static/imgs/microphone.png
-    :width: 30%
+    :width: 50%
 .. |res-220R| image:: ../_static/imgs/res-220R.png
-    :width: 10%
+    :width: 7%
 .. |red-led| image:: ../_static/imgs/red-led.png
-    :width: 30%
+    :width: 25%
 
 Component knowledge
 ================================================================
@@ -56,8 +56,8 @@ Below is the pinout of the high-sensitivity microphone sensor.
 .. list-table::
    :align: center
    :header-rows: 1
-   :class: product-table
-
+   :class: zebra
+   
    * - symbol
      - Function
 
@@ -80,23 +80,24 @@ Please do not use voltage beyond the power supply range to avoid damage to the h
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                |
-|                                                                                    |
-|   |microphone_Sc|                                                                  |
-+------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via: |
-|                                                                                    |
-|   support@freenove.com                                                             | 
-|                                                                                    |
-|   |microphone_Fr|                                                                  |
-+------------------------------------------------------------------------------------+
+.. table::
+   :align: center
+   :class: table-line
+   
+   +------------------------------------------------------------------------------------+
+   |   Schematic diagram                                                                |
+   |                                                                                    |
+   |   |microphone_Sc|                                                                  |
+   +------------------------------------------------------------------------------------+
+   |   Hardware connection. If you need any support,please feel free to contact us via: |
+   |                                                                                    |
+   |   support@freenove.com                                                             | 
+   |                                                                                    |
+   |   |microphone_Fr|                                                                  |
+   +------------------------------------------------------------------------------------+
 
 .. |microphone_Sc| image:: ../_static/imgs/microphone_Sc.png
 .. |microphone_Fr| image:: ../_static/imgs/microphone_Fr.png
-
-.. note:: 
-        **Youtube video:** https://youtu.be/W7fi0Sohpi0
 
 .. raw:: html
 

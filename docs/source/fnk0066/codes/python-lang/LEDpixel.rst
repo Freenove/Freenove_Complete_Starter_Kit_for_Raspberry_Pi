@@ -16,17 +16,22 @@ This project will achieve an Freenove 8 RGB LED Module flowing water.
 Component List
 ================================================================
 
-+------------------------------------------+-----------------+
-|1. Raspberry Pi (with 40 GPIO) x1         |                 |
-|                                          | Jumper Wires x4 |
-|2. GPIO Extension Board & Ribbon Cable x1 |                 |
-|                                          |  |jumper-wire|  |
-|3. Breadboard x1                          |                 |
-+------------------------------------------+-----------------+
-|Freenove 8 RGB LED Module x1                                |
-|                                                            |
-|  |LEDpixel|                                                |
-+------------------------------------------------------------+
+.. table:: 
+    :class: table-line
+    :width: 80%
+    :align: center
+    
+    +------------------------------------------+-----------------+
+    |1. Raspberry Pi (with 40 GPIO) x1         |                 |
+    |                                          | Jumper Wires x4 |
+    |2. GPIO Extension Board & Ribbon Cable x1 |                 |
+    |                                          |  |jumper-wire|  |
+    |3. Breadboard x1                          |                 |
+    +------------------------------------------+-----------------+
+    |Freenove 8 RGB LED Module x1                                |
+    |                                                            |
+    |  |LEDpixel|                                                |
+    +------------------------------------------------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
 .. |LEDpixel| image:: ../_static/imgs/LEDpixel.png
@@ -48,32 +53,42 @@ And you can also control many modules at the same time. Just connect OUT pin of 
 .. image:: ../_static/imgs/LEDpixel_2.png
     :align: center
 
-+---------------------------------------+----------------------------------------+
-|                  (IN)                 |                 (OUT)                  |
-+========+==============================+========+===============================+
-| symbol | Function                     | symbol | Function                      |
-+--------+------------------------------+--------+-------------------------------+
-| S      | Input control signal         | S      | Output control signal         |
-+--------+------------------------------+--------+-------------------------------+
-| V      | Power supply pin, +3.5V~5.5V | V      | Power supply pin, +3.5V~5.5V  |
-+--------+------------------------------+--------+-------------------------------+
-| G      | GND                          | G      | GND                           |
-+--------+------------------------------+--------+-------------------------------+
+.. table:: 
+    :class: zebra
+    :width: 80%
+    :align: center
+    
+    +---------------------------------------+----------------------------------------+
+    |                  (IN)                 |                 (OUT)                  |
+    +========+==============================+========+===============================+
+    | symbol | Function                     | symbol | Function                      |
+    +--------+------------------------------+--------+-------------------------------+
+    | S      | Input control signal         | S      | Output control signal         |
+    +--------+------------------------------+--------+-------------------------------+
+    | V      | Power supply pin, +3.5V~5.5V | V      | Power supply pin, +3.5V~5.5V  |
+    +--------+------------------------------+--------+-------------------------------+
+    | G      | GND                          | G      | GND                           |
+    +--------+------------------------------+--------+-------------------------------+
 
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |LEDpixel_Sc|                                                                                |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |LEDpixel_Fr|                                                                                |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :class: table-line
+    :width: 80%
+    :align: center
+    
+    +------------------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                            |
+    |                                                                                                |
+    |   |LEDpixel_Sc|                                                                                |
+    +------------------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:             |
+    |                                                                                                |
+    |   support@freenove.com                                                                         | 
+    |                                                                                                |
+    |   |LEDpixel_Fr|                                                                                |
+    +------------------------------------------------------------------------------------------------+
 
 .. |LEDpixel_Sc| image:: ../_static/imgs/LEDpixel_Sc.png
 .. |LEDpixel_Fr| image:: ../_static/imgs/LEDpixel_Fr.png
@@ -128,7 +143,6 @@ It will take effect after restarting, restart your RPi.
 
 If you want to restart the audio module, just restore the content modified in the above two steps.
 
-
 Code
 ================================================================
 
@@ -152,7 +166,7 @@ First observe the project result, and then learn about the code in detail.
 
 .. hint:: 
     
-    :red:`If you have any concerns, please contact us via:`  support@freenove.com
+    :red:`If you have any concerns, please contact us via:` support@freenove.com
 
 1.	Use ``cd`` command to enter 32.1.1_Ledpixel directory of Python code.
 
@@ -203,37 +217,47 @@ In this project, we will learn to control the LED module with a potentiometer.
 Component List
 ================================================================
 
-+--------------------------------------------------+-------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                 |                                                 |
-|                                                  | Jumper Wires x13                                |
-|2. GPIO Extension Board & Ribbon Cable x1         |                                                 |
-|                                                  |  |jumper-wire|                                  |
-|3. Breadboard x1                                  |                                                 |
-+--------------------------------+-----------------+-------------------+-----------------------------+
-|Freenove 8 RGB LED Module x1    |  Rotary Potentiometer x1            |  ADC Module x1              |
-|                                |                                     |                             |
-|  |LEDpixel|                    |   |Rotary-potentiometer|            |  |ADC-module-2|             |
-+--------------------------------+-------------------------------------+-----------------------------+
+.. table:: 
+    :class: table-line
+    :width: 80%
+    :align: center
+    
+    +--------------------------------------------------+-------------------------------------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1                 |                                                 |
+    |                                                  | Jumper Wires x13                                |
+    |2. GPIO Extension Board & Ribbon Cable x1         |                                                 |
+    |                                                  |  |jumper-wire|                                  |
+    |3. Breadboard x1                                  |                                                 |
+    +--------------------------------+-----------------+-------------------+-----------------------------+
+    |Freenove 8 RGB LED Module x1    |  Rotary Potentiometer x1            |  ADC Module x1              |
+    |                                |                                     |                             |
+    |  |LEDpixel2|                   |   |Rotary-potentiometer|            |  |ADC-module-2|             |
+    +--------------------------------+-------------------------------------+-----------------------------+
 
 .. |Rotary-potentiometer| image:: ../_static/imgs/Rotary-potentiometer.png
     :width: 60%
 .. |ADC-module-2| image:: ../_static/imgs/ADC-module-2.png
-    :width: 80%
+.. |LEDpixel2| image:: ../_static/imgs/LEDpixel.png
 
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |LEDpixel_Sc_1|                                                                              |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |LEDpixel_Fr_1|                                                                              |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :class: table-line
+    :width: 80%
+    :align: center
+    
+    +------------------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                            |
+    |                                                                                                |
+    |   |LEDpixel_Sc_1|                                                                              |
+    +------------------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:             |
+    |                                                                                                |
+    |   support@freenove.com                                                                         | 
+    |                                                                                                |
+    |   |LEDpixel_Fr_1|                                                                              |
+    +------------------------------------------------------------------------------------------------+
 
 .. |LEDpixel_Sc_1| image:: ../_static/imgs/LEDpixel_Sc_1.png
 .. |LEDpixel_Fr_1| image:: ../_static/imgs/LEDpixel_Fr_1.png
@@ -320,17 +344,22 @@ This project will control ledpixel to display any color by the Raspberry Pi's SP
 Component List
 ================================================================
 
-+--------------------------------------------------+-------------------------------------------------+
-|1. Raspberry Pi (with 40 GPIO) x1                 |                                                 |
-|                                                  | Jumper Wires x4                                 |
-|2. GPIO Extension Board & Ribbon Cable x1         |                                                 |
-|                                                  |  |jumper-wire|                                  |
-|3. Breadboard x1                                  |                                                 |
-+--------------------------------------------------+-------------------------------------------------+
-|Freenove 8 RGB LED Module x1                                                                        |
-|                                                                                                    |
-|  |LEDpixel|                                                                                        |
-+----------------------------------------------------------------------------------------------------+
+.. table:: 
+    :class: table-line
+    :width: 80%
+    :align: center
+    
+    +--------------------------------------------+-------------------------------+
+    |1. Raspberry Pi (with 40 GPIO) x1           |                               |
+    |                                            | Jumper Wires x4               |
+    |2. GPIO Extension Board & Ribbon Cable x1   |                               |
+    |                                            |  |jumper-wire|                |
+    |3. Breadboard x1                            |                               |
+    +--------------------------------------------+-------------------------------+
+    |Freenove 8 RGB LED Module x1                                                |
+    |                                                                            |
+    |  |LEDpixel|                                                                |
+    +----------------------------------------------------------------------------+
 
 Component knowledge
 ================================================================
@@ -348,32 +377,42 @@ And you can also control many modules at the same time. Just connect OUT pin of 
 .. image:: ../_static/imgs/LEDpixel_2.png
     :align: center
 
-+---------------------------------------+----------------------------------------+
-|                  (IN)                 |                 (OUT)                  |
-+========+==============================+========+===============================+
-| symbol | Function                     | symbol | Function                      |
-+--------+------------------------------+--------+-------------------------------+
-| S      | Input control signal         | S      | Output control signal         |
-+--------+------------------------------+--------+-------------------------------+
-| V      | Power supply pin, +3.5V~5.5V | V      | Power supply pin, +3.5V~5.5V  |
-+--------+------------------------------+--------+-------------------------------+
-| G      | GND                          | G      | GND                           |
-+--------+------------------------------+--------+-------------------------------+
+.. table:: 
+    :class: zebra
+    :width: 80%
+    :align: center
+    
+    +---------------------------------------+----------------------------------------+
+    |                  (IN)                 |                 (OUT)                  |
+    +========+==============================+========+===============================+
+    | symbol | Function                     | symbol | Function                      |
+    +--------+------------------------------+--------+-------------------------------+
+    | S      | Input control signal         | S      | Output control signal         |
+    +--------+------------------------------+--------+-------------------------------+
+    | V      | Power supply pin, +3.5V~5.5V | V      | Power supply pin, +3.5V~5.5V  |
+    +--------+------------------------------+--------+-------------------------------+
+    | G      | GND                          | G      | GND                           |
+    +--------+------------------------------+--------+-------------------------------+
 
 Circuit
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |LEDpixel_Sc_2|                                                                              |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |LEDpixel_Fr_2|                                                                              |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :class: table-line
+    :width: 80%
+    :align: center
+    
+    +------------------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                            |
+    |                                                                                                |
+    |   |LEDpixel_Sc_2|                                                                              |
+    +------------------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:             |
+    |                                                                                                |
+    |   support@freenove.com                                                                         | 
+    |                                                                                                |
+    |   |LEDpixel_Fr_2|                                                                              |
+    +------------------------------------------------------------------------------------------------+
 
 .. |LEDpixel_Sc_2| image:: ../_static/imgs/LEDpixel_Sc_2.png
 .. |LEDpixel_Fr_2| image:: ../_static/imgs/LEDpixel_Fr_2.png
@@ -412,6 +451,8 @@ The installation is complete as shown in the following figure.
 
 .. image:: ../_static/imgs/installation.png
     :align: center
+
+|
 
 .. hint:: 
     

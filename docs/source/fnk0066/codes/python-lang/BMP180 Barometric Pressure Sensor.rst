@@ -10,22 +10,27 @@ Project Barometer
 Component List
 ================================================================
 
-+-------------------------------------------+-----------------+
-|1. Raspberry Pi (with 40 GPIO) x1          |                 |
-|                                           | Jumper Wires x6 |
-|2. GPIO Extension Board & Ribbon Cable x1  |                 |
-|                                           |  |jumper-wire|  |
-|3. Breadboard x1                           |                 |
-+-------------------------------------------+-----------------+
-|BMP180 barometric pressure sensor x1                         |
-|                                                             |
-|  |BMP180|                                                   |
-+-------------------------------------------------------------+
+.. table:: 
+    :class: table-line
+    :width: 80%
+    :align: center
+    
+    +-------------------------------------------+-----------------+
+    |1. Raspberry Pi (with 40 GPIO) x1          |                 |
+    |                                           | Jumper Wires x6 |
+    |2. GPIO Extension Board & Ribbon Cable x1  |                 |
+    |                                           |  |jumper-wire|  |
+    |3. Breadboard x1                           |                 |
+    +-------------------------------------------+-----------------+
+    |BMP180 barometric pressure sensor x1                         |
+    |                                                             |
+    |  |BMP180|                                                   |
+    +-------------------------------------------------------------+
 
 .. |jumper-wire| image:: ../_static/imgs/jumper-wire.png
-    :width: 80%
+    :width: 70%
 .. |BMP180| image:: ../_static/imgs/BMP180.png
-    :width: 35%
+    :width: 30%
 
 Component knowledge
 ================================================================
@@ -66,7 +71,7 @@ Below is the pinout of BMP180 barometric pressure sensor.
 .. list-table::
    :align: center
    :header-rows: 1
-   :class: product-table
+   :class: zebra
 
    * - symbol
      - Function
@@ -85,18 +90,25 @@ Below is the pinout of BMP180 barometric pressure sensor.
 
 Please do not use voltage beyond the power supply range to avoid damage to the BMP180 barometric pressure sensor.
 
+Circuit
+================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |BMP180_Sc|                                                                                  |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         | 
-|                                                                                                |
-|   |BMP180_Fr|                                                                                  |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :class: table-line
+    :width: 80%
+    :align: center
+    
+    +------------------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                            |
+    |                                                                                                |
+    |   |BMP180_Sc|                                                                                  |
+    +------------------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:             |
+    |                                                                                                |
+    |   support@freenove.com                                                                         | 
+    |                                                                                                |
+    |   |BMP180_Fr|                                                                                  |
+    +------------------------------------------------------------------------------------------------+
 
 .. |BMP180_Sc| image:: ../_static/imgs/BMP180_Sc.png
 .. |BMP180_Fr| image:: ../_static/imgs/BMP180_Fr.png
@@ -140,6 +152,7 @@ The function bmp180_GetTemperature() is used to calculate the current temperatur
     :linenos: 
     :language: python
     :lines: 97-103
+    :dedent:
 
 The function bmp180_GetPressure() is used to calculate the current pressure value.
 
@@ -147,6 +160,7 @@ The function bmp180_GetPressure() is used to calculate the current pressure valu
     :linenos: 
     :language: python
     :lines: 104-129
+    :dedent:
     
 
 The function bmp180_Altitude() is used to calculate the current altitude.
@@ -155,3 +169,4 @@ The function bmp180_Altitude() is used to calculate the current altitude.
     :linenos: 
     :language: python
     :lines: 130-133
+    :dedent:
