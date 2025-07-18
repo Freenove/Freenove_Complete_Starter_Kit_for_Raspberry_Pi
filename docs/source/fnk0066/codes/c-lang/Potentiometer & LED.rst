@@ -16,6 +16,7 @@ Component List
 .. table:: 
     :align: center
     :width: 80%
+    :class: table-line
 
     +-------------------------------------------------------------------+
     |1. Raspberry Pi (with 40 GPIO) x1                                  |     
@@ -53,17 +54,22 @@ Component List
 Circuit with ADS7830
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |ADS7830-Schematic-2|                                                                        |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         |
-|                                                                                                |
-|   |ADS7830-fritizing-2|                                                                        |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+    :class: table-line
+
+    +------------------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                            |
+    |                                                                                                |
+    |   |ADS7830-Schematic-2|                                                                        |
+    +------------------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:             |
+    |                                                                                                |
+    |   support@freenove.com                                                                         |
+    |                                                                                                |
+    |   |ADS7830-fritizing-2|                                                                        |
+    +------------------------------------------------------------------------------------------------+
 
 .. |ADS7830-Schematic-2| image:: ../_static/imgs/ADS7830-Schematic-2.png
 .. |ADS7830-fritizing-2| image:: ../_static/imgs/ADS7830-fritizing-2.png
@@ -75,15 +81,20 @@ Circuit with ADS7830
 Circuit with PCF8591
 ================================================================
 
-+-----------------------+
-|Schematic diagram      |
-|                       |
-||PCF8591-Schematic-2|  |
-+-----------------------+
-|Hardware connection.   |
-|                       |
-||PCF8591-fritizing-2|  |
-+-----------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+    :class: table-line
+
+    +-----------------------+
+    |Schematic diagram      |
+    |                       |
+    ||PCF8591-Schematic-2|  |
+    +-----------------------+
+    |Hardware connection.   |
+    |                       |
+    ||PCF8591-fritizing-2|  |
+    +-----------------------+
 
 .. |PCF8591-Schematic-2| image:: ../_static/imgs/PCF8591-Schematic-2.png
 .. |PCF8591-fritizing-2| image:: ../_static/imgs/PCF8591-fritizing-2.png

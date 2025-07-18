@@ -17,6 +17,7 @@ Breadboard Power Module
 .. table:: 
     :align: center
     :width: 80%
+    :class: table-line
 
     +-------------------------------------------------+--------------------------------------------+
     |1. Raspberry Pi (with 40 GPIO) x1                |                                            |     
@@ -146,17 +147,22 @@ Circuit with ADS7830
 
 Use caution when connecting this circuit because the DC Motor is a high-power component. :combo:`font-bolder red:Do not use the power provided by the RPi to power the motor directly, as this may cause permanent damage to your RPi!` The logic circuit can be powered by the RPi's power or an external power supply, which should share a common ground with RPi.
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |Motor-ADS7830-Sc|                                                                           |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         |
-|                                                                                                |
-|   |Motor-ADS7830-Fr|                                                                           |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+    :class: table-line
+
+    +------------------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                            |
+    |                                                                                                |
+    |   |Motor-ADS7830-Sc|                                                                           |
+    +------------------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:             |
+    |                                                                                                |
+    |   support@freenove.com                                                                         |
+    |                                                                                                |
+    |   |Motor-ADS7830-Fr|                                                                           |
+    +------------------------------------------------------------------------------------------------+
 
 .. |Motor-ADS7830-Sc| image:: ../_static/imgs/Motor-ADS7830-Sc.png
 .. |Motor-ADS7830-Fr| image:: ../_static/imgs/Motor-ADS7830-Fr.png
@@ -170,17 +176,22 @@ Circuit with PCF8591
 
 Use caution when connecting this circuit because the DC Motor is a high-power component. :red:`Do not use the power provided by the RPi to power the motor directly, as this may cause permanent damage to your RPi!`` The logic circuit can be powered by the RPi's power or an external power supply, which should share a common ground with RPi.
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |Motor-PCF8591-Sc|                                                                           |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         |
-|                                                                                                |
-|   |Motor-PCF8591-Fr|                                                                           |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+    :class: table-line
+
+    +------------------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                            |
+    |                                                                                                |
+    |   |Motor-PCF8591-Sc|                                                                           |
+    +------------------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:             |
+    |                                                                                                |
+    |   support@freenove.com                                                                         |
+    |                                                                                                |
+    |   |Motor-PCF8591-Fr|                                                                           |
+    +------------------------------------------------------------------------------------------------+
 
 .. |Motor-PCF8591-Sc| image:: ../_static/imgs/Motor-PCF8591-Sc.png
 .. |Motor-PCF8591-Fr| image:: ../_static/imgs/Motor-PCF8591-Fr.png

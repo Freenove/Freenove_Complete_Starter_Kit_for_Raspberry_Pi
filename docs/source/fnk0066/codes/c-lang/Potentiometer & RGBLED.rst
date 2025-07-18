@@ -53,21 +53,26 @@ Component List
 Circuit with ADS7830
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |ADS7830-Schematic-3|                                                                        |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         |
-|                                                                                                |
-|   |ADS7830-fritizing-3|                                                                        |
-|                                                                                                |
-|   **If circuit above doesn't work, please try following wiring.**                              |
-|                                                                                                |
-|   |ADS7830-fritizing-4|                                                                        |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+    :class: table-line
+
+    +------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                |
+    |                                                                                    |
+    |   |ADS7830-Schematic-3|                                                            |
+    +------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via: |
+    |                                                                                    |
+    |   support@freenove.com                                                             |
+    |                                                                                    |
+    |   |ADS7830-fritizing-3|                                                            |
+    |                                                                                    |
+    |   **If circuit above doesn't work, please try following wiring.**                  |
+    |                                                                                    |
+    |   |ADS7830-fritizing-4|                                                            |
+    +------------------------------------------------------------------------------------+
 
 .. |ADS7830-Schematic-3| image:: ../_static/imgs/ADS7830-Schematic-3.png
 .. |ADS7830-fritizing-3| image:: ../_static/imgs/ADS7830-fritizing-3.png
@@ -76,17 +81,22 @@ Circuit with ADS7830
 Circuit with PCF8591
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |PCF8591-Schematic-3|                                                                        |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         |
-|                                                                                                |
-|   |PCF8591-fritizing-3|                                                                        |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+    :class: table-line
+
+    +-------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                 |
+    |                                                                                     |
+    |   |PCF8591-Schematic-3|                                                             |
+    +-------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:  |
+    |                                                                                     |
+    |   support@freenove.com                                                              |
+    |                                                                                     |
+    |   |PCF8591-fritizing-3|                                                             |
+    +-------------------------------------------------------------------------------------+
 
 .. |PCF8591-Schematic-3| image:: ../_static/imgs/PCF8591-Schematic-3.png
 .. |PCF8591-fritizing-3| image:: ../_static/imgs/PCF8591-fritizing-3.png
@@ -136,7 +146,7 @@ After the program is executed, rotate one of the potentiometers, then the color 
 The following is the program code:
 
 .. literalinclude:: ../../../freenove_Kit/Code/C_Code/09.1.1_ColorfulSoftlight/ColorfulSoftlight.cpp
-    :linenos: 
+    :linenos:
     :language: C
     :dedent:
 

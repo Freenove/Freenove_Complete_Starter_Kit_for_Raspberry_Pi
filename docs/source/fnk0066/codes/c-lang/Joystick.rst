@@ -15,6 +15,7 @@ Component List
 .. table:: 
     :align: center
     :width: 80%
+    :class: table-line
 
     +-------------------------------------------------+
     |1. Raspberry Pi x1                               |
@@ -69,17 +70,22 @@ When the Joystick data is read, there are some differences between the axes: dat
 Circuit with ADS7830
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |ADS7830-Schematic-6|                                                                        |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         |
-|                                                                                                |
-|   |ADS7830-fritizing-7|                                                                        |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+    :class: table-line
+
+    +-------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                 |
+    |                                                                                     |
+    |   |ADS7830-Schematic-6|                                                             |
+    +-------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:  |
+    |                                                                                     |
+    |   support@freenove.com                                                              |
+    |                                                                                     |
+    |   |ADS7830-fritizing-7|                                                             |
+    +-------------------------------------------------------------------------------------+
 
 .. |ADS7830-Schematic-6| image:: ../_static/imgs/ADS7830-Schematic-6.png
 .. |ADS7830-fritizing-7| image:: ../_static/imgs/ADS7830-fritizing-7.png
@@ -92,17 +98,22 @@ Circuit with ADS7830
 Circuit with PCF8591
 ================================================================
 
-+------------------------------------------------------------------------------------------------+
-|   Schematic diagram                                                                            |
-|                                                                                                |
-|   |PCF8591-Schematic-6|                                                                        |
-+------------------------------------------------------------------------------------------------+
-|   Hardware connection. If you need any support,please feel free to contact us via:             |
-|                                                                                                |
-|   support@freenove.com                                                                         |
-|                                                                                                |
-|   |PCF8591-fritizing-6|                                                                        |
-+------------------------------------------------------------------------------------------------+
+.. table:: 
+    :align: center
+    :width: 80%
+    :class: table-line
+
+    +-------------------------------------------------------------------------------------+
+    |   Schematic diagram                                                                 |
+    |                                                                                     |
+    |   |PCF8591-Schematic-6|                                                             |
+    +-------------------------------------------------------------------------------------+
+    |   Hardware connection. If you need any support,please feel free to contact us via:  |
+    |                                                                                     |
+    |   support@freenove.com                                                              |
+    |                                                                                     |
+    |   |PCF8591-fritizing-6|                                                             |
+    +-------------------------------------------------------------------------------------+
 
 .. |PCF8591-Schematic-6| image:: ../_static/imgs/PCF8591-Schematic-6.png
 .. |PCF8591-fritizing-6| image:: ../_static/imgs/PCF8591-fritizing-6.png
