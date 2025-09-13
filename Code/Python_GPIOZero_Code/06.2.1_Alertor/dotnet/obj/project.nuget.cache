@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "ETvQ5GpSD54=",
+  "success": true,
+  "projectFilePath": "/home/piuser/Desktop/Freenove_Kit/Code/Python_GPIOZero_Code/06.2.1_Alertor/dotnet/check.csproj",
+  "expectedPackageFiles": [
+    "/home/piuser/.nuget/packages/iot.device.bindings/4.0.1/iot.device.bindings.4.0.1.nupkg.sha512",
+    "/home/piuser/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/microsoft.win32.systemevents/8.0.0/microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/runtime.linux-arm.runtime.native.system.io.ports/8.0.0/runtime.linux-arm.runtime.native.system.io.ports.8.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/runtime.linux-arm64.runtime.native.system.io.ports/8.0.0/runtime.linux-arm64.runtime.native.system.io.ports.8.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/runtime.linux-x64.runtime.native.system.io.ports/8.0.0/runtime.linux-x64.runtime.native.system.io.ports.8.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/runtime.native.system.io.ports/8.0.0/runtime.native.system.io.ports.8.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/runtime.osx-arm64.runtime.native.system.io.ports/8.0.0/runtime.osx-arm64.runtime.native.system.io.ports.8.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/runtime.osx-x64.runtime.native.system.io.ports/8.0.0/runtime.osx-x64.runtime.native.system.io.ports.8.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/system.codedom/5.0.0/system.codedom.5.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/system.device.gpio/4.0.1/system.device.gpio.4.0.1.nupkg.sha512",
+    "/home/piuser/.nuget/packages/system.drawing.common/8.0.8/system.drawing.common.8.0.8.nupkg.sha512",
+    "/home/piuser/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/system.io.ports/8.0.0/system.io.ports.8.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/system.management/5.0.0/system.management.5.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
+    "/home/piuser/.nuget/packages/system.text.json/8.0.4/system.text.json.8.0.4.nupkg.sha512",
+    "/home/piuser/.nuget/packages/unitsnet/5.42.0/unitsnet.5.42.0.nupkg.sha512"
+  ],
+  "logs": []
+}

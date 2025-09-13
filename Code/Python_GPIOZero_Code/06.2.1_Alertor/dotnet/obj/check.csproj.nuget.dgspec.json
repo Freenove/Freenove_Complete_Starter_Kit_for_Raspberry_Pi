@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/piuser/Desktop/Freenove_Kit/Code/Python_GPIOZero_Code/06.2.1_Alertor/dotnet/check.csproj": {}
+  },
+  "projects": {
+    "/home/piuser/Desktop/Freenove_Kit/Code/Python_GPIOZero_Code/06.2.1_Alertor/dotnet/check.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/piuser/Desktop/Freenove_Kit/Code/Python_GPIOZero_Code/06.2.1_Alertor/dotnet/check.csproj",
+        "projectName": "check",
+        "projectPath": "/home/piuser/Desktop/Freenove_Kit/Code/Python_GPIOZero_Code/06.2.1_Alertor/dotnet/check.csproj",
+        "packagesPath": "/home/piuser/.nuget/packages/",
+        "outputPath": "/home/piuser/Desktop/Freenove_Kit/Code/Python_GPIOZero_Code/06.2.1_Alertor/dotnet/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/piuser/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Iot.Device.Bindings": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "System.Device.Gpio": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/piuser/.dotnet/sdk/8.0.414/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

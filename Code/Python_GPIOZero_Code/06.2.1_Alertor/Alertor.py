@@ -17,13 +17,24 @@ def loop():
     while True:
         if button.is_pressed:  # if button is pressed
             alertor()
-            print ('alertor turned on >>> ')
+            # print ('alertor turned on >>> ')
         else :
             stopAlertor()
-            print ('alertor turned off <<<')
+            # print ('alertor turned off <<<')
 def alertor():
-    buzzer.play(Tone(220.0)) 
-    time.sleep(0.1)
+    for x in range (0, 361):
+        sinVal = math.sin(x * (math.pi / 180.0))
+        
+        # TonalBuzzer: min_tone.frequency == 220
+        # TonalBuzzer: max_tone.frequency == 880
+        # sin [-1..1]
+        # middle = (880 - 220) / 2 +220 = 550
+        # sin [-1..1] -> sin * 330 = [-330..330]
+        # [-330..330] + 550 = [220..880] from min to max frequency
+        toneVal = 550 + sinVal * 330
+
+        buzzer.play(Tone(toneVal))
+        time.sleep(0.005)
         
 def stopAlertor():
     buzzer.stop()

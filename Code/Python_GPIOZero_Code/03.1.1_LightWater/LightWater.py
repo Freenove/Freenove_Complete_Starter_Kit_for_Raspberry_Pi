@@ -9,7 +9,15 @@ from gpiozero import LED
 from time import sleep
 
 ledPins = [17, 18, 27, 22, 23, 24, 25, 2, 3, 8]
-leds = [LED(pin=pin) for pin in ledPins] 
+leds = [LED(pin=pin) for pin in ledPins]
+
+def test():
+    for index in range(0,len(ledPins), 1):
+        leds[index].on()
+    sleep(1)
+    
+    for index in range(0,len(ledPins), 1):
+        leds[index].off()
     
 def loop():
     while True:
@@ -25,6 +33,7 @@ def loop():
 if __name__ == '__main__':     # Program entrance
     print ('Program is starting...')
     try:
+        test()
         loop()
     except KeyboardInterrupt:  # Press ctrl-c to end the program.
         print("Ending program")
