@@ -1,0 +1,3 @@
+using Microsoft.Extensions.Hosting; using Microsoft.Extensions.Logging;
+var b=Host.CreateApplicationBuilder(args); b.Logging.AddConsole(); b.Services.AddHostedService<36_ADC_SoundLevelService>(); using var h=b.Build(); await h.RunAsync();
+public sealed class 36_ADC_SoundLevelService(ILogger<36_ADC_SoundLevelService> log):BackgroundService{ protected override async Task ExecuteAsync(CancellationToken ct){ while(!ct.IsCancellationRequested) await Task.Delay(1000,ct); } }

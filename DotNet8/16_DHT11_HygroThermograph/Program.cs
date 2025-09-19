@@ -1,0 +1,3 @@
+using Microsoft.Extensions.Hosting; using Microsoft.Extensions.Logging; using Iot.Device.DHTxx;
+var b=Host.CreateApplicationBuilder(args); b.Logging.AddConsole(); b.Services.AddHostedService<App>(); using var h=b.Build(); await h.RunAsync();
+public sealed class App(ILogger<App> log):BackgroundService{ protected override async Task ExecuteAsync(CancellationToken ct){ using var d=new Dht11(4); while(!ct.IsCancellationRequested){ if(d.TryReadHumidity(out var h1)&&d.TryReadTemperature(out var t)) log.LogInformation("Hum {0:0.0}% Temp {1:0.0}C", h1.Percent, t.DegreesCelsius); await Task.Delay(2000,ct);} } }

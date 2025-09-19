@@ -1,0 +1,3 @@
+using Microsoft.Extensions.Hosting; using Microsoft.Extensions.Logging;
+var b=Host.CreateApplicationBuilder(args); b.Logging.AddConsole(); b.Services.AddHostedService<23_TouchSensor_LEDService>(); using var h=b.Build(); await h.RunAsync();
+public sealed class 23_TouchSensor_LEDService(ILogger<23_TouchSensor_LEDService> log):BackgroundService{ protected override async Task ExecuteAsync(CancellationToken ct){ while(!ct.IsCancellationRequested) await Task.Delay(1000,ct); } }

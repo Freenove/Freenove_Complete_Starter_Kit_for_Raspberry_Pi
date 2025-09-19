@@ -1,0 +1,3 @@
+using Microsoft.Extensions.Hosting; using Microsoft.Extensions.Logging;
+var b=Host.CreateApplicationBuilder(args); b.Logging.AddConsole(); b.Services.AddHostedService<35_Camera_Motion_TTSService>(); using var h=b.Build(); await h.RunAsync();
+public sealed class 35_Camera_Motion_TTSService(ILogger<35_Camera_Motion_TTSService> log):BackgroundService{ protected override async Task ExecuteAsync(CancellationToken ct){ while(!ct.IsCancellationRequested) await Task.Delay(1000,ct); } }

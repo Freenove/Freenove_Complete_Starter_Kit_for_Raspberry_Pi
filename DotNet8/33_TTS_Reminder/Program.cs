@@ -1,0 +1,1 @@
+using System.Diagnostics; var text=args.Length>0?string.Join(' ',args):"Reminder from Raspberry Pi"; Process.Start("bash",["-lc",$"espeak \"{text}\""]).WaitForExit();

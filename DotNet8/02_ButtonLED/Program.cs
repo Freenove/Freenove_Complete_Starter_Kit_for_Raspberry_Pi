@@ -1,0 +1,3 @@
+using Microsoft.Extensions.Hosting; using Microsoft.Extensions.Logging; using System.Device.Gpio;
+var b=Host.CreateApplicationBuilder(args); b.Logging.AddConsole(); b.Services.AddSingleton<GpioController>(); b.Services.AddHostedService<App>(); using var h=b.Build(); await h.RunAsync();
+public sealed class App(ILogger<App> log, GpioController gpio):BackgroundService{ const int Led=18, Btn=23; bool state; protected override Task ExecuteAsync(CancellationToken ct){ gpio.OpenPin(Led,PinMode.Output); gpio.OpenPin(Btn,PinMode.InputPullDown); gpio.RegisterCallbackForPinValueChangedEvent(Btn, PinEventTypes.Rising, (_,__)=>{ state=!state; gpio.Write(Led, state?PinValue.High:PinValue.Low); log.LogInformation("LED {0}", state? "ON":"OFF");}); return Task.CompletedTask; } }

@@ -1,0 +1,1 @@
+using System.Diagnostics; Console.WriteLine("Playing sample.mp3"); Process.Start("bash", ["-lc", "ffplay -autoexit sample.mp3"]).WaitForExit();

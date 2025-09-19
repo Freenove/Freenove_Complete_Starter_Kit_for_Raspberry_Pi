@@ -1,0 +1,3 @@
+using Microsoft.Extensions.Hosting; using Microsoft.Extensions.Logging;
+var b=Host.CreateApplicationBuilder(args); b.Logging.AddConsole(); b.Services.AddHostedService<13_MatrixKeypad_4x4Service>(); using var h=b.Build(); await h.RunAsync();
+public sealed class 13_MatrixKeypad_4x4Service(ILogger<13_MatrixKeypad_4x4Service> log):BackgroundService{ protected override async Task ExecuteAsync(CancellationToken ct){ while(!ct.IsCancellationRequested) await Task.Delay(1000,ct); } }

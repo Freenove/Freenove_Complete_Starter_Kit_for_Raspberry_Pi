@@ -1,0 +1,1 @@
+using System.Diagnostics; Console.WriteLine("Capturing to photo.jpg"); Process.Start("bash", ["-lc","libcamera-still -o photo.jpg"]).WaitForExit();

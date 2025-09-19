@@ -1,0 +1,3 @@
+using Microsoft.Extensions.Hosting; using Microsoft.Extensions.Logging;
+var b=Host.CreateApplicationBuilder(args); b.Logging.AddConsole(); b.Services.AddHostedService<22_RotaryEncoder_DimmerService>(); using var h=b.Build(); await h.RunAsync();
+public sealed class 22_RotaryEncoder_DimmerService(ILogger<22_RotaryEncoder_DimmerService> log):BackgroundService{ protected override async Task ExecuteAsync(CancellationToken ct){ while(!ct.IsCancellationRequested) await Task.Delay(1000,ct); } }

@@ -1,0 +1,3 @@
+using Microsoft.Extensions.Hosting; using Microsoft.Extensions.Logging; using Iot.Device.Hcsr04;
+var b=Host.CreateApplicationBuilder(args); b.Logging.AddConsole(); b.Services.AddHostedService<App>(); using var h=b.Build(); await h.RunAsync();
+public sealed class App(ILogger<App> log):BackgroundService{ protected override async Task ExecuteAsync(CancellationToken ct){ using var s=new Hcsr04(24,25); while(!ct.IsCancellationRequested){ if(s.TryGetDistance(out var d)) log.LogInformation("Dist {0:F1} cm", d.Centimeters); await Task.Delay(500,ct);} } }

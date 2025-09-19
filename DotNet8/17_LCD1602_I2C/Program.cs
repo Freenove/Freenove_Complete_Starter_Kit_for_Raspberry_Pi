@@ -1,0 +1,3 @@
+using Microsoft.Extensions.Hosting; using Microsoft.Extensions.Logging; using System.Device.I2c; using Iot.Device.CharacterLcd;
+var b=Host.CreateApplicationBuilder(args); b.Logging.AddConsole(); b.Services.AddHostedService<App>(); using var h=b.Build(); await h.RunAsync();
+public sealed class App(ILogger<App> log):BackgroundService{ protected override async Task ExecuteAsync(CancellationToken ct){ var dev=I2cDevice.Create(new I2cConnectionSettings(1,0x27)); using var lcd=new Lcd1602(dev,true); lcd.Clear(); lcd.SetCursorPosition(0,0); lcd.Write("Freenove .NET"); lcd.SetCursorPosition(0,1); lcd.Write("LCD1602 Demo"); int i=0; while(!ct.IsCancellationRequested){ lcd.SetCursorPosition(15,1); lcd.Write(((i++%3)+1).ToString()); await Task.Delay(600,ct);} } }

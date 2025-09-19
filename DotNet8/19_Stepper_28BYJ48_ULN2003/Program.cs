@@ -1,0 +1,3 @@
+using Microsoft.Extensions.Hosting; using Microsoft.Extensions.Logging;
+var b=Host.CreateApplicationBuilder(args); b.Logging.AddConsole(); b.Services.AddHostedService<19_Stepper_28BYJ48_ULN2003Service>(); using var h=b.Build(); await h.RunAsync();
+public sealed class 19_Stepper_28BYJ48_ULN2003Service(ILogger<19_Stepper_28BYJ48_ULN2003Service> log):BackgroundService{ protected override async Task ExecuteAsync(CancellationToken ct){ while(!ct.IsCancellationRequested) await Task.Delay(1000,ct); } }

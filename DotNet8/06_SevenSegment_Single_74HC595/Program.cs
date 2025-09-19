@@ -1,0 +1,3 @@
+using Microsoft.Extensions.Hosting; using Microsoft.Extensions.Logging;
+var b=Host.CreateApplicationBuilder(args); b.Logging.AddConsole(); b.Services.AddHostedService<06_SevenSegment_Single_74HC595Service>(); using var h=b.Build(); await h.RunAsync();
+public sealed class 06_SevenSegment_Single_74HC595Service(ILogger<06_SevenSegment_Single_74HC595Service> log):BackgroundService{ protected override async Task ExecuteAsync(CancellationToken ct){ while(!ct.IsCancellationRequested) await Task.Delay(1000,ct); } }
