@@ -104,25 +104,6 @@ Circuit
 
 :red:`The CSI camera must be connected or disconnected under no power and when Raspberry Pi is shut down, or the camera may be burned.`
 
-libcamera-apps does not work properly on Pi 0 to 3 devices when running the latest Bullseye images.
-
-A workaround is to open a terminal, run "sudo raspi-config", navigate to "Advanced Options" and enable "Glamor" graphic acceleration. Then reboot your Pi.
-
-.. code-block:: console
-
-    $ sudo raspi-config
-
-.. image:: ../_static/imgs/reboot.png
-    :align: center
-
-.. image:: ../_static/imgs/reboot_1.png
-    :align: center
-
-.. image:: ../_static/imgs/reboot_2.png
-    :align: center
-
-reboot your Pi.
-
 Code
 ================================================================
 
@@ -130,7 +111,7 @@ Detect camera:
 
 .. code-block:: console
 
-    $ v4l2-ctl --list-devices
+    $ rpicam-hello --list -camera
 
 .. image:: ../_static/imgs/list_device.png
     :align: center
@@ -232,7 +213,7 @@ Detect camera:
 
 .. code-block:: console
 
-    $ v4l2-ctl --list-devices
+    $ rpicam-hello --list -camera
 
 .. image:: ../_static/imgs/list_device.png
     :align: center
