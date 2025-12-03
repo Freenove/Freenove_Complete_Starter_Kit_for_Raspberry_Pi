@@ -72,7 +72,7 @@ public class Joystick{
         });
         
         try {  
-            int ADC_CHIP_ADDR = 0x48;  
+            int ADC_CHIP_ADDR = 0x4B;  
             ADCDevice adc = new ADCDevice(pi4j, i2CProvider, ADC_CHIP_ADDR);  
   
             if (adc.detectI2C()) {  

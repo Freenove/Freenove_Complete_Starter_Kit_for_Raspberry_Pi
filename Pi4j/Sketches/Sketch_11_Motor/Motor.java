@@ -120,7 +120,7 @@ class ADCDevice {
 public class Motor{
     private static int MOTOR_PIN_1 = 27;
     private static int MOTOR_PIN_2 = 17;
-    private static int ADC_CHIP_ADDR = 0x48; 
+    private static int ADC_CHIP_ADDR = 0x4B; 
     private static int ADC_CHANNEL = 0;
     
     private static final Context pi4j = Pi4J.newAutoContext();  

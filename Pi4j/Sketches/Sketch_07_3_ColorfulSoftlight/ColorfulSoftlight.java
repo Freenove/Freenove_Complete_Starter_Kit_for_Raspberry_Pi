@@ -119,7 +119,7 @@ class ADCDevice {
 
 public class ColorfulSoftlight{
     private static int   LED_PIN = 17;
-    private static int   ADC_CHIP_ADDR = 0x48; 
+    private static int   ADC_CHIP_ADDR = 0x4B; 
     private static final Context pi4j = Pi4J.newAutoContext();  
     private static final Map<Integer, PWMController> pwmControllers = new HashMap<>();  
     

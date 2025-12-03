@@ -119,7 +119,7 @@ class ADCDevice {
 
 public class Softlight{
     private static int   LED_PIN = 17;
-    private static int   ADC_CHIP_ADDR = 0x48; 
+    private static int   ADC_CHIP_ADDR = 0x4B; 
     private static int   ADC_CHANNEL = 0;
     
     private static final Context pi4j = Pi4J.newAutoContext();  
