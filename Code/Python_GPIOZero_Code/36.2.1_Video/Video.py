@@ -24,7 +24,6 @@ def loop():
             picam2.configure(video_config)
             encoder = H264Encoder()
             picam2.start_recording(encoder, 'video.h264', quality=Quality.HIGH)
-            print(encoder._bitrate)
             time.sleep(2)
             picam2.stop_recording()
             picam2.close()

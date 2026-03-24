@@ -16,7 +16,7 @@ sensor=MicrophoneSensor(sensorPin, pull_up=False)
 
 def loop():
     while True:
-       if sensor.is_active:
+       if not sensor.is_active:
            led.on()                    # turn on led
            time.sleep(5)
            led.off()                   # turn off led
